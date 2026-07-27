@@ -39,6 +39,13 @@ Target End: 2026-08-31
 
 ## 🧠 SESSION LOG (Most Recent First)
 
+### Session 7 — 2026-07-27
+- **AI Used:** Antigravity (Google DeepMind)
+- **Done:**
+  - Diagnosed and fixed Git tracking issue for `.gitignore` files.
+  - Cleared Git index cache (`git rm -r --cached .` followed by `git add .`) to untrack previously tracked ignored files (such as `.obsidian/graph.json` and `.obsidian/plugins/obsidian-local-rest-api/`).
+  - Verified Git index now cleanly respects `.gitignore` without deleting local files.
+
 ### Session 6 — 2026-07-27
 - **AI Used:** Gemini (Google DeepMind)
 - **Done:**
