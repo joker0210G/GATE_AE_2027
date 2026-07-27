@@ -1,85 +1,28 @@
-﻿---
+---
 type: topic-note
 subject: Engineering Mathematics
-topic: Complex Variables
-status: to-do
-phase: 1
-date_first_read: 
-last_revised: 
-pyqs_done: 0
+topic: Complex Variables - Overview
+status: first-read
+phase: 1-foundation
+date_first_read: 2026-07-27
+last_revised: 2026-07-27
 ---
 
-# 📖 Complex Variables
-#subject/math #status/to-do #type/topic-note #phase/1-foundation
+# 📖 Complex Variables — Section Overview
+#subject/math #status/first-read #type/topic-note
 
-**Subject:** [[02 - SUBJECTS/Engineering Mathematics/_Index]]
-**Formula Sheet:** [[06 - FORMULA SHEETS/Engineering Mathematics - Formulas]]
-**Date First Read:** —
-**Last Revised:** —
+**Official Syllabus Section:** [[02 - SUBJECTS/Engineering Mathematics/06 - Complex Variables|Section 6: Complex Variables]]  
+**Parent:** [[02 - SUBJECTS/Engineering Mathematics/_Index]]
 
----
-
-## 📌 What is This Topic?
-
-> Write a 2–3 sentence plain-English summary of what this topic is about and why it matters for GATE AE. (Fill this when you study it.)
+> ℹ️ **Note:** This section is organized under **Section 6** in the official GATE 2027 AE Syllabus structure (`_Index.md`). All completed topic notes are linked below.
 
 ---
 
-## 🧠 Core Concepts
+## 📌 Completed Topics in Complex Variables
 
-> Fill when studying. Use bullet points for definitions, theorems, key ideas.
-
--
--
--
+- [x] [[02 - SUBJECTS/Engineering Mathematics/06.1 - Complex Variables|06.1 - Complex Variables (Core Notes): Three Forms $z=x+iy=re^{i\theta}$, Euler's Formula, De Moivre's Theorem, C-R Equations, Cauchy's Theorem & Integral Formula $2\pi i f(z_0)$, Laurent Series, Residue Theorem $2\pi i\sum\text{Res}$]] ✅ `#status/first-read`
+- [x] [[02 - SUBJECTS/Engineering Mathematics/06.2 - Analytic Functions|06.2 - Analytic Functions (Deep-Dive): C-R Derivation, Polar C-R, $\bar{z}$-test, Milne-Thomson Method $f(z)=\int[u_x(z,0)-iu_y(z,0)]dz$, CHAIN Properties, Conformal Mapping, Joukowski Airfoil Transform $w=z+a^2/z$]] ✅ `#status/first-read`
+- [x] [[02 - SUBJECTS/Engineering Mathematics/06.3 - Cauchy Riemann Equations|06.3 - Cauchy-Riemann Equations (Standalone Reference): 2-Direction Derivation, 4 $f'(z)$ Forms, Polar C-R $u_r=v_\theta/r$, Necessary vs Sufficient, Full Pattern Table, 5 Solved Examples]] ✅ `#status/first-read`
 
 ---
-
-## 📐 Key Formulas
-
-| Formula | Description | When to Use |
-|---|---|---|
-| | | |
-| | | |
-
----
-
-## 🔗 Related Topics
-
-- **Prerequisites:**
-- **Leads to:**
-- **Also related:**
-
----
-
-## 📝 Worked Examples
-
-### Example 1
-**Problem:**
-
-**Solution:**
-
-**Key Insight:**
-
----
-
-## ❓ GATE PYQs from This Topic
-
-- [[04 - PYQs/Engineering Mathematics/GATE-AE-YYYY-QNN]] — Brief description
-
----
-
-## ⚠️ Common Mistakes
-
--
--
-
----
-
-## 🔄 Revision Log
-
-| Date | Action | Status After |
-|---|---|---|
-| | First read | #status/first-read |
-| | PYQ practice | #status/needs-revision |
-| | Full revision | #status/mastered |
+*Main Section Note:* [[02 - SUBJECTS/Engineering Mathematics/06 - Complex Variables]]

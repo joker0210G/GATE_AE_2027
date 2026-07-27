@@ -1,85 +1,33 @@
-﻿---
+---
 type: topic-note
 subject: Engineering Mathematics
-topic: Numerical Methods
-status: to-do
-phase: 1
-date_first_read: 
-last_revised: 
-pyqs_done: 0
+topic: Numerical Methods - Overview
+status: first-read
+phase: 1-foundation
+date_first_read: 2026-07-27
+last_revised: 2026-07-27
 ---
 
-# 📖 Numerical Methods
-#subject/math #status/to-do #type/topic-note #phase/1-foundation
+# 📖 Numerical Methods — Section Overview
+#subject/math #status/first-read #type/topic-note
 
-**Subject:** [[02 - SUBJECTS/Engineering Mathematics/_Index]]
-**Formula Sheet:** [[06 - FORMULA SHEETS/Engineering Mathematics - Formulas]]
-**Date First Read:** —
-**Last Revised:** —
+**Official Syllabus Section:** [[02 - SUBJECTS/Engineering Mathematics/04 - Numerical Methods|Section 4: Numerical Methods]]  
+**Parent:** [[02 - SUBJECTS/Engineering Mathematics/_Index]]
 
----
-
-## 📌 What is This Topic?
-
-> Write a 2–3 sentence plain-English summary of what this topic is about and why it matters for GATE AE. (Fill this when you study it.)
+> ℹ️ **Note:** This section is organized under **Section 4** in the official GATE 2027 AE Syllabus structure (`_Index.md`). All completed topic notes are linked below.
 
 ---
 
-## 🧠 Core Concepts
+## 📌 Completed Topics in Numerical Methods
 
-> Fill when studying. Use bullet points for definitions, theorems, key ideas.
-
--
--
--
-
----
-
-## 📐 Key Formulas
-
-| Formula | Description | When to Use |
-|---|---|---|
-| | | |
-| | | |
+- [x] [[02 - SUBJECTS/Engineering Mathematics/04.1 - Bisection Method|04.1 - Bisection Method: Bracketing, Convergence Rate $O(1/2^n)$, Order 1, Iteration Formula]] ✅ `#status/first-read`
+- [x] [[02 - SUBJECTS/Engineering Mathematics/04.2 - Newton Raphson Method|04.2 - Newton-Raphson Method: Tangent Line, Order 2 (Quadratic), $x_{n+1} = x_n - \frac{f(x_n)}{f'(x_n)}$, Pitfalls ($f'(x)=0$)]] ✅ `#status/first-read`
+- [x] [[02 - SUBJECTS/Engineering Mathematics/04.3 - Numerical Differentiation|04.3 - Numerical Differentiation: Forward, Backward, and Central Difference Schemes, Truncation Errors]] ✅ `#status/first-read`
+- [x] [[02 - SUBJECTS/Engineering Mathematics/04.4 - Trapezoidal Rule|04.4 - Trapezoidal Rule: 1-Segment & Composite, Exact for Degree $\le 1$, Error $-\frac{(b-a)^3}{12 n^2} f''(\xi)$]] ✅ `#status/first-read`
+- [x] [[02 - SUBJECTS/Engineering Mathematics/04.5 - Simpsons Rules|04.5 - Simpson's 1/3 & 3/8 Rules: Parabolic Interpolation, Exact for Degree $\le 3$, Error Formulas]] ✅ `#status/first-read`
+- [x] [[02 - SUBJECTS/Engineering Mathematics/04.6 - Linear Regression|04.6 - Linear Regression: Best-Fit Line $y = ax + b$, Normal Equations, Slope & Intercept Formulas]] ✅ `#status/first-read`
+- [x] [[02 - SUBJECTS/Engineering Mathematics/04.6b - Least Squares Method|04.6b - Least Squares Method (General): Polynomial & Nonlinear Fitting, Residual Minimization]] ✅ `#status/first-read`
+- [x] [[02 - SUBJECTS/Engineering Mathematics/04.7 - Linear Interpolation|04.7 - Linear Interpolation: Lagrange, Newton Forward/Backward, FEB-BEN-LAG Rule]] ✅ `#status/first-read`
 
 ---
-
-## 🔗 Related Topics
-
-- **Prerequisites:**
-- **Leads to:**
-- **Also related:**
-
----
-
-## 📝 Worked Examples
-
-### Example 1
-**Problem:**
-
-**Solution:**
-
-**Key Insight:**
-
----
-
-## ❓ GATE PYQs from This Topic
-
-- [[04 - PYQs/Engineering Mathematics/GATE-AE-YYYY-QNN]] — Brief description
-
----
-
-## ⚠️ Common Mistakes
-
--
--
-
----
-
-## 🔄 Revision Log
-
-| Date | Action | Status After |
-|---|---|---|
-| | First read | #status/first-read |
-| | PYQ practice | #status/needs-revision |
-| | Full revision | #status/mastered |
+*Main Section Note:* [[02 - SUBJECTS/Engineering Mathematics/04 - Numerical Methods]]
