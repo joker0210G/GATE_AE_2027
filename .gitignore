@@ -1,0 +1,68 @@
+# =====================================================================
+# Obsidian Vault .gitignore
+# Designed for GATE AE 2027 Shared Second Brain Vault
+# =====================================================================
+
+# ---------------------------------------------------------------------
+# 🔒 PRIVATE / PERSONAL NOTES (DO NOT COMMIT TO GITHUB)
+# ---------------------------------------------------------------------
+journals/
+Private/
+Personal/
+*.private.md
+
+# Ignore personal daily logs (keep directory structure with .gitkeep or templates)
+# If you want to keep daily study logs private from your friends:
+03 - DAILY TRACKER/*.md
+!03 - DAILY TRACKER/.gitkeep
+
+# Ignore personal mock test results (keep templates & master index)
+05 - MOCK TESTS/*.md
+!05 - MOCK TESTS/_Mock Test Index.md
+!05 - MOCK TESTS/.gitkeep
+
+# ---------------------------------------------------------------------
+# Obsidian Workspace & Local State (DO NOT COMMIT)
+# ---------------------------------------------------------------------
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/workspace.json.bak
+.obsidian/indexeddb/
+.obsidian/cache/
+.obsidian/backups/
+.obsidian/local-settings.json
+
+# ---------------------------------------------------------------------
+# OS Clutter & Local Temp Files
+# ---------------------------------------------------------------------
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+$RECYCLE.BIN/
+
+# ---------------------------------------------------------------------
+# AI Agents & IDE Local Scratch Directories
+# ---------------------------------------------------------------------
+.brain/
+scratch/
+*.tmp
+*.log
+.gemini/antigravity-ide/
+.antigravity/
+
+# ---------------------------------------------------------------------
+# Node / Build Artifacts
+# ---------------------------------------------------------------------
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+__pycache__/
+*.pyc
+.env
+.env.local

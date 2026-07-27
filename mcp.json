@@ -1,0 +1,29 @@
+{
+  "mcpServers": {
+    "obsidian-rest-api": {
+      "command": "cmd",
+      "args": [
+        "/c",
+        "npx",
+        "-y",
+        "mcp-remote@latest",
+        "http://127.0.0.1:27123/mcp/",
+        "--allow-http",
+        "--header",
+        "Authorization: Bearer YOUR_OBSIDIAN_REST_API_TOKEN"
+      ],
+      "description": "Obsidian Local REST API bridge using mcp-remote. Connects directly to running Obsidian app on port 27123."
+    },
+    "obsidian-vault": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@mcp-community/server-obsidian"
+      ],
+      "env": {
+        "OBSIDIAN_VAULT_PATH": "."
+      },
+      "description": "Direct filesystem Obsidian MCP server."
+    }
+  }
+}

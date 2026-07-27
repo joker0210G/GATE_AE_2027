@@ -1,0 +1,27 @@
+{
+  "mcpServers": {
+    "obsidian-rest-api": {
+      "command": "cmd",
+      "args": [
+        "/c",
+        "npx",
+        "-y",
+        "mcp-remote@latest",
+        "http://127.0.0.1:27123/mcp/",
+        "--allow-http",
+        "--header",
+        "Authorization: Bearer YOUR_OBSIDIAN_REST_API_TOKEN"
+      ]
+    },
+    "obsidian-vault": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@mcp-community/server-obsidian"
+      ],
+      "env": {
+        "OBSIDIAN_VAULT_PATH": "${workspaceFolder}"
+      }
+    }
+  }
+}
