@@ -32,7 +32,7 @@ last_updated: 2026-07-27
 | Parabolic | $e = 1$ | $E = 0$ |
 | Hyperbolic | $e > 1$ | $E > 0$ |
 
-**Related Notes:** [[02 - SUBJECTS/Space Dynamics/01 - Two Body Problem]]
+**Related Notes:** [[02 - SUBJECTS/Flight Mechanics & Space Dynamics/06.1 - Central Force Motion and Two-Body Problem]]
 
 ---
 
@@ -51,7 +51,7 @@ last_updated: 2026-07-27
 | $v_{esc} = \sqrt{2\mu/r}$ | Escape velocity |
 | $v_{esc} = \sqrt{2} \cdot v_{circ}$ | Escape vs circular relation |
 
-**Related Notes:** [[02 - SUBJECTS/Space Dynamics/02 - Keplers Laws]]
+**Related Notes:** [[02 - SUBJECTS/Flight Mechanics & Space Dynamics/06.2 - Keplerian Conic Orbits and Kepler Laws]], [[02 - SUBJECTS/Flight Mechanics & Space Dynamics/06.3 - Escape Velocity and Energy Requirements]]
 
 ---
 
@@ -73,7 +73,7 @@ last_updated: 2026-07-27
 |---|---|
 | $\Delta v = 2v\sin(\Delta i/2)$ | Velocity change for inclination change $\Delta i$ |
 
-**Related Notes:** [[02 - SUBJECTS/Space Dynamics/03 - Orbit Transfers]]
+**Related Notes:** [[02 - SUBJECTS/Flight Mechanics & Space Dynamics/08.1 - Hohmann Orbital Transfers and Energy Requirements]]
 
 ---
 

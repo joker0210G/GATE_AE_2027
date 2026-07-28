@@ -12,7 +12,7 @@ pyqs_done: 0
 # 📖 Calculus & Vector Calculus
 #subject/math #status/first-read #type/topic-note #phase/1-foundation
 
-**Subject:** [[02 - SUBJECTS/Engineering Mathematics/_Index]]  
+**Subject:** [[_Index_Engineering Mathematics]]  
 **Formula Sheet:** [[06 - FORMULA SHEETS/Engineering Mathematics - Formulas]]  
 **Date First Read:** 2026-07-27  
 **Last Revised:** 2026-07-27  
@@ -58,7 +58,7 @@ Calculus is the mathematical study of continuous change. In GATE AE, Calculus is
 ## 🔗 Related Topics
 
 - **Prerequisites:** Basic algebra, trigonometry
-- **Leads to:** [[02 - SUBJECTS/Engineering Mathematics/03 - ODEs]] (Differential equations), [[02 - SUBJECTS/Aerodynamics/_Index]] (Fluid flow integration)
+- **Leads to:** [[02 - SUBJECTS/Engineering Mathematics/03 - ODEs]] (Differential equations), [[_Index_Aerodynamics]] (Fluid flow integration)
 - **Also related:** [[02 - SUBJECTS/Engineering Mathematics/01.1 - Vector Algebra]]
 
 ---

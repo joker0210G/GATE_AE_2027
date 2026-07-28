@@ -11,7 +11,7 @@ last_revised: 2026-07-27
 # 📖 Section 6: Complex Variables — Overview
 #subject/math #status/first-read #type/topic-note
 
-**Subject:** [[02 - SUBJECTS/Engineering Mathematics/_Index]]  
+**Subject:** [[_Index_Engineering Mathematics]]  
 **Date First Read:** 2026-07-27
 
 > 🟡 **Special Topic** — ≤10% of GATE AE questions.
@@ -23,4 +23,4 @@ last_revised: 2026-07-27
 - [x] [[02 - SUBJECTS/Engineering Mathematics/06.3 - Cauchy Riemann Equations|Cauchy-Riemann Equations (Standalone Reference): Derivation from 2 Directions, 4 Equivalent $f'(z)$ Forms, Polar C-R $u_r=v_\theta/r$, Necessary vs Sufficient, Full Pattern Table, 4 Consequences, Diagonal Grid Trick, SAME-OPPOSITE Rule, CURE Mnemonic, 5 Solved Examples]] ✅ `#status/first-read`
 
 ---
-*Parent:* [[02 - SUBJECTS/Engineering Mathematics/_Index]]
+*Parent:* [[_Index_Engineering Mathematics]]

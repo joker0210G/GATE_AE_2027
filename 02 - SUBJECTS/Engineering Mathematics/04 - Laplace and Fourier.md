@@ -12,7 +12,7 @@ last_revised: 2026-07-27
 #subject/math #status/first-read #type/topic-note
 
 **Official Syllabus Section:** [[02 - SUBJECTS/Engineering Mathematics/05 - Fourier Series|Section 5: Fourier Series]]  
-**Parent:** [[02 - SUBJECTS/Engineering Mathematics/_Index]]
+**Parent:** [[_Index_Engineering Mathematics]]
 
 > ℹ️ **Note on GATE 2027 AE Syllabus:**
 > - ❌ **Laplace Transform is NOT in GATE 2027 AE Syllabus.** (Do not spend time studying Laplace Transform).

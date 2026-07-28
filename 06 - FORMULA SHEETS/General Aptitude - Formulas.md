@@ -95,8 +95,8 @@ last_updated: 2026-07-27
 
 > **Goal: 13+/15 in GA** — These are free marks if you prepare consistently!
 
-**Related Notes:** [[02 - SUBJECTS/General Aptitude/_Index]]
+**Related Notes:** [[_Index_General Aptitude]]
 
 ---
 
-*Last Updated: 2026-07-27 | Full Index: [[02 - SUBJECTS/General Aptitude/_Index]]*
+*Last Updated: 2026-07-27 | Full Index: [[_Index_General Aptitude]]*

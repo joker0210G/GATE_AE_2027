@@ -12,7 +12,7 @@ pyqs_done: 0
 # 📖 Linear Algebra
 #subject/math #status/first-read #type/topic-note #phase/1-foundation
 
-**Subject:** [[02 - SUBJECTS/Engineering Mathematics/_Index]]  
+**Subject:** [[_Index_Engineering Mathematics]]  
 **Formula Sheet:** [[06 - FORMULA SHEETS/Engineering Mathematics - Formulas]]  
 **Date First Read:** 2026-07-27  
 **Last Revised:** 2026-07-27

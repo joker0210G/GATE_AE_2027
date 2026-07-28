@@ -12,7 +12,7 @@ last_revised: 2026-07-27
 #subject/math #status/first-read #type/topic-note
 
 **Official Syllabus Section:** [[02 - SUBJECTS/Engineering Mathematics/04 - Numerical Methods|Section 4: Numerical Methods]]  
-**Parent:** [[02 - SUBJECTS/Engineering Mathematics/_Index]]
+**Parent:** [[_Index_Engineering Mathematics]]
 
 > ℹ️ **Note:** This section is organized under **Section 4** in the official GATE 2027 AE Syllabus structure (`_Index.md`). All completed topic notes are linked below.
 

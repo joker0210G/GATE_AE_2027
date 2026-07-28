@@ -11,7 +11,7 @@ last_revised: 2026-07-27
 # 📖 Section 7: Probability & Statistics — Overview
 #subject/math #status/first-read #type/topic-note
 
-**Subject:** [[02 - SUBJECTS/Engineering Mathematics/_Index]]  
+**Subject:** [[_Index_Engineering Mathematics]]  
 **Date First Read:** 2026-07-27
 
 > 🟡 **Special Topic** — ≤10% of GATE AE questions. *(Section Complete)*
@@ -26,4 +26,4 @@ last_revised: 2026-07-27
 - [x] [[02 - SUBJECTS/Engineering Mathematics/07.3c - Normal Distribution|Normal Distribution: $Z=(X-\mu)/\sigma$, Bell Curve Properties (Mean=Median=Mode=$\mu$, Inflection $\mu\pm\sigma$), Empirical Rule 68-95-99.7, $\Phi(-z)=1-\Phi(z)$, Additivity $X_1-X_2\sim N(\mu_1-\mu_2, \sigma_1^2+\sigma_2^2)$ (Plus Sign Rule!), Central Limit Theorem $\bar{X}\sim N(\mu, \sigma^2/n)$, BELL-S & EMPIRIC Mnemonics, 5 Solved Examples]] ✅ `#status/first-read`
 
 ---
-*Parent:* [[02 - SUBJECTS/Engineering Mathematics/_Index]]
+*Parent:* [[_Index_Engineering Mathematics]]

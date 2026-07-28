@@ -1,4 +1,4 @@
-﻿---
+---
 type: subject-index
 subject: General Aptitude
 subject_code: ga

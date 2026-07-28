@@ -99,4 +99,4 @@ last_updated: 2026-07-27
 
 ---
 
-*Last Updated: 2026-07-27 | Full Index: [[02 - SUBJECTS/Aerodynamics/_Index]]*
+*Last Updated: 2026-07-27 | Full Index: [[_Index_Aerodynamics]]*
