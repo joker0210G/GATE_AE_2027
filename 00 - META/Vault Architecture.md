@@ -103,11 +103,16 @@ GATE/
 │   ├── Propulsion - Formulas.md
 │   └── Space Dynamics - Formulas.md
 │
-└── 07 - TEMPLATES/
-    ├── Topic Note Template.md
-    ├── PYQ Analysis Template.md
-    ├── Mock Test Review Template.md
-    └── Daily Tracker Template.md
+├── 07 - TEMPLATES/
+│   ├── Topic Note Template.md
+│   ├── PYQ Analysis Template.md
+│   ├── Mock Test Review Template.md
+│   ├── Daily Tracker Template.md
+│   └── AI Student Context Template.md  ← NEW: For new joiner onboarding
+│
+└── journals/                            ← 🔒 GIT-IGNORED: Private student data
+    ├── AI_STUDENT_CONTEXT.md            ← Student's AI memory & session log
+    └── YYYY_MM_DD.md                    ← Daily study journals
 ```
 
 ---

@@ -41,10 +41,11 @@ Do this every Sunday evening:
 - [ ] Or manually scan each subject index for 🔲 and 🔁 items
 - [ ] List the top 3 weakest areas
 
-### Step 3: Update AI_CONTEXT.md
-- [ ] Update "Current Phase" if phase has changed
-- [ ] Update "Next Actions" for the coming week
+### Step 3: Update Student Context & Roadmap
+- [ ] Update "Current Phase" in `journals/AI_STUDENT_CONTEXT.md` if phase has changed
+- [ ] Update "Next Actions" for the coming week in `journals/AI_STUDENT_CONTEXT.md` and `AI_CONTEXT.md`
 - [ ] Update strong/weak subjects if discovered
+
 
 ### Step 4: Plan Next Week
 - [ ] Set a weekly goal (e.g., "Complete Aerodynamics Chapters 3–5")

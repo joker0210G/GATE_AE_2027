@@ -11,10 +11,6 @@ Private/
 Personal/
 *.private.md
 
-# Ignore personal daily logs (keep directory structure with .gitkeep or templates)
-03 - DAILY TRACKER/*.md
-!03 - DAILY TRACKER/.gitkeep
-
 # Ignore personal mock test results (keep templates & master index)
 05 - MOCK TESTS/*.md
 !05 - MOCK TESTS/_Mock Test Index.md
@@ -23,8 +19,9 @@ Personal/
 # ---------------------------------------------------------------------
 # 🔑 OBSIDIAN LOCAL REST API & SENSITIVE KEYS (DO NOT COMMIT)
 # ---------------------------------------------------------------------
-.obsidian/plugins/obsidian-local-rest-api/data.json
+.obsidian/plugins/*/data.json
 .obsidian/plugins/obsidian-local-rest-api/
+.obsidian/plugins/llm-hub/data.json
 
 # ---------------------------------------------------------------------
 # Obsidian Workspace & Local State (DO NOT COMMIT)

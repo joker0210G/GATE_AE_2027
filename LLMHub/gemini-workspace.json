@@ -1,0 +1,7 @@
+{
+  "selectedRagSetting": null,
+  "webSearchEnabled": false,
+  "selectedModel": "api:provider_1786552589026:openai/gpt-oss-20b:free",
+  "ragSettings": {},
+  "maxPreviousMessages": 99
+}

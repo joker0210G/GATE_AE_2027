@@ -38,6 +38,19 @@ syllabus_source: GATE 2027 Official (IIT Madras)
 
 ---
 
+## 🎯 Topic-Wise & Sectional Mock Tests (Hardness-Ranked)
+- [[05 - MOCK TESTS/Topic Tests/01.1 - Vector Algebra - 50Q Hardness Ranked Mock Test|🧪 Vector Algebra — 50-Question Master Mock Test (5 Levels of Hardness)]] (80 Marks | Q01–Q50)
+- [[05 - MOCK TESTS/Topic Tests/01.2 - Matrix Algebra - 50Q Hardness Ranked Mock Test|🧪 Matrix Algebra — 50-Question Master Mock Test (5 Levels of Hardness)]] (80 Marks | Q01–Q50)
+- [[05 - MOCK TESTS/Topic Tests/01.3 - Systems of Linear Equations - 50Q Hardness Ranked Mock Test|🧪 Systems of Linear Equations — 50-Question Master Mock Test (5 Levels of Hardness)]] (80 Marks | Q01–Q50)
+- [[05 - MOCK TESTS/Topic Tests/01.3.1 - Rank of a Matrix - 50Q Hardness Ranked Mock Test|🧪 Rank of a Matrix — 50-Question Master Mock Test (5 Levels of Hardness)]] (80 Marks | Q01–Q50)
+- [[05 - MOCK TESTS/Topic Tests/01.4 - Eigenvalues - 50Q Hardness Ranked Mock Test|🧪 Eigenvalues & Eigenvectors — 50-Question Master Mock Test (5 Levels of Hardness)]] (80 Marks | Q01–Q50)
+- [[05 - MOCK TESTS/Topic Tests/01.4.1 - Eigenvectors - 50Q Hardness Ranked Mock Test|🧪 Eigenvectors & Diagonalization — 50-Question Master Mock Test (5 Levels of Hardness)]] (80 Marks | Q01–Q50)
+- [[05 - MOCK TESTS/Topic Tests/02.1 - Single Variable Calculus - 50Q Hardness Ranked Mock Test|🧪 Functions of Single Variable — 50-Question Master Mock Test (5 Levels of Hardness)]] (80 Marks | Q01–Q50)
+- [[05 - MOCK TESTS/Topic Tests/02.1.1 - Limits - 50Q Hardness Ranked Mock Test|🧪 Limits & Indeterminate Forms — 50-Question Master Mock Test (5 Levels of Hardness)]] (80 Marks | Q01–Q50)
+- [[05 - MOCK TESTS/Topic Tests/02.1.2 - Continuity - 50Q Hardness Ranked Mock Test|🧪 Continuity & Discontinuity Analysis — 50-Question Master Mock Test (5 Levels of Hardness)]] (80 Marks | Q01–Q50)
+
+---
+
 ## 📈 Performance Trend by Section (GATE 2027 Structure)
 
 | Section | Mock 1 | Mock 2 | Mock 3 | Mock 4 | Mock 5 | Mock 6 | Mock 7 |

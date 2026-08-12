@@ -1,28 +1,18 @@
 ---
 name: gate-vault-manager
-description: Rules and instructions for managing the GATE AE 2027 Obsidian vault structure, AI context, daily logs, and tag statuses.
+description: Manages the GATE AE 2027 vault structure, AI context, and student session logs.
 ---
 
-# GATE Vault Manager Skill
+# GATE Vault Manager
 
-Use this skill whenever you need to:
-- Read or update vault context across sessions.
-- Maintain daily study logs in `03 - DAILY TRACKER/`.
-- Audit topic status tags (`#status/to-do`, `#status/first-read`, `#status/needs-revision`, `#status/mastered`).
-- Update subject `_Index.md` progress trackers.
+Use this skill for vault context management, daily logs, and tag audits.
 
-## Instructions
+## Key File Paths
+- **Shared blueprint:** `AI_CONTEXT.md`
+- **Student context:** `journals/AI_STUDENT_CONTEXT.md`
+- **Daily journals:** `journals/YYYY_MM_DD.md`
+- **All AI rules:** `AGENTS.md`
+- **Templates:** `07 - TEMPLATES/`
 
-1. **AI Context Maintenance:**
-   - Always open `AI_CONTEXT.md` first.
-   - After modifying notes or performing study sessions, append a log entry to `## 🧠 SESSION LOG (Most Recent First)`.
-   - Update `## 📋 CURRENT NEXT ACTIONS` for the user.
-
-2. **Daily Log Creation:**
-   - When user finishes a study day, ensure `03 - DAILY TRACKER/YYYY-MM-DD.md` is populated using `07 - TEMPLATES/Daily Tracker Template.md`.
-   - Update cumulative progress counters.
-
-3. **Status Tag Synchronization:**
-   - When a note is read for the first time: set `#status/first-read`.
-   - When PYQs are practiced with errors: set `#status/needs-revision`.
-   - When PYQs are solved with ≥80% accuracy: set `#status/mastered`.
+## Quick Reference
+All behavioral rules (modes, workflows, data preservation, formatting, tagging, maintenance) are defined in `AGENTS.md`. Read that file for complete instructions.
