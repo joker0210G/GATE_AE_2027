@@ -36,15 +36,8 @@ Use this skill when the student triggers `mode: tutor` ("Let's study", "Continue
 3. **No lecture marathons!** Move directly to question practice.
 
 ### Step 3: Interactive Practice Blitz (Batches of 10–15 Questions)
-1. Present questions in batches of 10 to 15.
-2. Hide solutions using Obsidian foldable callouts:
-   ```markdown
-   > [!faq]- 🔍 View Solution
-   > **Correct Answer:** ...
-   > **Key Formula:** $$...$$
-   > **Step-by-Step:** ...
-   > **⚠️ Common Trap:** ...
-   ```
+1. Present questions in batches of 10 to 15 WITHOUT solutions.
+2. In live AI chat (Antigravity/Web UI), markdown callouts render open and spoil answers. Therefore, withhold solution blocks completely when asking questions in live chat. (Use `> [!faq]-` foldable callouts only when saving pre-authored notes into Obsidian vault files).
 3. Ask the student for:
    - Their answers for each question.
    - Their thought process / reasoning for shaky questions.
@@ -52,13 +45,14 @@ Use this skill when the student triggers `mode: tutor` ("Let's study", "Continue
    - Time spent on the batch.
 
 ### Step 4: Forensic Review & Speed Shortcuts
-1. For every wrong answer, perform a forensic root-cause analysis:
+1. Reveal step-by-step solutions and conduct forensic root-cause analysis for every wrong/guessed answer:
    - 🔴 **Conceptual Gap**
    - 🟠 **Formula Memory Slip**
    - 🟡 **Silly / Calculation Error**
    - 🔵 **Time Pressure**
    - 🟣 **Trap Victim**
 2. Provide **1-minute Speed Shortcuts** and NAT rounding rules required by IIT Madras.
+3. ⚡ **REAL-TIME LOGGING MANDATE:** Immediately write/append the full question statements, student answers, target answers, time taken, score, and forensic diagnoses into `journals/YYYY_MM_DD.md` during the same response turn!
 
 ### Step 5: Real-Time Fatigue & Energy Management
 - Monitor fatigue signals: student stating *"I'm tired"*, *"brain fried"*, or accuracy dropping by >30% between batches.
@@ -68,11 +62,8 @@ Use this skill when the student triggers `mode: tutor` ("Let's study", "Continue
   - Build **Tomorrow's Bridge**: A 2-line preview of tomorrow's starting topic to ensure zero startup friction tomorrow.
 
 ### Step 6: Mining Data into `journals/`
-- Log the entire session to `journals/YYYY_MM_DD.md`:
-  - Student's exact quotes & reasoning.
-  - Start time, end time, total minutes.
-  - Accuracy %, questions solved, mistake categorization.
-- Append session entry to `journals/AI_STUDENT_CONTEXT.md` (keep file <300 lines).
+- Ensure all conversation data (student quotes, timing, guesses, reasoning, scorecards) are 100% synchronized into `journals/YYYY_MM_DD.md`.
+- Append summary entry to `journals/AI_STUDENT_CONTEXT.md` (keep file <300 lines).
 
 ---
 
@@ -80,5 +71,6 @@ Use this skill when the student triggers `mode: tutor` ("Let's study", "Continue
 
 - **Conversational & Encouraging:** Act as a supportive, rigorous academic coach.
 - **Strict LaTeX Formatting:** All formulas must use valid LaTeX.
-- **Never Reveal Solutions Early:** Keep solutions inside foldable callouts (`> [!faq]-`).
+- **Never Reveal Solutions Early in Live Chat:** Withhold solutions completely until student submits their answers. (Foldable callouts `> [!faq]-` are strictly for written vault files).
+- **Real-Time Journal Logging:** Automatically write/update `journals/YYYY_MM_DD.md` after every completed test batch/warmup drill. Never wait for session end!
 - **Log to `journals/` ONLY:** Never write student attempt data to `03 - DAILY TRACKER/` or `05 - MOCK TESTS/`.

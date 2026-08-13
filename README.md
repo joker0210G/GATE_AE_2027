@@ -2,8 +2,8 @@
 
 [![Exam](https://img.shields.io/badge/GATE-Aerospace_Engineering_2027-blue.svg)](00%20-%20META/GATE%202027%20Official%20Syllabus.md)
 [![Syllabus](https://img.shields.io/badge/IIT_Madras-Official_Syllabus-green.svg)](00%20-%20META/GATE%202027%20Official%20Syllabus.md)
-[![Version](https://img.shields.io/badge/Vault_Version-1.0.0-purple.svg)](VERSION.md)
-[![Last Updated](https://img.shields.io/badge/Last_Updated-2026--08--13-orange.svg)](CHANGELOG.md)
+[![Version](https://img.shields.io/badge/Vault_Version-1.0.1-purple.svg)](VERSION.md)
+[![Last Updated](https://img.shields.io/badge/Last_Updated-2026--08--14-orange.svg)](CHANGELOG.md)
 [![AI Integration](https://img.shields.io/badge/AI_Ready-Claude_%7C_GPT--4o_%7C_Gemini_%7C_Cursor-purple.svg)](AGENTS.md)
 
 Welcome to the **GATE Aerospace Engineering (AE) 2027 Second Brain**. This is an interconnected, AI-native study workspace built in **Obsidian**, specifically architected for the **February 2027 GATE exam by IIT Madras**.
@@ -13,8 +13,8 @@ Welcome to the **GATE Aerospace Engineering (AE) 2027 Second Brain**. This is an
 ## 🚀 Quick Start for Students
 
 1. **Get the Vault:**
-   - **GitHub ZIP Download (70%):** Go to [joker0210G/GATE_AE_2027](https://github.com/joker0210G/GATE_AE_2027), click the green **`<> Code`** button, select **`Download ZIP`**, and extract the `GATE_AE_2027-main` folder.
-   - **Git Clone (30%):** Run `git clone https://github.com/joker0210G/GATE_AE_2027.git` in your terminal.
+   - **GitHub ZIP Download :** Go to [joker0210G/GATE_AE_2027](https://github.com/joker0210G/GATE_AE_2027), click the green **`<> Code`** button, select **`Download ZIP`**, and extract the `GATE_AE_2027-main` folder.
+   - **Git Clone :** Run `git clone https://github.com/joker0210G/GATE_AE_2027.git` in your terminal.
 2. **Open in Obsidian:**
    - Download & install [Obsidian](https://obsidian.md).
    - Click **"Open folder as vault"** and select the extracted `GATE_AE_2027-main` folder.
@@ -31,11 +31,8 @@ This vault includes a built-in multi-agent protocol defined in [`AGENTS.md`](AGE
 | Mode | Trigger Phrase | What the AI Does |
 |---|---|---|
 | 🎓 **Tutor** | `"Let's study"` / `"Continue"` / `"Tutor mode"` | Interactive 4-Pillar GATE coaching (Warmup → Concept Scan → PYQ Batches → Forensic Review → Tomorrow's Bridge) |
-
 | 📝 **Mock** | `"Test me on X"` / `"Mock mode"` / `"Mock test"` | 5-Tier Hardness mock test, student reasoning capture, NAT/MCQ negative drag, forensic review |
-
 | 📊 **Analyse** | `"Analyse my prep"` / `"Telemetry report"` | Deep telemetry diagnostic (NAT/MCQ split, Negative Drag, Speed, 5-tier errors, ROI Rank Boosters) |
-
 | 🚀 **Onboard** | `"I am new here"` | Initializes `journals/AI_STUDENT_CONTEXT.md` for new joiners |
 | 🛠️ **Author** | `"I am author"` / `"Developer mode"` | **Zero-logging mode** for vault maintainers creating shared content |
 | 📦 **Release** | `"Prepare release vX.Y.Z"` | Runs pre-release privacy audit & packages clean release ZIP |

@@ -73,7 +73,7 @@ GATE/
 - **Student Modes (`tutor`, `mock`, `analyse`, `onboard`):** Active study modes where AI logs conversation insights, timings, and error diagnostics into `journals/YYYY_MM_DD.md` and `journals/AI_STUDENT_CONTEXT.md`.
 - **Developer / Author Mode (`author` / `dev`):** Zero-logging mode triggered by *"I am author"* or *"Developer mode"*. AI assists in editing shared course files without generating student logs.
 - **Author Release Mode (`release`):** Triggers pre-release privacy audit ensuring 0 personal student log leaks before creating clean release ZIPs (`GATE_AE_2027_vX.Y.Z.zip`).
-- **Lossless Update Mode (`update`):** AI-guided update engine that backs up `journals/` to `.backup/` and syncs shared course files for both ZIP download (70%) and Git clone (30%) students.
+- **Lossless Update Mode (`update`):** AI-guided update engine that backs up `journals/` to `.backup/` and syncs shared course files for both ZIP download and Git clone students.
 
 ---
 
