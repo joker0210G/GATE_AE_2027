@@ -38,14 +38,7 @@ Use this skill when running mock tests in `mode: mock` ("Test me on X", "Mock mo
    - **Level 3 (Medium):** Core 2-Mark multi-step calculations and derivations.
    - **Level 4 (Tough):** Advanced 2-Mark tricky geometry and parameter tests.
    - **Level 5 (Challenger):** IIT Madras Rank Booster conceptual/abstract questions.
-3. Solutions MUST be hidden using Obsidian foldable callouts:
-   ```markdown
-   > [!faq]- 🔍 View Solution & Detailed Explanation
-   > **Correct Answer:** ...
-   > **Key Formula:** $$...$$
-   > **Step-by-Step Derivation:** ...
-   > **⚠️ Common GATE Trap / NAT Precision Alert:** ...
-   ```
+3. In live AI chat, solutions MUST NOT be included in the question presentation prompt. Withhold solutions completely until after student submits their answers. (Foldable callouts `> [!faq]-` are used exclusively when authoring/saving mock files into `05 - MOCK TESTS/` for Obsidian).
 
 ### Step 3: Student Thought Process & Confidence Capture
 For each question batch, collect from the student:
