@@ -1,7 +1,8 @@
 ---
 type: meta
 source: Official GATE 2027 IIT Madras
-saved_date: 2026-07-27
+last_updated: 2026-08-13
+version: 1.0.0
 sections: 5
 ---
 

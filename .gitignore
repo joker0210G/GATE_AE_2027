@@ -11,11 +11,6 @@ Private/
 Personal/
 *.private.md
 
-# Ignore personal mock test results (keep templates & master index)
-05 - MOCK TESTS/*.md
-!05 - MOCK TESTS/_Mock Test Index.md
-!05 - MOCK TESTS/.gitkeep
-
 # ---------------------------------------------------------------------
 # 🔑 OBSIDIAN LOCAL REST API & SENSITIVE KEYS (DO NOT COMMIT)
 # ---------------------------------------------------------------------
@@ -59,7 +54,7 @@ scratch/
 .antigravity/
 
 # ---------------------------------------------------------------------
-# Node / Build Artifacts
+# Node / Build Artifacts & Vault Backups / Releases
 # ---------------------------------------------------------------------
 node_modules/
 npm-debug.log*
@@ -69,3 +64,9 @@ __pycache__/
 *.pyc
 .env
 .env.local
+
+# Vault Update Backups & Release Zip Archives
+.backup/
+GATE_AE_2027_*.zip
+scripts/*.log
+

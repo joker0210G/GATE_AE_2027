@@ -1,15 +1,16 @@
 ---
 tags: [type/meta, phase/1-foundation]
-last_updated: 2026-08-10
+last_updated: 2026-08-13
+version: 1.0.0
 ---
 
 # 🌳 Divide & Conquer — 6 Month Battle Plan
 #type/meta
 
-> **Preparation Start:** August 11, 2026 (Tomorrow)  
-> **Exam Day:** February 2027 (GATE AE — IIT Madras)  
+> **Preparation Exam:** February 2027 (GATE AE — IIT Madras)  
 > **Master Formula:** CONCEPT → QUESTIONS → SPEED → RANK  
-> **AIR <10 = C × P × R × T**
+> **AIR <10 = C × P × R × T**  
+> **Official Roadmap:** [[01 - ROADMAP/GATE AE 2027 Master Roadmap]]
 
 ---
 
@@ -34,7 +35,7 @@ last_updated: 2026-08-10
 ### Mission: Make Engineering Mathematics Unbeatable
 
 > ⚠️ **All Engineering Mathematics notes already exist.** M1 = PYQ Blitz + 50Q Mocks + Error Book + Subject Test.
-> 📄 **Full daily plan:** [[M1 — Engineering Mathematics 28-Day Plan]]
+
 
 | Week | Dates | Focus | Mode |
 |---|---|---|---|
@@ -56,7 +57,6 @@ last_updated: 2026-08-10
 | **D5** | Sat Aug 15 | Cayley-Hamilton & Diagonalization | Subspaces, Basis, Dimension + PYQs | Revise D3+D4 | 5 mixed Linear Algebra MCQs |
 | **D6** | Sun Aug 16 | Full Linear Algebra Concept Scan | 10 mixed GATE PYQs (all Linear Algebra) | Full W1 concept scan | ⏱️ **20Q Timed Mini-Test (Linear Algebra)** |
 | **D7** | Mon Aug 17 | 🔁 REVISION DAY | Update Error Book | Build Linear Algebra Micro Notes | Review test errors from D6 |
-
 
 > **W1 Target:** Linear Algebra → `#status/first-read` ✅
 
@@ -87,7 +87,7 @@ last_updated: 2026-08-10
 | **D3** | Thu Aug 27 | Green's / Stokes' / Gauss' Theorems | 5 Theorem PYQs | Revise D1+D2 | 5 Theorem MCQs |
 | **D4** | Fri Aug 28 | ODEs — 1st Order (Separable, Exact, Linear, Bernoulli) | 5 ODE PYQs | Revise D2+D3 | 5 ODE MCQs |
 | **D5** | Sat Aug 29 | ODEs — Higher Order (Undetermined Coefficients, Variation of Parameters) | 5 Higher ODE PYQs | Revise D3+D4 | 5 MCQs |
-| **D6** | Sun Aug 30 | Laplace Transforms — Properties, IVP solutions | 10 mixed ODE/Vector Calc PYQs | Full W3 concept scan | ⏱️ **20Q Timed Mini-Test (Calculus 2 + ODEs)** |
+| **D6** | Sun Aug 30 | Laplace Equation (PDE) + Classification | 10 mixed ODE/Vector Calc PYQs | Full W3 concept scan | ⏱️ **20Q Timed Mini-Test (Calculus 2 + ODEs)** |
 | **D7** | Mon Aug 31 | 🔁 REVISION DAY | Update Error Book | Build Multivariable + ODE Micro Notes | Review D6 test errors |
 
 > **W3 Target:** Multivariable Calculus + ODEs → `#status/first-read` ✅
@@ -119,8 +119,6 @@ last_updated: 2026-08-10
 | **W2** | Sep 15–21 | Aerodynamics Block 2 | Potential Flow, Thin Airfoil Theory, Kutta-Joukowski, Lifting Line |
 | **W3** | Sep 22–28 | Aerodynamics Block 3 + GA | Viscous BL, Compressible Flow, Isentropic, Normal/Oblique Shocks, P-M + GA |
 | **W4** | Sep 29–Oct 5 | Structures Core + Aero Subject Test | SoM, Thin-walled sections, Structural Dynamics, Buckling + Aero Subject Test |
-
-> **W1–W4 Structure:** Each day follows D1=Concept+PYQ → D6=Mini-Test → D7=Revision
 
 ---
 
@@ -158,9 +156,6 @@ last_updated: 2026-08-10
 | **W3** | Dec 15–21 | Mixed Tests + FLT #2 → Analyse → Fix → Speed Practice | Exam Mode 🔴 |
 | **W4** | Dec 22–28 | FLT #3 + Mixed Tests → Error Book Deep Dive → Repair | Exam Mode 🔴 |
 
-> **Test Formula every week:** `TEST → FIND ERROR → FIX → RE-TEST`  
-> If marks drop — **Don't panic. Diagnose.**
-
 ---
 
 ## 🔴 M6 — December 29 to Exam Day: PERFORM (RANK MODE)
@@ -175,14 +170,11 @@ last_updated: 2026-08-10
 | **Final Sprint** | Jan 26–Feb | Light Revision Only — Short Notes + Error Book. NO new topics. |
 | **🎯 EXAM DAY** | **February 2027** | **GATE AE 2027 — PERFORM** |
 
-> **Final Loop: Revise → Mock → Analyse → Repair → Repeat**  
-> **TARGET: Fewer Mistakes Every Test**
-
 ---
 
 ## 📋 Daily Log Template (Every Day)
 
-```
+```markdown
 📅 Date:
 📍 Week: W__ | Month: M__
 🎯 Today's Target:
@@ -203,4 +195,4 @@ last_updated: 2026-08-10
 
 ---
 
-*Linked from:* [[GATE AE 2027 Master Roadmap]] | [[AI_CONTEXT.md]]
+*Last Updated: 2026-08-13 | Version: 1.0.0 | Linked from:* [[01 - ROADMAP/GATE AE 2027 Master Roadmap]] | [[AI_CONTEXT]]

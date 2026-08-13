@@ -1,7 +1,8 @@
 ---
 type: meta
 title: MCP & Local REST API Setup Guide (VS Code, Codex, Antigravity, Claude, Cursor)
-last_updated: 2026-07-27
+last_updated: 2026-08-13
+version: 1.0.0
 ---
 
 # 🔌 MCP Setup & Local REST API Guide
@@ -102,3 +103,5 @@ Add `obsidian` to your MCP settings in Cursor / Windsurf settings using the same
 
 ## 🔐 Security Reminder
 Do **NOT** commit your actual bearer token to public Git repositories! Keep your real token inside your local private configs (such as `%APPDATA%\Claude\claude_desktop_config.json`).
+
+*Last Updated: 2026-08-13 | Version: 1.0.0*

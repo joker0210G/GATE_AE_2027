@@ -39,10 +39,10 @@ Tags are organized into 4 namespaces. Always use the `namespace/value` format.
 |---|---|
 | `#type/topic-note` | Core subject topic notes |
 | `#type/pyq` | Previous year question analysis |
-| `#type/mock-test` | Mock test review |
-| `#type/formula` | Formula sheets |
+| `#type/mock-test` | Mock test review & score tracking |
+| `#type/formula` | Formula reference sheets |
 | `#type/daily-log` | Daily study tracker |
-| `#type/meta` | Vault meta files (like this one) |
+| `#type/meta` | Vault meta files (`VERSION.md`, `CHANGELOG.md`, `AGENTS.md`, `AI_CONTEXT.md`, `00 - META/*`) |
 
 ---
 
@@ -67,32 +67,32 @@ Obsidian's power comes from `[[bi-directional links]]`. Use them aggressively.
 
 **1. Topic Note → Formula Sheet**
 When writing a topic note, always link to its formula sheet:
-```
+```markdown
 For key equations, see [[Aerodynamics - Formulas]]
 ```
 
 **2. Topic Note → Related Topics**
 Link concepts that share foundations:
-```
+```markdown
 This builds on [[Potential Flow]] and directly feeds into [[Finite Wing Theory]].
 ```
 
 **3. PYQ → Source Topic**
 When analyzing a PYQ, always link back to the concept it tests:
-```
+```markdown
 **Concept Tested:** [[Thin Airfoil Theory]] — specifically the lift coefficient formula.
 ```
 
 **4. Mock Test → Weak Topics**
 In a mock test review, link every mistake to its source topic note:
-```
+```markdown
 **Mistake in Q12:** Confused by boundary layer transition. See [[Boundary Layer]].
 Action: Revise [[Boundary Layer]] and attempt [[GATE-AE-2023-Q08]] again.
 ```
 
-**5. Daily Log → Topics Studied**
-In daily logs, link every topic you covered:
-```
+**5. Daily Log / Tracker → Topics Studied**
+In daily trackers and logs, link every topic covered:
+```markdown
 Studied [[Linear Algebra]] (Eigenvalues section) — updated status to #status/first-read
 ```
 
@@ -120,5 +120,7 @@ SORT date DESC
 ---
 
 ## Golden Rule
-> One topic. One note. Many links.
+> One topic. One note. Many links.  
 > Never duplicate information. If two topics share a concept, link — don't copy.
+
+*Last Updated: 2026-08-13 | Version: 1.0.0*

@@ -1,6 +1,7 @@
 ---
 type: meta
-last_updated: 2026-07-27
+last_updated: 2026-08-13
+version: 1.0.0
 ---
 
 # 🔧 Vault Maintenance Protocol
@@ -32,7 +33,7 @@ Do these at the END of every study session:
 Do this every Sunday evening:
 
 ### Step 1: Review the Week
-- [ ] Open all 5 daily logs from the week
+- [ ] Open all daily tracker logs from the week
 - [ ] Count total study hours (did you hit your targets?)
 - [ ] List topics covered and their current status
 
@@ -43,9 +44,8 @@ Do this every Sunday evening:
 
 ### Step 3: Update Student Context & Roadmap
 - [ ] Update "Current Phase" in `journals/AI_STUDENT_CONTEXT.md` if phase has changed
-- [ ] Update "Next Actions" for the coming week in `journals/AI_STUDENT_CONTEXT.md` and `AI_CONTEXT.md`
-- [ ] Update strong/weak subjects if discovered
-
+- [ ] Update "Next Actions" for the coming week in `journals/AI_STUDENT_CONTEXT.md`
+- [ ] *(Note: Never edit `AI_CONTEXT.md` directly during student study sessions — log everything to `journals/` only).*
 
 ### Step 4: Plan Next Week
 - [ ] Set a weekly goal (e.g., "Complete Aerodynamics Chapters 3–5")
@@ -55,7 +55,7 @@ Do this every Sunday evening:
 ### Step 5: Clean Up
 - [ ] Check for any orphaned notes (no links in or out)
 - [ ] Merge duplicate notes if any
-- [ ] Ensure all new topic notes are linked from their subject _Index
+- [ ] Ensure all new topic notes are linked from their subject `_Index`
 
 ---
 
@@ -72,7 +72,7 @@ Do this every Sunday evening:
 - [ ] Look for recurring mistake patterns across PYQs
 
 ### Step 3: Formula Sheet Health
-- [ ] Review each of the 6 formula sheets
+- [ ] Review each of the formula sheets in `06 - FORMULA SHEETS/`
 - [ ] Add any new formulas you encountered this month
 - [ ] Star (highlight) the formulas you keep forgetting
 
@@ -86,11 +86,30 @@ SORT subject ASC
 - How many have reached `#status/mastered`?
 - Update plan accordingly
 
-### Step 5: AI_CONTEXT.md Full Update
-- [ ] Append a monthly summary to Session Log
-- [ ] Update strong/weak subjects
-- [ ] Update the phase status table
-- [ ] Revise "Next Actions" for the next month
+### Step 5: Student Context Compaction
+- [ ] Open `journals/AI_STUDENT_CONTEXT.md`
+- [ ] If file exceeds 300 lines, compact older sessions into `## 📜 HISTORICAL SESSIONS ARCHIVE SUMMARY` while keeping the 5 most recent sessions intact.
+
+---
+
+## 🛠️ AUTHOR & DEVELOPER MAINTENANCE PROTOCOL
+
+If you are maintaining or updating the vault as the **Author/Developer**:
+
+### 1. Authoring Shared Content (`mode: author`)
+- Tell the AI: **"I am author"** or **"Developer mode"**.
+- **Zero Logging Rule:** AI will NOT create or update student log files in `journals/`.
+- Edit & create shared content in `02 - SUBJECTS/`, `03 - DAILY TRACKER/`, `04 - PYQs/`, `05 - MOCK TESTS/` (shared mocks), `06 - FORMULA SHEETS/`, `07 - TEMPLATES/`, and `.agents/`.
+
+### 2. Pre-Release Audit & Packaging (`mode: release`)
+- Tell the AI: **"Prepare release vX.Y.Z"**.
+- AI runs privacy audit to ensure **0 personal student log files** (`journals/`, personal mock attempts) are included.
+- Update `VERSION.md` and append release notes to `CHANGELOG.md`.
+- Generate clean release ZIP (`GATE_AE_2027_vX.Y.Z.zip`) or verify Git release branch status.
+
+### 3. Student Vault Lossless Updates (`mode: update`)
+- Instruct students to tell the AI: **"Update my vault"** or **"Update vault from [Path]"**.
+- AI creates a timestamped backup in `.backup/`, syncs shared course files, and confirms student private logs remain 100% untouched.
 
 ---
 
@@ -98,11 +117,11 @@ SORT subject ASC
 
 | Warning Sign | Action |
 |---|---|
-| Daily logs not filled for 3+ days | Fill retroactively or skip with a note; don't abandon |
+| Daily tracker not filled for 3+ days | Fill retroactively or skip with a note; don't abandon |
 | Formula sheets not updated in 2+ weeks | Spend 30 min updating them |
 | No PYQs added in 2+ weeks | Start PYQ practice immediately |
 | Topics all stuck at `#status/first-read` | Must do PYQ practice to advance |
-| AI_CONTEXT.md not updated in 2 weeks | Update it — LLMs can't help without context |
+| `journals/AI_STUDENT_CONTEXT.md` not updated in 2 weeks | Update it — LLMs can't help without context |
 
 ---
 
@@ -134,17 +153,6 @@ Phase:   #phase/1-foundation | #phase/2-core1 | #phase/3-core2 | #phase/4-pyq | 
 5. **Daily Log → Topics Covered** (link the actual note)
 6. **Mock Test → Topic Notes** (for every wrong answer)
 
-### The Golden Rule
-> "If you can't navigate from any note to any other related note in 2–3 clicks, your linking is incomplete."
-
 ---
 
-## 🗑️ What to Delete
-
-- Duplicate notes (merge before deleting)
-- Empty stubs with no content added after 3 months (archive, don't delete)
-- Outdated daily logs older than 6 months (move to `Archive/` if needed)
-
----
-
-*Created: 2026-07-27 | Related: [[00 - META/Vault Architecture]] | [[AI_CONTEXT]]*
+*Updated: 2026-08-13 | Version: 1.0.0 | Related: [[00 - META/Vault Architecture]] | [[00 - META/Update & Release Guide]] | [[AGENTS]]*

@@ -1,7 +1,8 @@
 ---
 type: meta
 syllabus_source: GATE 2027 Official (IIT Madras)
-last_updated: 2026-08-11
+last_updated: 2026-08-13
+version: 1.0.0
 ---
 
 # 🗺️ GATE AE 2027 — Master Roadmap
@@ -11,7 +12,8 @@ last_updated: 2026-08-11
 **Strategy:** 6 Months = 4 Missions  
 **Master Formula:** CONCEPT → QUESTIONS → SPEED → RANK  
 **Daily Hours:** 4 hours on weekdays  
-**Official Syllabus:** [[00 - META/GATE 2027 Official Syllabus]]
+**Official Syllabus:** [GATE 2027 Official Syllabus](00%20-%20META/GATE%202027%20Official%20Syllabus.md)  
+**Update & Release Guide:** [Update & Release Guide](00%20-%20META/Update%20%26%20Release%20Guide.md)
 
 ---
 
@@ -28,6 +30,19 @@ last_updated: 2026-08-11
 | Section 5 | Propulsion | 12–15 | 🟡 Medium |
 
 > **Total: 100 marks | 65 questions | 3 hours**
+
+---
+
+## 🤖 Interactive AI Execution Modes
+
+When working with your AI assistant on this roadmap, use these mode commands in chat:
+- 🎓 `mode: tutor` ("Let's study"): Resumes today's study session along the roadmap.
+- 📝 `mode: mock` ("Test me on X"): Conducts focused mock tests.
+- 📊 `mode: analyse` ("Analyse my prep"): Diagnostic analysis of mock scores and weakness matrices.
+- 🚀 `mode: onboard` ("I am new here"): Initializes student context profile.
+- 🛠️ `mode: author` ("I am author"): Zero-logging mode for vault maintainers.
+- 📦 `mode: release` ("Prepare release"): Runs pre-release privacy audit and packages clean release ZIP.
+- 🔄 `mode: update` ("Update my vault"): Performs lossless backup & syncs updated shared course content.
 
 ---
 
@@ -220,8 +235,8 @@ $$\text{AIR} < 10 = C \times P \times R \times T$$
 9. **Error Book** — Log every wrong answer from Month 3 onwards. This is your goldmine.
 10. **No New Resources in Month 6** — Only the 4 weapons: Short Notes, PYQs, Error Book, Mocks.
 11. **Divide & Conquer** — Plan monthly → weekly → daily. Never lose the daily execution.
-12. **Update `AI_CONTEXT.md`** — Keep the LLM shared memory updated after every session.
+12. **Update `journals/AI_STUDENT_CONTEXT.md`** — Keep the LLM student memory updated after every session (Never edit `AI_CONTEXT.md` directly during student study sessions).
 
 ---
 
-*Linked from:* [[AI_CONTEXT.md]] | [[00 - META/GATE 2027 Official Syllabus]]
+*Last Updated: 2026-08-13 | Version: 1.0.0 | Linked from:* [[AI_CONTEXT]] | [GATE 2027 Official Syllabus](00%20-%20META/GATE%202027%20Official%20Syllabus.md)
