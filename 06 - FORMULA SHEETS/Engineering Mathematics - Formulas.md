@@ -41,11 +41,11 @@ last_updated: 2026-07-27
 | $(AB)^T = B^T A^T$ | Transpose of product (Reversal law) |
 | $A \cdot \text{adj}(A) = \det(A) \cdot I_n$ | Fundamental Adjoint identity |
 | $\det(\text{adj}(A)) = (\det A)^{n-1}$ | Determinant of Adjoint for $n \times n$ matrix |
-| $\det(\text{adj}(\text{adj}(A))) = (\det A)^{(n-1)^2}$ | Determinant of double Adjoint |
+| $\det(\text{adj}(\text{adj}(A))) = (\det A)^{(n-1)^2}$ | Determinant of double Adjoint (In general, $\det(\text{adj}^{(k)}(A)) = (\det A)^{(n-1)^k}$) |
 | $\text{adj}(\text{adj}(A)) = (\det A)^{n-2} \cdot A$ | Double Adjoint matrix formula |
 | $\text{tr}(AB) = \text{tr}(BA)$ | Trace cyclic property |
 | $A^{-1} = \frac{1}{ad-bc}\begin{pmatrix}d&-b\\-c&a\end{pmatrix}$ | 2x2 Inverse Shortcut ($A = \begin{pmatrix}a&b\\c&d\end{pmatrix}$) |
-| $\det(A) = 0$ | Odd-order Skew-Symmetric matrix determinant |
+| $\det(A) = 0$ | Odd-order Skew-Symmetric matrix ($A^T = -A, n \text{ is odd}$) determinant is ALWAYS ZERO |
 | $A^T A = I \iff A^{-1} = A^T$ | Orthogonal Matrix condition ($\det = \pm 1$) |
 
 ### Systems of Linear Equations & Rank

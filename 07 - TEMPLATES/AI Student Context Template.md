@@ -21,6 +21,29 @@ description: Blank template for initializing a new student's private AI context 
 
 ---
 
+## 🧬 LEARNING DNA
+> AI builds this profile dynamically by observing student interactions across sessions.
+> Every student input is precious data. Mine personality signals from responses, doubts, confidence patterns, struggle patterns, and pacing behavior.
+> This section is READ at session start and UPDATED at session end.
+> **Compaction Rule:** Keep the 20 most recent observations per sub-section. Archive older observations into a single summary line.
+
+### Observed Preferences
+*(AI appends timestamped observations about how the student prefers to learn)*
+
+### Confidence Calibration
+*(AI tracks gaps between self-reported confidence and actual accuracy)*
+
+### Pacing & Fatigue Patterns
+*(AI notes optimal session lengths, time-of-day patterns, batch size preferences)*
+
+### Struggle Signatures
+*(AI logs recurring mistake patterns, weak concept areas, sign/unit error tendencies)*
+
+### Communication Style
+*(AI notes tone preferences, language comfort, encouragement vs clinical feedback)*
+
+---
+
 ## 📊 360° CUMULATIVE TELEMETRY MATRIX
 
 ### 1. Cumulative Performance & Accuracy

@@ -5,6 +5,19 @@ All notable changes to the GATE AE 2027 Obsidian Vault will be documented in thi
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.1.0] — 2026-08-15
+
+### 🐛 Fixed & Polished (1/5 Bug Fixes / Enhancements)
+- **Matrix Algebra Shortcut Hot-Patch (`02 - SUBJECTS/Engineering Mathematics/01.2 - Matrix Algebra.md`, `06 - FORMULA SHEETS/Engineering Mathematics - Formulas.md`):** Added the Iterated Adjoint Ladder Law shortcut ($\det(\text{adj}^{(k)}(A)) = (\det A)^{(n-1)^k}$) with worked calculation for $3 \times 3$ matrices ($5^4 = 625$), along with the complete 10-second proof for why odd-order real skew-symmetric matrices always have $\det(A) = 0$.
+
+### 🚀 Added
+- **Tutor Mode Overhaul — Full Teaching System (`AGENTS.md`, `tutor-coach`):** Upgraded tutor mode from a 4-step "study router + quiz machine" to a 10-step unified Learn-Test-Review system. New steps include: Topic Sequence Anchor (anti-hallucination with `NOW_TEACHING` pointer), 3-Layer Topic Teaching (Intuition → Engineering → GATE Mastery), Comprehension Checkpoints, Doubt Side-Quest Invariant (pause → resolve → auto-restore), and Smart SKIP Protocol (checkpoint-based mastery detection vs backlog routing).
+- **Student Commands (`AGENTS.md`, `tutor-coach`):** Added 5 explicit student-controlled commands: `NEXT` (advance topic), `SKIP` (smart skip with checkpoint), `RECAP` (repeat summary), `DERIVE` (on-demand derivation), and natural doubts (auto side-quest).
+- **Dynamic Learning DNA Profile (`AI Student Context Template`, `AGENTS.md`):** Added `🧬 Learning DNA` section to student context — a living, free-form observational log (not a rigid table) where AI mines personality signals from every student interaction. Five sub-sections: Observed Preferences, Confidence Calibration, Pacing & Fatigue Patterns, Struggle Signatures, Communication Style. Includes compaction rule (20 most recent per sub-section).
+- **Onboard Mode Enhancement (`AGENTS.md`):** Added single open-ended Learning DNA seed question during student onboarding to initialize the personality profile.
+
+---
+
 ## [1.0.1] — 2026-08-14
 
 ### 🐛 Fixed & Polished (5/5 Bug Fixes / Enhancements)

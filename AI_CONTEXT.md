@@ -50,7 +50,7 @@
 
 | Mode | Trigger | What It Does |
 |---|---|---|
-| **tutor** | "Let's study" / "Continue" / "Tutor mode" | Interactive 4-Pillar GATE coaching (Warmup → Concept Scan → PYQ Batches → Forensic Review → Tomorrow's Bridge) |
+| **tutor** | "Let's study" / "Continue" / "Tutor mode" | Unified 10-Step Learn-Test-Review flow (Anchor → Warmup → Layered Teaching → Checkpoint → Blitz → Forensic Review) |
 
 | **mock** | "Test me" / "Mock on X" / "Mock mode" | 5-Tier Hardness mock test, student reasoning capture, NAT/MCQ negative drag, forensic review |
 
@@ -60,4 +60,4 @@
 | **release** | "Prepare release vX.Y.Z" | Conduct pre-release privacy audit & package clean release ZIP |
 | **update** | "Update my vault" | Lossless backup of `journals/` & sync of shared course content |
 
-*Last Updated: 2026-08-13 | Version: 1.0.0*
+*Last Updated: 2026-08-15 | Version: 1.1.0*
