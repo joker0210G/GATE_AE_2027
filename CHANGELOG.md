@@ -7,8 +7,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [1.1.0] — 2026-08-15
 
-### 🐛 Fixed & Polished (1/5 Bug Fixes / Enhancements)
+### 🐛 Fixed & Polished (2/5 Bug Fixes / Enhancements)
 - **Matrix Algebra Shortcut Hot-Patch (`02 - SUBJECTS/Engineering Mathematics/01.2 - Matrix Algebra.md`, `06 - FORMULA SHEETS/Engineering Mathematics - Formulas.md`):** Added the Iterated Adjoint Ladder Law shortcut ($\det(\text{adj}^{(k)}(A)) = (\det A)^{(n-1)^k}$) with worked calculation for $3 \times 3$ matrices ($5^4 = 625$), along with the complete 10-second proof for why odd-order real skew-symmetric matrices always have $\det(A) = 0$.
+- **KaTeX Multi-Line Invariant Hot-Patch (`AGENTS.md`, `tutor-coach`):** Fixed live chat KaTeX parse error (`Expected 'EOF', got '&'`) triggered by `\begin{aligned}` blocks with ampersands. Established strict rule forbidding `\begin{aligned}` in live chat / notes in favor of standalone `$$ ... $$` lines or bulleted `$ ... $` expressions.
 
 ### 🚀 Added
 - **Tutor Mode Overhaul — Full Teaching System (`AGENTS.md`, `tutor-coach`):** Upgraded tutor mode from a 4-step "study router + quiz machine" to a 10-step unified Learn-Test-Review system. New steps include: Topic Sequence Anchor (anti-hallucination with `NOW_TEACHING` pointer), 3-Layer Topic Teaching (Intuition → Engineering → GATE Mastery), Comprehension Checkpoints, Doubt Side-Quest Invariant (pause → resolve → auto-restore), and Smart SKIP Protocol (checkpoint-based mastery detection vs backlog routing).

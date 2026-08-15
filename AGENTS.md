@@ -201,7 +201,13 @@ AI-guided lossless vault update for students (ZIP download or Git).
 ### LaTeX & KaTeX Compatibility
 - Inline: `$ ... $` — Display: `$$ ... $$` on dedicated lines
 - In callouts: prefix every line with `> `
-- **KaTeX Alignment Invariant:** NEVER place item numbers with leading ampersands (e.g. `1.\ &`) inside `\begin{aligned}` blocks as KaTeX throws a syntax error. For aligned multi-line equations, align strictly on relation operators (e.g. `&=`) without leading item numbers, OR use markdown numbered lists with standalone `$$ ... $$` blocks.
+- **KaTeX Multi-Line Invariant (Strict No-`\begin{aligned}` Rule):** NEVER use `\begin{aligned}`, `\begin{align}`, or `&` alignment operators in live AI chat or vault notes. Many web and mobile markdown/KaTeX renderers fail with `Expected 'EOF', got '&'`. For multiple related equations, ALWAYS write them as separate standalone `$$ ... $$` blocks OR bulleted lists with inline `$ ... $`.
+  - ✅ **CORRECT:**
+    $$ (AB)^T = B^T A^T $$
+    $$ (AB)^{-1} = B^{-1} A^{-1} $$
+    $$ \text{adj}(AB) = \text{adj}(B) \cdot \text{adj}(A) $$
+  - ❌ **WRONG:**
+    `$$\begin{aligned} (AB)^T &= B^T A^T \\ ... \end{aligned}$$`
 
 ### Cleanliness
 Never leave conversational scratchpad text, self-corrections, or internal monologues in final notes.
