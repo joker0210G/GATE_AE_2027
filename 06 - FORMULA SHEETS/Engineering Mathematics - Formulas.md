@@ -60,6 +60,7 @@ last_updated: 2026-07-27
 | $\det(A) = 0$ (for $n \times n$ $A\vec{x}=\vec{0}$) | Homogeneous system $\implies$ INFINITELY MANY NON-TRIVIAL SOLUTIONS |
 | L.I. Solutions Count $= n - \text{Rank}(A)$ | Number of linearly independent solutions for $A\vec{x}=\vec{0}$ |
 | $\text{Rank}(A^T A) = \text{Rank}(A A^T) = \text{Rank}(A)$ | Gram matrix rank identity |
+| $\text{Rank}(\text{adj}(A)) = n \text{ (if } r=n); \ 1 \text{ (if } r=n-1); \ 0 \text{ (if } r < n-1)$ | Rank of Adjoint Matrix for $n \times n$ matrix $A$ |
 | $\text{Rank}(AB) \le \min(\text{Rank}(A), \text{Rank}(B))$ | Product rank upper bound |
 
 ### Eigenvalues & Eigenvectors

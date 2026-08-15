@@ -5,17 +5,33 @@ All notable changes to the GATE AE 2027 Obsidian Vault will be documented in thi
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [1.1.0] — 2026-08-15
+## [Unreleased] — Target: v1.1.2 (Progress: 0/5 Bug Fixes)
 
-### 🐛 Fixed & Polished (2/5 Bug Fixes / Enhancements)
-- **Matrix Algebra Shortcut Hot-Patch (`02 - SUBJECTS/Engineering Mathematics/01.2 - Matrix Algebra.md`, `06 - FORMULA SHEETS/Engineering Mathematics - Formulas.md`):** Added the Iterated Adjoint Ladder Law shortcut ($\det(\text{adj}^{(k)}(A)) = (\det A)^{(n-1)^k}$) with worked calculation for $3 \times 3$ matrices ($5^4 = 625$), along with the complete 10-second proof for why odd-order real skew-symmetric matrices always have $\det(A) = 0$.
+---
+
+## [1.1.1] — 2026-08-15
+
+### 🐛 Fixed & Polished (7 Post-v1.1.0 Hot-Patches & Invariants)
 - **KaTeX Multi-Line Invariant Hot-Patch (`AGENTS.md`, `tutor-coach`):** Fixed live chat KaTeX parse error (`Expected 'EOF', got '&'`) triggered by `\begin{aligned}` blocks with ampersands. Established strict rule forbidding `\begin{aligned}` in live chat / notes in favor of standalone `$$ ... $$` lines or bulleted `$ ... $` expressions.
+- **Rank of Adjoint Master Rule Hot-Patch (`02 - SUBJECTS/Engineering Mathematics/01.3.1 - Rank of a Matrix.md`, `06 - FORMULA SHEETS/Engineering Mathematics - Formulas.md`):** Added the 3-case Rank of Adjoint classification rule ($\text{Rank}(\text{adj}(A)) \in \{n, 1, 0\}$) with complete proof and intuition.
+- **Diagnostic Status Badge Invariant (`AGENTS.md`, `tutor-coach`):** Fixed inaccurate "Mastered" status tags in the Topic Sequence Anchor when students exhibited mistakes or conceptual gaps. Established calibrated status tags (`✅ [Mastered — 100%]`, `⚠️ [Needs Revision — N Gaps]`, `🔄 [In Progress]`, `⏳ [Pending]`) to preserve forensic honesty and prevent false security.
+- **Strict Topic Separation & Remedial Gate (`AGENTS.md`, `tutor-coach`):** Fixed premature auto-advancement where the AI bundled checkpoint diagnosis of Sub-Topic $K$ with the full Layer 1–3 teaching of Sub-Topic $K+1$ in a single message. Established strict separation and remedial retry flow requiring explicit student `NEXT` before advancing the `NOW_TEACHING` pointer.
+- **Currency & Raw Dollar Symbol Invariant (`AGENTS.md`):** Fixed a LaTeX parser crash triggered when raw or escaped currency dollar symbols (`$15` or `\$15`) in conversational text examples were misinterpreted by markdown renderers as unclosed math-mode delimiters. Established strict rule forbidding raw dollar symbols in favor of written-out words (e.g., `15 dollars`, `10 Rs`).
+- **Mastery-First Pacing & Full 5-Day Curriculum Mapping (`AGENTS.md`, `tutor-coach`):** Fixed incomplete topic anchors and "rushing" anti-pattern where AI advanced across syllabus topics without verifying student comprehension. Anchors now comprehensively map all roadmap sub-topics (D1 to D5 for Linear Algebra) with strict remedial retry gates.
+- **Zero-Hint Testing Invariant (`AGENTS.md`, `tutor-coach`):** Strictly eliminated unsolicited hints, formulas, and "Notice that..." clues inside question blocks. All live chat checkpoint and practice problems must simulate unassisted, ruthless GATE exam conditions to develop authentic pattern-recognition, with hints permitted strictly on-demand.
+
+---
+
+## [1.1.0] — 2026-08-15
 
 ### 🚀 Added
 - **Tutor Mode Overhaul — Full Teaching System (`AGENTS.md`, `tutor-coach`):** Upgraded tutor mode from a 4-step "study router + quiz machine" to a 10-step unified Learn-Test-Review system. New steps include: Topic Sequence Anchor (anti-hallucination with `NOW_TEACHING` pointer), 3-Layer Topic Teaching (Intuition → Engineering → GATE Mastery), Comprehension Checkpoints, Doubt Side-Quest Invariant (pause → resolve → auto-restore), and Smart SKIP Protocol (checkpoint-based mastery detection vs backlog routing).
 - **Student Commands (`AGENTS.md`, `tutor-coach`):** Added 5 explicit student-controlled commands: `NEXT` (advance topic), `SKIP` (smart skip with checkpoint), `RECAP` (repeat summary), `DERIVE` (on-demand derivation), and natural doubts (auto side-quest).
 - **Dynamic Learning DNA Profile (`AI Student Context Template`, `AGENTS.md`):** Added `🧬 Learning DNA` section to student context — a living, free-form observational log (not a rigid table) where AI mines personality signals from every student interaction. Five sub-sections: Observed Preferences, Confidence Calibration, Pacing & Fatigue Patterns, Struggle Signatures, Communication Style. Includes compaction rule (20 most recent per sub-section).
 - **Onboard Mode Enhancement (`AGENTS.md`):** Added single open-ended Learning DNA seed question during student onboarding to initialize the personality profile.
+
+### 🐛 Fixed & Polished
+- **Matrix Algebra Shortcut Hot-Patch (`02 - SUBJECTS/Engineering Mathematics/01.2 - Matrix Algebra.md`, `06 - FORMULA SHEETS/Engineering Mathematics - Formulas.md`):** Added the Iterated Adjoint Ladder Law shortcut ($\det(\text{adj}^{(k)}(A)) = (\det A)^{(n-1)^k}$) with worked calculation for $3 \times 3$ matrices ($5^4 = 625$), along with the complete 10-second proof for why odd-order real skew-symmetric matrices always have $\det(A) = 0$.
 
 ---
 

@@ -38,18 +38,20 @@ Unified Learn-Test-Review GATE Coaching flow matching student's roadmap targets 
 2. Extract the **ordered list of sub-topics** for today's target (from the daily tracker or the topic note in `02 - SUBJECTS/`).
 3. Set a persistent **`NOW_TEACHING`** pointer = first sub-topic in the sequence.
 4. Present the full sub-topic sequence to the student with the current pointer marked.
-5. **Anchor Content Rule:** The sequence must list **ONLY teaching sub-topics** (concepts to be taught in Step 3). Do NOT include protocol steps (Warmup, Practice Blitz, Forensic Review) as sub-topic entries — those are separate steps in the protocol, not content to teach. Example:
-   ```
-   📋 Today's Sub-Topic Sequence:
-   1. [Determinant Properties & Cofactor Expansion] ← NOW TEACHING
-   2. [Rank & Row Echelon Form]
-   3. [Rouché-Capelli Theorem & Solution Classification]
-   Say NEXT when ready to move forward.
-   ```
-6. **Anti-Hallucination Rules:**
-   - AI must **never advance** the pointer without an explicit **`NEXT`** command from the student.
-   - AI must **never skip, reorder, or switch** topics on its own initiative.
+5. **Anchor Content Rule:** The sequence must list **all core teaching sub-topics** covering the active study block/module across the roadmap timeline (e.g., Days 1–5 for Linear Algebra). Do NOT include protocol steps (Warmup, Practice Blitz, Forensic Review) as sub-topic entries.
+6. **Mastery-First Pacing Directive (Anti-Rushing Invariant):**
+   - The AI must prioritize **genuine student comprehension and mastery over rapid progression**.
+   - If a student makes an error or expresses doubt, the AI must **pause**, explain with everyday intuitive analogies, provide a single focused retry, and **verify comprehension before moving on**.
+   - The AI must **never advance** the pointer without an explicit **`NEXT`** command from the student.
+   - The AI must **never skip, reorder, or switch** topics on its own initiative.
    - At the start of every AI response during teaching, silently verify the `NOW_TEACHING` pointer is correct. If drift is detected, self-correct back to the anchored position.
+7. **Diagnostic Status Badge Invariant:**
+   - When displaying completed topics in the Sequence Anchor, **NEVER** use generic `(Mastered)` badges if the student made errors or exhibited conceptual/formula gaps during checkpoints or practice.
+   - **Accurate Status Badges:**
+     - `✅ [Mastered — 100% (2/2)]` $\implies$ Flawless execution on first attempt without gaps.
+     - `⚠️ [Needs Revision — 1 Gap]` or `⚠️ [Needs Revision — Sign Slip]` $\implies$ Checkpoint had mistakes, hesitations, or notes-reliance.
+     - `🔄 [In Progress]` $\implies$ Under active study.
+     - `⏳ [Pending]` $\implies$ Awaiting study.
 
 **Step 2 — Diagnostic Warmup (3 Questions):** Run a 3-question memory check on yesterday's formulas/struggles before introducing new topics.
 
@@ -82,7 +84,17 @@ Deliver the current `NOW_TEACHING` sub-topic in three layers, adapting to the st
 2. **If student scores well (≥2/3):** Student already knows this → log as "Skipped (Mastered)" and advance the pointer. No backlog entry needed.
 3. **If student scores poorly (<2/3):** Student is avoiding the topic, not mastering it → log to the **Unfinished Batches & Backlog Tracker** in `journals/AI_STUDENT_CONTEXT.md` for future revisit, then advance the pointer.
 
-**Step 4 — Comprehension Checkpoint (2–3 Questions):** After teaching each sub-topic, present 2–3 quick concept-check questions to verify understanding. If student fails >1 → re-explain the specific gap. If student passes → prompt for `NEXT`.
+**Step 4 — Comprehension Checkpoint (2–3 Questions) & Remedial Gate:** After teaching each sub-topic, present 2–3 quick concept-check questions to verify understanding.
+- **Zero-Hint Testing Invariant (Ruthless Exam Conditions):**
+  - All test and checkpoint questions presented in live chat MUST contain ONLY the pure question text and options/NAT prompt.
+  - AI must **NEVER include unsolicited hints, formulas, or "Notice that..." clues** inside question blocks. Hints create cognitive crutches and destroy exam pattern-recognition.
+  - Hints are permitted ONLY if the student explicitly asks for one (e.g. "give me a hint").
+- **Strict Separation Invariant:** AI must **NEVER bundle** the checkpoint diagnosis of Sub-Topic $K$ with the Layer 1–3 teaching of Sub-Topic $K+1$ in the same turn/message. Checkpoint review and subsequent topic teaching must remain distinct turns.
+- **Remedial Gate on Gaps:** If the student makes an error, expresses hesitation, or asks for shortcuts on a checkpoint question, the AI must:
+  1. Re-explain the specific gap using crystal-clear, simple, high-intuition analogies and 10-second shortcuts.
+  2. Provide a single quick retry question (WITHOUT hints) to confirm gap resolution.
+  3. Only once the gap is resolved, ask the student to say **`NEXT`**.
+- **Explicit `NEXT` Gate:** The `NOW_TEACHING` pointer must **NEVER advance** to the next sub-topic until the student explicitly types **`NEXT`**.
 
 **Step 5 — Practice Blitz (Batches of 10–15):** After all sub-topics for today are taught (or student requests practice early), present GATE-style questions WITHOUT solutions. Collect answers, reasoning, confidence (`Confident` / `Guess` / `Stuck`), and time taken.
 
@@ -143,11 +155,11 @@ Can be triggered in **ANY active student mode** (`tutor`, `mock`, `analyse`) whe
 
 ### Mode: `release` — "Prepare release vX.Y.Z" / "Run release audit"
 Author packaging & pre-release privacy audit mode.
-1. Verify `VERSION.md` matches target release version and `CHANGELOG.md` is updated.
-2. Conduct pre-release privacy scan to confirm **ZERO personal student logs** (`journals/`, personal mock attempts) are included.
-3. Verify shared course content (`00-07`, `.agents/`, root docs) are complete and formatted properly.
-4. Prepare clean Git commit & release tag (`git tag vX.Y.Z`) ready to push to GitHub (where GitHub automatically provides the ZIP download for students).
-5. Provide release summary report with exact git commands.
+1. **Version & Changelog Synchronization:** Promote `## [Unreleased]` items in `CHANGELOG.md` to `## [X.Y.Z] — YYYY-MM-DD`. Update `VERSION.md` and version badges in `README.md` to match target `vX.Y.Z`. Re-establish a fresh `## [Unreleased] — Target: vX.Y.Z+1` template section at top of `CHANGELOG.md`.
+2. **Privacy Audit Scan:** Conduct pre-release scan confirming **ZERO personal student logs** (`journals/`, personal mock attempts, `.backup/`) are tracked in git (`git ls-files journals/ Private/ Personal/ .backup/`).
+3. **Course Content Audit:** Verify shared course content (`00-07`, `.agents/`, root docs) are complete, formatted, and free of broken math/Markdown rendering errors.
+4. **Git Packaging:** Prepare clean Git commit (`release: vX.Y.Z - <Summary>`) and annotated release tag (`git tag -a vX.Y.Z -m "vX.Y.Z Release"`).
+5. **Release Summary:** Output structured release report with exact `git push origin main` and `git push origin vX.Y.Z` commands.
 
 
 ### Mode: `update` — "Update my vault" / "Migrate vault"
@@ -208,6 +220,7 @@ AI-guided lossless vault update for students (ZIP download or Git).
     $$ \text{adj}(AB) = \text{adj}(B) \cdot \text{adj}(A) $$
   - ❌ **WRONG:**
     `$$\begin{aligned} (AB)^T &= B^T A^T \\ ... \end{aligned}$$`
+- **Currency & Raw Dollar Sign Invariant:** NEVER use raw or backslash-escaped dollar signs (e.g. `\$15` or `$10`) for currency or conversational text examples. In markdown, un-paired dollar signs trigger math-mode parsing and corrupt subsequent text with `KaTeX parse error: Unexpected character: '\'`. ALWAYS write out words instead (e.g. `15 dollars`, `10 Rs`, or `Rs 10`).
 
 ### Cleanliness
 Never leave conversational scratchpad text, self-corrections, or internal monologues in final notes.

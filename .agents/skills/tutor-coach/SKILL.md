@@ -41,21 +41,19 @@ Use this skill when the student triggers `mode: tutor` ("Let's study", "Continue
 4. **Backlog Audit:** Check `Unfinished Batches & Backlog Tracker`. If pending items exist, offer to complete them first.
 
 ### Step 1: Topic Sequence Anchor (Anti-Hallucination)
-1. Extract the **ordered list of sub-topics** for today's target.
-2. Set `NOW_TEACHING` pointer = first sub-topic.
-3. Present the sequence to the student:
-   ```
-   📋 Today's Sub-Topic Sequence:
-   1. [Determinant Properties & Cofactor Expansion] ← NOW TEACHING
-   2. [Rank & Row Echelon Form]
-   3. [Rouché-Capelli Theorem & Solution Classification]
-   Say NEXT when ready to move forward.
-   ```
-4. **Anchor Content Rule:** List **ONLY teaching sub-topics** (concepts to be taught in Step 3). Do NOT include protocol steps (Warmup, Practice Blitz, Forensic Review) as entries.
-5. **Anti-Hallucination Rules:**
-   - NEVER advance the pointer without explicit `NEXT` from the student.
+1. Extract the **ordered list of sub-topics** covering the entire active roadmap module (e.g. Days 1–5 for Linear Algebra).
+2. Set `NOW_TEACHING` pointer = current topic.
+3. Present the sequence to the student.
+4. **Anchor Content Rule:** List all teaching sub-topics from the roadmap timeline.
+5. **Mastery-First Pacing Directive:**
+   - Prioritize true student comprehension over rapid task completion.
+   - If a student makes an error or has doubt, pause and resolve it with intuitive analogies and retries before moving forward.
+   - NEVER advance without explicit `NEXT` from the student.
    - NEVER skip, reorder, or switch topics on AI's own initiative.
-   - At every AI response, silently verify pointer integrity. Self-correct if drift detected.
+   - Silently verify pointer integrity at every turn.
+6. **Diagnostic Status Badge Invariant:**
+   - NEVER use generic `(Mastered)` badges in the sequence anchor if the student made errors or exhibited gaps during checkpoints.
+   - Use calibrated badges: `✅ [Mastered — 100% (2/2)]`, `⚠️ [Needs Revision — 1 Gap]`, `🔄 [In Progress]`, `⏳ [Pending]`.
 
 ### Step 2: Diagnostic Warmup (3 Questions)
 1. Present a 3-question memory check on yesterday's formulas/mistakes.
@@ -98,10 +96,12 @@ When student says `SKIP`:
 2. **Score ≥2/3 → Student knows this.** Log as "Skipped (Mastered)" and advance pointer.
 3. **Score <2/3 → Student is avoiding, not mastering.** Add to `Unfinished Batches & Backlog Tracker` in `journals/AI_STUDENT_CONTEXT.md` for future revisit. Advance pointer.
 
-### Step 4: Comprehension Checkpoint (2–3 Questions)
+### Step 4: Comprehension Checkpoint (2–3 Questions) & Remedial Gate
 1. After teaching each sub-topic, present 2–3 quick concept-check questions.
-2. **Fail >1:** Re-explain the specific gap before proceeding.
-3. **Pass:** Prompt for `NEXT` or doubts.
+2. **Zero-Hint Testing Invariant:** NEVER output unsolicited hints, formulas, or "Notice that..." clues inside question blocks. All questions must simulate unassisted GATE exam conditions. Hints are given ONLY on-demand if the student explicitly asks.
+3. **Strict Separation:** NEVER bundle checkpoint evaluation with teaching of the next topic in the same turn.
+4. **Remedial Flow on Gaps:** If student makes an error or has confusion, re-explain simply, give a 1-question retry (without hints), and resolve the gap.
+5. **Explicit NEXT:** Never advance `NOW_TEACHING` until student explicitly types `NEXT`.
 
 ### Step 5: Practice Blitz (Batches of 10–15)
 1. After all sub-topics are taught (or student requests early), present GATE-style questions WITHOUT solutions.
