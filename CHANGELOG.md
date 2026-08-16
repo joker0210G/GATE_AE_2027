@@ -5,9 +5,24 @@ All notable changes to the GATE AE 2027 Obsidian Vault will be documented in thi
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [Unreleased] — Target: v1.1.4
+## [Unreleased] — Target: v1.1.5
+
+### 🚀 Planned / In Progress
+- Continuous pedagogical telemetry refinement and subject module expansions.
 
 ---
+
+## [1.1.4] — 2026-08-16
+
+### 🐛 Fixed & Polished
+- **Anti-Rushing Invariant Hot-Patch (`AGENTS.md`, `tutor-coach`):** Fixed a systemic failure where the AI violated the Anti-Rushing Invariant by advancing across topics without waiting for an explicit `NEXT` command. The Remedial Gate algorithm now explicitly mandates `HALT EXECUTION` and `LOG the retry` before allowing any topic advancement.
+- **Lossless Refactor Restoration (Full Extraction `AGENTS.md`):** Fixed a regression where semantic tagging in v1.1.3 compressed procedural examples. Restored full text fidelity with enhanced XML working-memory tags, preserving KaTeX rules, privacy bounds, and diagnostic workflows.
+- **Infinite Mastery Loop & Granular Dissection (`AGENTS.md`, `tutor-coach`):** Rewrote the tutor engine to mandate proactive, granular dissection of daily material into atomic micro-topics with an Infinite Mastery Loop that guarantees concept mastery before advancing.
+- **Mandatory AIR-1 Web Search Protocol (`AGENTS.md`, `tutor-coach`):** Upgraded web search to a mandatory pre-teaching requirement. The tutor must autonomously query competitive shortcuts and weave them directly into Layer 3 teaching delivery and remediation loops.
+- **Completeness Mandate for Layered Teaching (`AGENTS.md`, `tutor-engine`):** Formulated strict 3-Layer Completeness Criteria: every micro-topic must deliver Layer 1 Intuition (analogies), Layer 2 Engineering Significance (aerospace applications), and Layer 3 GATE Mastery (all formula variants, traps, question types, and step-by-step worked examples).
+- **Private Dual-Note Generation Framework (`AGENTS.md`, `07 - TEMPLATES/`):** Codified the standardized architecture for personal dual-note systems (`Fresh` foundational notes with ELI15 intuition and `Recall` densely packed AIR-1 speed cheat sheets) maintaining 1-to-1 matching `## Micro-Topic N:` modular sections.
+- **Strict Prompt Editing & Scope Boundary (`AGENTS.md` Rule 5):** Hardened permission boundaries to prevent student study commands from modifying core vault architecture files (`AGENTS.md`, `AI_CONTEXT.md`, `CHANGELOG.md`), strictly isolating personal student prompt overrides to their private context layer.
+
 
 ## [1.1.3] — 2026-08-16
 

@@ -2,7 +2,7 @@
 
 [![Exam](https://img.shields.io/badge/GATE-Aerospace_Engineering_2027-blue.svg)](00%20-%20META/GATE%202027%20Official%20Syllabus.md)
 [![Syllabus](https://img.shields.io/badge/IIT_Madras-Official_Syllabus-green.svg)](00%20-%20META/GATE%202027%20Official%20Syllabus.md)
-[![Version](https://img.shields.io/badge/Vault_Version-1.1.2-purple.svg)](VERSION.md)
+[![Version](https://img.shields.io/badge/Vault_Version-1.1.4-purple.svg)](VERSION.md)
 [![Last Updated](https://img.shields.io/badge/Last_Updated-2026--08--16-orange.svg)](CHANGELOG.md)
 [![AI Integration](https://img.shields.io/badge/AI_Ready-Claude_%7C_GPT--4o_%7C_Gemini_%7C_Cursor-purple.svg)](AGENTS.md)
 

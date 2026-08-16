@@ -1,4 +1,4 @@
 # GATE AE 2027 Vault
-**Current Version:** 1.1.3
+**Current Version:** 1.1.4
 **Last Updated:** 2026-08-16
 **Target Exam:** GATE Aerospace Engineering (Feb 2027, IIT Madras)
