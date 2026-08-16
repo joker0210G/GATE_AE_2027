@@ -30,6 +30,13 @@
 
 ---
 
+## ⚙️ Personalization Mechanisms (The Layer Bridge)
+
+To ensure this vault is universally robust while allowing each student to have a hyper-personalized AI tutor experience, all personal AI customizations must strictly follow this bridging mechanism:
+1. **Triggering (Layer 1):** The universal rule for *when* to execute a personalized feature (e.g., Step 7 Private Notes Generation) lives in `AGENTS.md`.
+2. **Formatting & Structure (Layer 3):** The exact formatting, layout, and style of the personal notes or responses MUST be read directly from the specific student's `journals/AI_STUDENT_CONTEXT.md` (e.g., whether they want "Visual Mindmaps" or "Fresh & Recall" summaries).
+3. **Execution Privacy:** Whenever the AI generates personalized `.md` study materials (like commute notes or custom summaries), it MUST save them strictly to `journals/Private Notes/`. The AI is strictly forbidden from writing personalized notes to the public `02 - SUBJECTS/` folder.
+
 ## 📐 6-Month Syllabus Map
 
 | Mission | Focus | Core Topics |

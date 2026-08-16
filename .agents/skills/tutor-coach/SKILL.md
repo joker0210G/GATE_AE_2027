@@ -34,21 +34,28 @@ Use this skill when the student triggers `mode: tutor` ("Let's study", "Continue
 
 ## 📋 Step-by-Step Execution Guide
 
-### Step 0: Context Load, Backlog Check & Active Weakness Mining
+### Step 0: Context Load, Backlog Check & Dynamic Daily Optimization
 1. Read `journals/AI_STUDENT_CONTEXT.md` (Phase, Next Actions, Learning DNA).
 2. Read latest `journals/YYYY_MM_DD.md` (Yesterday's struggles & timing).
 3. Load today's study target from `03 - DAILY TRACKER/YYYY-MM-DD.md`.
 4. **Backlog Audit:** Check `Unfinished Batches & Backlog Tracker`. If pending items exist, offer to complete them first.
-5. **Active Weakness Mining (The Real Tutor Protocol):**
+5. **Dynamic Daily Optimization Directive:**
+   - Cross-reference the daily roadmap sub-topics with the student's past performance in the journals.
+   - **Strong Topics:** Mastered previously? $\implies$ Fast-track (checkpoint to verify, then skip).
+   - **Weak/Forgotten Topics:** Struggled previously? $\implies$ Ground-up deep dive (Layer 1 $\to$ 3).
+   - **Unknown Baseline:** Use Diagnostic Warmup to probe the entire day's scope and calibrate dynamically.
+   - Formulate an **"Optimized Daily Flight Plan"** customized to the student's actual knowledge state.
+6. **Active Weakness Mining:**
    - Silently extract the student's top 3–5 weakness patterns from `Struggle Signatures`, `Cumulative Error Taxonomy`, `TOP ROI RANK-BOOSTER WEAK TOPICS`, and recent journal forensic diagnoses.
    - Build an internal **Stealth Remediation Target List** (e.g., "sign errors in cross products", "point-to-plane formula gap").
    - Use this list throughout the session to covertly engineer checkpoint and practice questions that target these weaknesses — without announcing it to the student.
 
-### Step 1: Topic Sequence Anchor (Anti-Hallucination)
-1. Extract the **ordered list of sub-topics** covering the entire active roadmap module (e.g. Days 1–5 for Linear Algebra).
-2. Set `NOW_TEACHING` pointer = current topic.
-3. Present the sequence to the student.
-4. **Anchor Content Rule:** List all teaching sub-topics from the roadmap timeline.
+### Step 1: Topic Sequence Anchor & Customized Pacing
+1. Extract the **ordered list of sub-topics** covering the entire active roadmap module.
+2. Apply **Dynamic Daily Optimization** to visibly mark which topics are fast-tracked vs deep-dived.
+3. Set `NOW_TEACHING` pointer = first topic in the customized sequence.
+4. Present the sequence to the student.
+5. **Anchor Content Rule:** List all teaching sub-topics from the roadmap timeline.
 5. **Mastery-First Pacing Directive:**
    - Prioritize true student comprehension over rapid task completion.
    - If a student makes an error or has doubt, pause and resolve it with intuitive analogies and retries before moving forward.
@@ -134,7 +141,7 @@ When student says `SKIP`:
 5. **Autonomous Content Gap Detection (Auto-Trigger Web Search):**
    - This fires **automatically** — does NOT require "spy" or "hot-patch" keywords.
    - Triggers: student says "I don't know" / "not in notes" / "referred online", or scores 0 on a formula-dependent question, or the solution uses a formula not in vault notes.
-   - Action: web search → hot-patch vault notes & formula sheets → log in `CHANGELOG.md`.
+   - Action: **Web search specifically for "GATE topper shortcuts", "under 1-minute lesser time methods", and "topper notes key points"** → hot-patch vault notes & formula sheets with these fast methods → log in `CHANGELOG.md`.
 6. **Post-Blitz Mastery Gate (Anti-Rushing Invariant):**
    - **≥80% accuracy:** Topic mastered. May offer to advance.
    - **50–79% accuracy:** Identify failed concepts, re-teach, give 3–5 targeted retries. Only advance after retry ≥80%.
@@ -180,3 +187,4 @@ When student says `SKIP`:
 - **Real-Time Journal Logging:** Write/update `journals/YYYY_MM_DD.md` after every completed test batch/warmup.
 - **Log to `journals/` ONLY:** Never write student data to `03 - DAILY TRACKER/` or `05 - MOCK TESTS/`.
 - **Topic Continuity is Sacred:** The `NOW_TEACHING` pointer is the single source of truth. Never let it drift.
+- **Strict Markdown Bulleting & List Invariant:** NEVER output consecutive unbulleted lines for sequences or questions. Markdown collapses them into a single horizontal text clump. Always format Sequence Anchors as explicit list items (`- 👉 \`NOW_TEACHING\` ...`) and questions as numbered items with double newlines (`1. **Q1:** ...\n\n2. **Q2:** ...`).

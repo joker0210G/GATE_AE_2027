@@ -5,8 +5,20 @@ All notable changes to the GATE AE 2027 Obsidian Vault will be documented in thi
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [Unreleased] — Target: v1.1.3 (Progress: 0/5 Bug Fixes)
+## [Unreleased] — Target: v1.1.4
 
+---
+
+## [1.1.3] — 2026-08-16
+
+### 🐛 Fixed & Polished
+- **30-Point Deep Diagnostic Profiler (`AGENTS.md` Onboard Mode):** Completely overhauled the AI Onboarding mode. Replaced the superficial single open-ended question with a rigorous, comprehensive 30-question diagnostic interview (chunked into 5 rapid-fire phases: Academic Baseline, Cognitive Processing, Memory Retention, Pacing/Fatigue, and Mindset/Goal). This guarantees the tutor extracts a highly precise `Learning DNA` profile for every new student, fully customizing the tutoring style from Day 1.
+- **AIR-1 Mastery Standard (Warmup Remediation):** Fixed a critical pedagogical flaw where the AI passively graded diagnostic warmup gaps (e.g., forgotten formulas) and deferred them to later topic blocks instead of immediately closing the gap. Updated `AGENTS.md` and `AI_STUDENT_CONTEXT.md` to enforce rigorous immediate verification: if an error occurs during the warmup, the tutor must immediately pause, re-teach the concept (Layer 1+3), and verify with a retry question before formulating the Daily Flight Plan.
+- **Generic Private Note Mechanism (3-Tier Alignment):** Fixed an architectural flaw where personalized note styles (like commute notes) were hardcoded into the global AI layer. Introduced a robust 3-Tier mechanism: `AGENTS.md` (Layer 1) triggers the note generation universally; `AI_CONTEXT.md` (Layer 2) enforces the privacy mechanism to save strictly to `journals/Private Notes/`; and `AI_STUDENT_CONTEXT.md` (Layer 3) dictates the actual formatting (e.g., "Fresh & Recall" vs "Visual Mindmaps") based on the individual student's Learning DNA. This ensures the vault release supports deep personalization for any student.
+- **Antigravity-Native System Prompt Architecture (`AGENTS.md`):** Completely refactored the formatting and structure of `AGENTS.md` to perfectly align with Google Antigravity's cognitive processing model. Replaced dense paragraphs with strict XML-style semantic tagging (e.g., `<tutor_engine>`, `<interaction_modes>`), explicit algorithmic pseudo-code for complex decision trees (like the Smart SKIP Protocol and Post-Blitz Mastery Gate), and strictly enforced constraint keywords (`MUST`, `NEVER`). This ensures zero hallucinations and flawless procedural adherence across all advanced AI models, while maintaining 100% of the original pedagogical logic.
+- **Antigravity-Native Student Profile Architecture (`AI_STUDENT_CONTEXT.md`):** Deeply refactored the personal student context file to perfectly align with Google Antigravity's cognitive model. Wrapped all sections in strict XML semantic tags (`<learning_dna>`, `<custom_ai_overrides>`, etc.) for flawless working-memory encapsulation. Translated the student's 30-Point Profiler answers into strict, immutable `[DIRECTIVE]` tags (e.g., `[MASTERY_VALIDATION]`, `[PACING_FATIGUE]`, `[TEACHING_STYLE]`) so that the AI rigorously obeys the student's brutal commute constraints, constant self-doubt, 12-hour memory decay rate, and AIR-1 exam goals.
+- **Topper Web Search Alignment (`AGENTS.md`, `tutor-coach`):** Updated the Autonomous Content Gap Detection (Auto-Trigger Web Search) protocol to explicitly search for "GATE topper shortcuts", "under 1-minute lesser time methods", and "topper notes key points". This ensures the vault is hot-patched with the absolute fastest competitive exam tricks, avoiding slow, standard textbook proofs.
+- **Strict Prompt Editing Authorization (`AGENTS.md`):** Fixed an architectural vulnerability where students in active study modes could accidentally or intentionally request modifications to core AI instruction files (`AGENTS.md`, `AI_CONTEXT.md`) and the `CHANGELOG.md`. Added a strict directive that blocks any direct edits to these files unless the student explicitly switches to `author`/`dev` mode. (Students may still freely edit their personal `journals/AI_STUDENT_CONTEXT.md` in any mode).
 ---
 
 ## [1.1.2] — 2026-08-16

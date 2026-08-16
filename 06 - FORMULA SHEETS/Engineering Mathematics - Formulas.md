@@ -26,8 +26,11 @@ last_updated: 2026-07-27
 | $\vec{a} \times (\vec{b} \times \vec{c}) = \vec{b}(\vec{a} \cdot \vec{c}) - \vec{c}(\vec{a} \cdot \vec{b})$ | Vector Triple Product (BAC - CAB Rule) |
 | $d = \frac{|Ax_0 + By_0 + Cz_0 + D|}{\sqrt{A^2 + B^2 + C^2}}$ | Perpendicular distance from point $(x_0, y_0, z_0)$ to plane $Ax+By+Cz+D=0$ |
 | $d = \frac{|D_2 - D_1|}{\sqrt{A^2 + B^2 + C^2}}$ | Shortest distance between parallel planes $Ax+By+Cz=D_1$ and $D_2$ |
+| $d = \sqrt{\|\vec{AP}\|^2 - \frac{(\vec{AP}\cdot\vec{b})^2}{\|\vec{b}\|^2}}$ | ⚡ **Topper Hack:** Distance from point to line via Pythagoras Projection (Dot product only!) |
 | $d = \frac{\|(\vec{p} - \vec{a}) \times \vec{b}\|}{\|\vec{b}\|}$ | Perpendicular distance from point $\vec{p}$ to line $\vec{r} = \vec{a} + \lambda\vec{b}$ |
 | $d = \frac{|(\vec{a}_2 - \vec{a}_1) \cdot (\vec{b}_1 \times \vec{b}_2)|}{\|\vec{b}_1 \times \vec{b}_2\|}$ | Shortest distance between skew lines $\vec{r}_1 = \vec{a}_1 + \lambda\vec{b}_1, \vec{r}_2 = \vec{a}_2 + \mu\vec{b}_2$ |
+| $\sin\theta = \frac{|\vec{b} \cdot \vec{n}|}{\|\vec{b}\| \|\vec{n}\|}$ | Angle $\theta$ between line ($\vec{b}$) and plane ($\vec{n}$) — **Opposites use Sine!** |
+| $V = \frac{1}{6} |[\vec{AB}\ \vec{AC}\ \vec{AD}]|$ | Volume of tetrahedron with 4 vertices $A, B, C, D$ |
 | $\det(A) \neq 0 \iff \text{Linearly Independent}$ | LI Test for $n$ vectors in $\mathbb{R}^n$ |
 | $\dim(P_n(x)) = n + 1$ | Dimension of polynomials of degree $\le n$ |
 | $\dim(\text{Symmetric } n \times n) = \frac{n(n+1)}{2}$ | Dimension of symmetric matrices |
