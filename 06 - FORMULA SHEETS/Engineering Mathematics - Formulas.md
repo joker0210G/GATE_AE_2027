@@ -24,6 +24,10 @@ last_updated: 2026-07-27
 | $[\vec{a}\ \vec{b}\ \vec{c}] = \vec{a} \cdot (\vec{b} \times \vec{c}) = \det([\vec{a},\vec{b},\vec{c}]^T)$ | Scalar Triple Product (STP) / Parallelepiped volume |
 | $[\vec{a}\ \vec{b}\ \vec{c}] = 0$ | Condition for 3 vectors to be coplanar |
 | $\vec{a} \times (\vec{b} \times \vec{c}) = \vec{b}(\vec{a} \cdot \vec{c}) - \vec{c}(\vec{a} \cdot \vec{b})$ | Vector Triple Product (BAC - CAB Rule) |
+| $d = \frac{|Ax_0 + By_0 + Cz_0 + D|}{\sqrt{A^2 + B^2 + C^2}}$ | Perpendicular distance from point $(x_0, y_0, z_0)$ to plane $Ax+By+Cz+D=0$ |
+| $d = \frac{|D_2 - D_1|}{\sqrt{A^2 + B^2 + C^2}}$ | Shortest distance between parallel planes $Ax+By+Cz=D_1$ and $D_2$ |
+| $d = \frac{\|(\vec{p} - \vec{a}) \times \vec{b}\|}{\|\vec{b}\|}$ | Perpendicular distance from point $\vec{p}$ to line $\vec{r} = \vec{a} + \lambda\vec{b}$ |
+| $d = \frac{|(\vec{a}_2 - \vec{a}_1) \cdot (\vec{b}_1 \times \vec{b}_2)|}{\|\vec{b}_1 \times \vec{b}_2\|}$ | Shortest distance between skew lines $\vec{r}_1 = \vec{a}_1 + \lambda\vec{b}_1, \vec{r}_2 = \vec{a}_2 + \mu\vec{b}_2$ |
 | $\det(A) \neq 0 \iff \text{Linearly Independent}$ | LI Test for $n$ vectors in $\mathbb{R}^n$ |
 | $\dim(P_n(x)) = n + 1$ | Dimension of polynomials of degree $\le n$ |
 | $\dim(\text{Symmetric } n \times n) = \frac{n(n+1)}{2}$ | Dimension of symmetric matrices |
@@ -62,6 +66,7 @@ last_updated: 2026-07-27
 | $\text{Rank}(A^T A) = \text{Rank}(A A^T) = \text{Rank}(A)$ | Gram matrix rank identity |
 | $\text{Rank}(\text{adj}(A)) = n \text{ (if } r=n); \ 1 \text{ (if } r=n-1); \ 0 \text{ (if } r < n-1)$ | Rank of Adjoint Matrix for $n \times n$ matrix $A$ |
 | $\text{Rank}(AB) \le \min(\text{Rank}(A), \text{Rank}(B))$ | Product rank upper bound |
+| $a_{ij}' = a_{11} a_{ij} - a_{i1} a_{1j}$ | 2x2 Cross-Pivot Shortcut (Bareiss fraction-free Row Echelon Form) |
 
 ### Eigenvalues & Eigenvectors
 | Formula / Rule | Description / Condition |

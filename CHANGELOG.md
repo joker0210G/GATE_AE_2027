@@ -5,7 +5,24 @@ All notable changes to the GATE AE 2027 Obsidian Vault will be documented in thi
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [Unreleased] — Target: v1.1.2 (Progress: 0/5 Bug Fixes)
+## [Unreleased] — Target: v1.1.3 (Progress: 0/5 Bug Fixes)
+
+---
+
+## [1.1.2] — 2026-08-16
+
+### 🐛 Fixed & Polished
+- **Isolated Matrix Environment Invariant (`AGENTS.md`):** Fixed a KaTeX multiline truncation error (`Expected & or \\ or \cr or \end at end of input`) caused by chaining trailing relation operators (`\implies`) and text notes on subsequent lines inside a single `$$ \begin{bmatrix} ... \end{bmatrix} ... $$` display math block. Established rule isolating matrix blocks in their own dedicated display math lines.
+- **2x2 Cross-Pivot Row Echelon Method Documentation (`01.3.1 - Rank of a Matrix.md`, `01.3 - Systems of Linear Equations.md`, `06 - FORMULA SHEETS/Engineering Mathematics - Formulas.md`):** Documented the fraction-free Bareiss 2x2 Cross-Pivot method ($a_{ij}' = a_{11}a_{ij} - a_{i1}a_{1j}$) with full visual formula, step-by-step worked examples for square and augmented matrices, and speed benchmarks.
+- **Autonomous Note-Evolution & 3D Geometry Hot-Patch (`AGENTS.md`, `tutor-coach`, `01.1 - Vector Algebra.md`, `06 - FORMULA SHEETS/Engineering Mathematics - Formulas.md`):** Added a core protocol requiring the tutor to take complete pedagogical ownership when a student indicates a formula/concept was missing from notes or referred online. Added full Section 6 to `01.1 - Vector Algebra.md` and formula sheets covering 3D Lines and Planes geometry (Point-to-Plane, Point-to-Line, Skew Lines Distance, and Plane-Line Angles).
+- **Active Tutoring Protocols — Real Tutor Behavior (`AGENTS.md`, `tutor-coach`):** Fixed three systemic defects where the AI was acting as a passive logging machine instead of an adaptive private tutor:
+  1. **Active Weakness Mining (Step 0):** AI now silently extracts student's weakness patterns from `Struggle Signatures`, `Cumulative Error Taxonomy`, and `TOP ROI RANK-BOOSTER WEAK TOPICS` at session start and builds a Stealth Remediation Target List.
+  2. **Zero-Repetition Invariant & Stealth Weakness Remediation (Step 5):** All checkpoint and practice questions must be freshly generated (never recycled from mock banks or past journals). AI must covertly embed 2–3 weakness-targeting questions per batch, blended naturally without announcing it.
+  3. **Active Telemetry Update (Step 6):** After forensic review, AI must immediately recalculate and update `Cumulative Error Taxonomy`, `Struggle Signatures`, `TOP ROI RANK-BOOSTER WEAK TOPICS`, and `Cumulative Performance` in real-time, making the student context a living diagnostic dashboard.
+- **"I Don't Know" = Teaching Failure Protocol & Post-Blitz Mastery Gate (`AGENTS.md`, `tutor-coach`):** Critical fix for the most dangerous defect — the tutor was passively grading "0 marks" and suggesting to advance to the next topic even when the student hadn't mastered the current one. Three new invariants:
+  1. **Teaching Failure Ownership:** When a student says "I don't know", the AI must own the gap ("This is on me"), re-teach the concept immediately, give a retry question, and hot-patch vault notes if the formula was missing. ≥3 "I don't know" answers triggers emergency re-teaching mode.
+  2. **Auto-Trigger Web Search:** Content gap detection now fires automatically during forensic review without needing "spy" keywords. Any 0-score on formula-dependent questions triggers autonomous web search + vault hot-patching.
+  3. **Post-Blitz Mastery Gate:** ≥80% = may advance. 50–79% = re-teach failed concepts + retry. <50% = full re-teach from scratch. The AI must NEVER say "type NEXT to begin [next topic]" if mastery gate isn't cleared.
 
 ---
 

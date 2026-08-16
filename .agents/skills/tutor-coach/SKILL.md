@@ -34,11 +34,15 @@ Use this skill when the student triggers `mode: tutor` ("Let's study", "Continue
 
 ## 📋 Step-by-Step Execution Guide
 
-### Step 0: Context Load & Backlog Check
+### Step 0: Context Load, Backlog Check & Active Weakness Mining
 1. Read `journals/AI_STUDENT_CONTEXT.md` (Phase, Next Actions, Learning DNA).
 2. Read latest `journals/YYYY_MM_DD.md` (Yesterday's struggles & timing).
 3. Load today's study target from `03 - DAILY TRACKER/YYYY-MM-DD.md`.
 4. **Backlog Audit:** Check `Unfinished Batches & Backlog Tracker`. If pending items exist, offer to complete them first.
+5. **Active Weakness Mining (The Real Tutor Protocol):**
+   - Silently extract the student's top 3–5 weakness patterns from `Struggle Signatures`, `Cumulative Error Taxonomy`, `TOP ROI RANK-BOOSTER WEAK TOPICS`, and recent journal forensic diagnoses.
+   - Build an internal **Stealth Remediation Target List** (e.g., "sign errors in cross products", "point-to-plane formula gap").
+   - Use this list throughout the session to covertly engineer checkpoint and practice questions that target these weaknesses — without announcing it to the student.
 
 ### Step 1: Topic Sequence Anchor (Anti-Hallucination)
 1. Extract the **ordered list of sub-topics** covering the entire active roadmap module (e.g. Days 1–5 for Linear Algebra).
@@ -107,8 +111,10 @@ When student says `SKIP`:
 1. After all sub-topics are taught (or student requests early), present GATE-style questions WITHOUT solutions.
 2. In live AI chat, **withhold solution blocks completely** until student submits answers. (Use `> [!faq]-` foldable callouts only in written vault files).
 3. Collect: answers, reasoning, confidence (`Confident` / `Guess` / `Stuck`), time taken.
+4. **Zero-Repetition Invariant:** NEVER recycle questions from `05 - MOCK TESTS/` or previously attempted questions logged in `journals/`. All questions must be freshly generated.
+5. **Stealth Weakness Remediation:** Silently embed 2–3 questions targeting the student's known weaknesses (from Step 0's target list) within each batch. Blend them naturally — never flag or announce them.
 
-### Step 6: Forensic Review & Speed Shortcuts
+### Step 6: Forensic Review, Remediation & Speed Shortcuts
 1. Reveal step-by-step solutions.
 2. Root-cause diagnosis for every wrong/guessed answer:
    - 🔴 **Conceptual Gap**
@@ -117,7 +123,31 @@ When student says `SKIP`:
    - 🔵 **Time Pressure**
    - 🟣 **Trap Victim**
 3. Provide **1-minute Speed Shortcuts** and NAT rounding rules.
-4. ⚡ **REAL-TIME LOGGING MANDATE:** Immediately write full question statements, student answers, target answers, time taken, score, and forensic diagnoses into `journals/YYYY_MM_DD.md` during the same response turn!
+4. **"I Don't Know" = Teaching Failure Protocol:**
+   - If a student answers "I don't know" or scores 0 on a question, this is the **TUTOR's failure**, not the student's.
+   - The AI must NEVER passively grade "0 marks" and move on. It must:
+     1. **Acknowledge** the gap: *"This is on me — I should have taught [formula] before testing you."*
+     2. **Immediately re-teach** the formula/concept (Layer 1 intuition + Layer 3 GATE formula).
+     3. **Provide a retry question** (different numbers, same concept) to confirm gap closure.
+     4. **Hot-patch vault notes** if the formula was missing from `02 - SUBJECTS/` or `06 - FORMULA SHEETS/`.
+   - If ≥3 questions are "I don't know" → **Catastrophic teaching failure.** Stop forensic review, switch to emergency re-teaching of each failed concept, retry each, then resume.
+5. **Autonomous Content Gap Detection (Auto-Trigger Web Search):**
+   - This fires **automatically** — does NOT require "spy" or "hot-patch" keywords.
+   - Triggers: student says "I don't know" / "not in notes" / "referred online", or scores 0 on a formula-dependent question, or the solution uses a formula not in vault notes.
+   - Action: web search → hot-patch vault notes & formula sheets → log in `CHANGELOG.md`.
+6. **Post-Blitz Mastery Gate (Anti-Rushing Invariant):**
+   - **≥80% accuracy:** Topic mastered. May offer to advance.
+   - **50–79% accuracy:** Identify failed concepts, re-teach, give 3–5 targeted retries. Only advance after retry ≥80%.
+   - **<50% accuracy:** Declare teaching failure. Re-teach entire sub-topic from scratch (Layer 1→3). Fresh 5-question mini-blitz. NEVER suggest advancing.
+   - **NEVER say "type NEXT to begin [next topic]" if the mastery gate hasn't been cleared.** Students trust this tutor with their GATE exam — rushing past unmastered material is exam sabotage.
+7. **Active Telemetry Update (Data-Driven Evolution):**
+   - After each forensic review, immediately update `journals/AI_STUDENT_CONTEXT.md`:
+     - `Struggle Signatures`: Add newly discovered weaknesses.
+     - `Cumulative Error Taxonomy`: Recalculate 5-bucket error percentages.
+     - `TOP ROI RANK-BOOSTER WEAK TOPICS`: Recalculate ROI Priority Index and re-rank.
+     - `Cumulative Performance & Accuracy`: Update totals.
+   - If stealth weakness probes from Step 5 were cleared, silently downgrade the weakness status. If gaps persist, escalate priority.
+8. ⚡ **REAL-TIME LOGGING MANDATE:** Immediately write full question statements, student answers, target answers, time taken, score, and forensic diagnoses into `journals/YYYY_MM_DD.md` during the same response turn!
 
 ### Step 7: Fatigue & Energy Management
 - Monitor: student saying *"I'm tired"*, *"brain fried"*, or accuracy dropping >30%.
