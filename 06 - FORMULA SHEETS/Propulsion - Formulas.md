@@ -109,4 +109,37 @@ last_updated: 2026-07-27
 
 ---
 
-*Last Updated: 2026-07-27 | Full Index: [[_Index_Propulsion]]*
+## 🃏 Interactive Foldable Flashcards Deck
+
+> [!question]- 🃏 Flashcard: Rocket Burnout Velocity (Tsiolkovsky)
+> **Question:** State the ideal Tsiolkovsky rocket equation including gravity and atmospheric drag losses.
+> > [!success]- **Answer & Formula:**
+> > $$\Delta v = I_{sp} g_0 \ln\left(\frac{m_0}{m_f}\right) - \bar{g} t_b \sin\bar{\theta} - \Delta v_{\text{drag}}$$
+> > 
+> > ⚠️ **TCS Calculator Trap:** Use the natural logarithm `ln` key, **NOT** `log` ($\log_{10}$).
+
+> [!question]- 🃏 Flashcard: Optimum Pressure Ratio for Max Specific Thrust
+> **Question:** For an ideal turbojet with fixed turbine inlet temperature $T_{04}$ and ambient temperature $T_{01}$, what compressor temperature ratio $\tau_c$ maximizes specific thrust?
+> > [!success]- **Answer & Formula:**
+> > $$\tau_{c,\text{opt}} = \sqrt{\tau_\lambda} = \sqrt{\frac{T_{04}}{T_{01}}}$$
+> > 
+> > Corresponding pressure ratio: $r_{c,\text{opt}} = \tau_{c,\text{opt}}^{\frac{\gamma}{\gamma - 1}} = \left(\frac{T_{04}}{T_{01}}\right)^{\frac{\gamma}{2(\gamma - 1)}}$.
+
+> [!question]- 🃏 Flashcard: Choking Condition in Isentropic Nozzles
+> **Question:** What is the critical pressure ratio $p^*/p_0$ for sonic choking at the nozzle throat for air ($\gamma = 1.4$)?
+> > [!success]- **Answer & Formula:**
+> > $$\frac{p^*}{p_0} = \left(\frac{2}{\gamma + 1}\right)^{\frac{\gamma}{\gamma - 1}} = \left(\frac{2}{2.4}\right)^{3.5} = 0.52828$$
+> > 
+> > ⚠️ **Rule:** If ambient pressure $p_a \le 0.528 p_0$, the nozzle throat is **choked** ($M_t = 1$).
+
+> [!question]- 🃏 Flashcard: Characteristic Velocity $c^*$
+> **Question:** Define characteristic velocity $c^*$ for a rocket combustion chamber and write its formula in terms of $T_c, \bar{M}, \gamma$.
+> > [!success]- **Answer & Formula:**
+> > $$c^* = \frac{p_c A_t}{\dot{m}} = \frac{\sqrt{\gamma R T_c}}{\gamma \sqrt{\left(\frac{2}{\gamma + 1}\right)^{\frac{\gamma + 1}{\gamma - 1}}}}$$
+> > 
+> > ⚠️ **Insight:** $c^*$ measures **combustion efficiency** independently of nozzle expansion geometry.
+
+---
+
+*Last Updated: 2026-08-17 | Full Index: [[_Index_Propulsion]] | [[06 - FORMULA SHEETS/Master Flashcard Hub|Flashcard Hub ↗]]*
+

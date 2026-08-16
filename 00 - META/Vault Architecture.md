@@ -11,6 +11,7 @@ GATE/
 │
 ├── VERSION.md                           ← Current vault version tracking (v1.0.0)
 ├── CHANGELOG.md                         ← Release history & update notes
+├── FEATURES.md                          ← Feature catalog & study enhancement roadmap
 ├── AI_CONTEXT.md                        ← LLM shared memory blueprint (ALWAYS read first)
 ├── AGENTS.md                            ← Universal AI agent rules & interaction modes
 ├── mcp.json                             ← Model Context Protocol server configuration
@@ -18,6 +19,9 @@ GATE/
 │
 ├── 00 - META/
 │   ├── GATE 2027 Official Syllabus.md   ← Official IIT Madras Core vs Special syllabus
+│   ├── GATE TCS Calculator Guide & NAT Precision Rules.md ← TCS Calculator & precision rules
+│   ├── GATE AE AIR Rank & Institute Cutoff Simulator.md ← Marks vs Score vs AIR & cutoffs
+│   ├── GATE 3-Hour Full-Mock Endurance & Fatigue Protocol.md ← 3-block 180min telemetry & FDI
 │   ├── MCP Setup Guide.md               ← MCP connection guide for local REST API
 │   ├── Tagging & Linking System.md      ← Full tagging and linking guide
 │   ├── Update & Release Guide.md        ← Student updates & Author release guide
@@ -42,9 +46,9 @@ GATE/
 │
 ├── 05 - MOCK TESTS/                     ← 🟢 SHARED: Shared developer mock series (Topic Tests/, Mock Series/, _Mock Test Index.md)
 │
-├── 06 - FORMULA SHEETS/                 ← 🟢 SHARED: Subject formula sheets (7 sheets)
+├── 06 - FORMULA SHEETS/                 ← 🟢 SHARED: Subject formula sheets & Master Flashcard Hub (8 notes)
 │
-├── 07 - TEMPLATES/                      ← 🟢 SHARED: Master markdown templates (5 templates)
+├── 07 - TEMPLATES/                      ← 🟢 SHARED: Master markdown templates (6 templates)
 │
 ├── .agents/                             ← 🟢 SHARED: AI Agent skills (vault-manager, mock-reviewer, pyq-analyzer)
 │

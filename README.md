@@ -109,6 +109,7 @@ While the vault works out-of-the-box as pure Markdown, we recommend enabling the
 GATE/
 ├── VERSION.md                         ← Current vault version (v1.0.0)
 ├── CHANGELOG.md                       ← Version history & release notes
+├── FEATURES.md                        ← Feature catalog & study enhancement roadmap
 ├── AI_CONTEXT.md                      ← LLM Shared Memory (Read this first)
 ├── AGENTS.md                          ← Universal AI agent rules
 ├── mcp.json                           ← Model Context Protocol config

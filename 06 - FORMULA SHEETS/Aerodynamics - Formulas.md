@@ -192,4 +192,38 @@ last_updated: 2026-07-27
 
 ---
 
-*Last Updated: 2026-07-27 | Full Index: [[_Index_Aerodynamics]]*
+## 🃏 Interactive Foldable Flashcards Deck
+
+> [!question]- 🃏 Flashcard: Oblique Shock Relation ($\theta\text{--}\beta\text{--}M$)
+> **Question:** Write the $\theta\text{--}\beta\text{--}M$ relation for an oblique shock with flow deflection $\theta$, wave angle $\beta$, and Mach number $M_1$.
+> > [!success]- **Answer & AIR 1 Traps:**
+> > $$\tan\theta = 2\cot\beta \left[ \frac{M_1^2 \sin^2\beta - 1}{M_1^2(\gamma + \cos 2\beta) + 2} \right]$$
+> > 
+> > ⚠️ **IIT Traps to Watch:**
+> > 1. For $\theta = 0$: Either $\beta = \mu = \sin^{-1}(1/M_1)$ (Mach wave) OR $\beta = 90^\circ$ (Normal Shock).
+> > 2. Always compute $\beta$ in **Degrees** on the TCS calculator using `1/x` for $\cot\beta$.
+
+> [!question]- 🃏 Flashcard: Prandtl-Glauert Compressibility Rule
+> **Question:** What is the linearized subsonic compressibility correction for pressure coefficient $C_p$ and lift coefficient $C_L$? State the valid Mach range.
+> > [!success]- **Answer & Formula:**
+> > $$C_p = \frac{C_{p,0}}{\sqrt{1 - M_\infty^2}}, \quad C_L = \frac{C_{L,0}}{\sqrt{1 - M_\infty^2}}$$
+> > 
+> > ⚠️ **Validity Limit:** Valid only for **thin airfoils at small $\alpha$** and **$0.3 < M_\infty < 0.7$**. Fails as $M_\infty \to 1.0$.
+
+> [!question]- 🃏 Flashcard: Thin Airfoil Aerodynamic Center & Lift Slope
+> **Question:** For a thin symmetric airfoil in incompressible flow, state the location of the Aerodynamic Center and the lift-curve slope $C_{L\alpha}$.
+> > [!success]- **Answer & Formula:**
+> > 1. **Aerodynamic Center:** $x_{ac} = c/4 = 0.25c$ from the leading edge.
+> > 2. **Lift Slope:** $C_{L\alpha} = 2\pi \text{ rad}^{-1} \approx 0.1097 \text{ deg}^{-1}$.
+> > 3. **Pitching Moment:** $C_{M,ac} = 0$ (for symmetric airfoil).
+
+> [!question]- 🃏 Flashcard: Prandtl-Meyer Expansion Relation
+> **Question:** How is the turning angle $\theta$ related to the upstream and downstream Mach numbers across a centered Prandtl-Meyer expansion fan?
+> > [!success]- **Answer & Formula:**
+> > $$\theta = \nu(M_2) - \nu(M_1)$$
+> > where $\nu(M)$ is the Prandtl-Meyer function. Flow expands isentropically ($p_{02} = p_{01}, T_{02} = T_{01}$).
+
+---
+
+*Last Updated: 2026-08-17 | Full Index: [[_Index_Aerodynamics]] | [[06 - FORMULA SHEETS/Master Flashcard Hub|Flashcard Hub ↗]]*
+

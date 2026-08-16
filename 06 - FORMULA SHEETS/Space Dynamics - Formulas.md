@@ -104,4 +104,30 @@ last_updated: 2026-07-27
 
 ---
 
-*Last Updated: 2026-07-27 | Full Index: [[02 - SUBJECTS/Space Dynamics/_Index]]*
+## 🃏 Interactive Foldable Flashcards Deck
+
+> [!question]- 🃏 Flashcard: Hohmann Transfer Velocity Impulses
+> **Question:** For a Hohmann transfer from circular orbit $r_1$ to circular orbit $r_2$, write the semi-major axis of transfer orbit $a_t$ and the first burn $\Delta v_1$.
+> > [!success]- **Answer & Formula:**
+> > $$a_t = \frac{r_1 + r_2}{2}$$
+> > $$\Delta v_1 = v_{t,p} - v_{c1} = \sqrt{\frac{\mu}{r_1}} \left( \sqrt{\frac{2r_2}{r_1 + r_2}} - 1 \right)$$
+> > Total transfer time: $t_{\text{transfer}} = \pi \sqrt{\frac{a_t^3}{\mu}}$.
+
+> [!question]- 🃏 Flashcard: Orbital Energy & Velocity Relations
+> **Question:** State the Vis-Viva equation relating orbital speed $v$, distance $r$, and semi-major axis $a$ for any Keplerian orbit.
+> > [!success]- **Answer & Formula:**
+> > $$v^2 = \mu \left( \frac{2}{r} - \frac{1}{a} \right)$$
+> > - Specific orbital energy: $\mathcal{E} = -\frac{\mu}{2a}$.
+> > - For circular orbit ($r = a$): $v_{c} = \sqrt{\frac{\mu}{r}}$.
+> > - For escape velocity ($a \to \infty$): $v_{\text{esc}} = \sqrt{\frac{2\mu}{r}} = \sqrt{2} v_c$.
+
+> [!question]- 🃏 Flashcard: Orbital Plane Change Velocity Budget
+> **Question:** What is the impulse $\Delta v$ required to change orbit inclination by angle $\Delta i$ at orbital velocity $v$ without changing orbit radius?
+> > [!success]- **Answer & Formula:**
+> > $$\Delta v = 2 v \sin\left(\frac{\Delta i}{2}\right)$$
+> > ⚠️ **Topper Rule:** Plane changes are most efficient at **apoapsis** where velocity $v$ is lowest!
+
+---
+
+*Last Updated: 2026-08-17 | Full Index: [[02 - SUBJECTS/Flight Mechanics & Space Dynamics/_Index_Flight Mechanics]] | [[06 - FORMULA SHEETS/Master Flashcard Hub|Flashcard Hub ↗]]*
+

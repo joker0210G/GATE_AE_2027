@@ -125,4 +125,38 @@ last_updated: 2026-07-27
 
 ---
 
-*Last Updated: 2026-07-27 | Full Index: [[_Index_Structures]]*
+## 🃏 Interactive Foldable Flashcards Deck
+
+> [!question]- 🃏 Flashcard: Bredt-Batho Closed Tube Torsion
+> **Question:** For a single-cell closed thin-walled tube with enclosed mean area $A_m$ under torque $T$, what is the shear flow $q$ and the total angle of twist per unit length $d\theta/dx$?
+> > [!success]- **Answer & Formula:**
+> > 1. **Shear Flow:** $q = \tau(s) \cdot t(s) = \frac{T}{2 A_m}$ (Constant along the perimeter).
+> > 2. **Rate of Twist:** $\frac{d\theta}{dx} = \frac{T}{4 A_m^2 G} \oint \frac{ds}{t(s)}$.
+> > 
+> > ⚠️ **Key Assumption:** Wall thickness $t(s) \ll \text{cross-sectional dimensions}$.
+
+> [!question]- 🃏 Flashcard: Euler Column Buckling Effective Lengths ($L_e$)
+> **Question:** State the critical Euler buckling load formula $P_{cr}$ and list the effective lengths $L_e$ for the 4 standard end boundary conditions.
+> > [!success]- **Answer & Formula:**
+> > $$P_{cr} = \frac{\pi^2 E I}{L_e^2}$$
+> > 1. **Both ends pinned:** $L_e = L$ ($P_{cr} = \frac{\pi^2 EI}{L^2}$).
+> > 2. **One end fixed, other free (Cantilever):** $L_e = 2L$ ($P_{cr} = \frac{\pi^2 EI}{4L^2}$).
+> > 3. **Both ends fixed:** $L_e = 0.5L$ ($P_{cr} = \frac{4\pi^2 EI}{L^2}$).
+> > 4. **One fixed, one pinned:** $L_e \approx 0.7L$ ($P_{cr} \approx \frac{2.046 \pi^2 EI}{L^2}$).
+
+> [!question]- 🃏 Flashcard: Shear Center Location of Semicircular Open Channel
+> **Question:** For a thin-walled semicircular open section of radius $R$, where is the shear center located relative to the center of the arc?
+> > [!success]- **Answer & Formula:**
+> > $$e = \frac{4R}{\pi} \approx 1.273 R$$
+> > from the center of the semicircle along the axis of symmetry, lying **outside** the physical cross-section!
+
+> [!question]- 🃏 Flashcard: Mohr's Circle Principal Stresses
+> **Question:** Given 2D state of stress $(\sigma_x, \sigma_y, \tau_{xy})$, what are the principal stresses $\sigma_{1,2}$ and maximum in-plane shear stress $\tau_{\max}$?
+> > [!success]- **Answer & Formula:**
+> > $$\sigma_{1,2} = \frac{\sigma_x + \sigma_y}{2} \pm \sqrt{\left(\frac{\sigma_x - \sigma_y}{2}\right)^2 + \tau_{xy}^2}$$
+> > $$\tau_{\max,\text{in-plane}} = R = \sqrt{\left(\frac{\sigma_x - \sigma_y}{2}\right)^2 + \tau_{xy}^2}$$
+
+---
+
+*Last Updated: 2026-08-17 | Full Index: [[_Index_Structures]] | [[06 - FORMULA SHEETS/Master Flashcard Hub|Flashcard Hub ↗]]*
+

@@ -810,6 +810,43 @@ $$C_{m,cg} = C_{m_0} + C_{m_\alpha} \cdot \alpha + C_{m_{\delta_e}} \cdot \delta
 
 **Related Note:** [[02 - SUBJECTS/Flight Mechanics & Space Dynamics/07.3 - Decoupling of Lateral-Directional Dynamics and Dynamic Modes]]
 
+---
+
+## 🃏 Interactive Foldable Flashcards Deck
+
+> [!question]- 🃏 Flashcard: Static Margin & Longitudinal Stability Criterion
+> **Question:** Define the stick-fixed Static Margin ($SM$) and state the sign of $C_{M\alpha}$ required for longitudinal static stability.
+> > [!success]- **Answer & Formula:**
+> > $$SM = \frac{x_{np} - x_{cg}}{\bar{c}} = -\frac{C_{M\alpha}}{C_{L\alpha}}$$
+> > For static longitudinal stability:
+> > $$\frac{dC_M}{d\alpha} < 0 \iff x_{cg} < x_{np} \implies SM > 0$$
+> > *(Center of gravity must lie strictly ahead of the Neutral Point)*.
+
+> [!question]- 🃏 Flashcard: Load Factor in Coordinated Level Turn
+> **Question:** In a coordinated steady level turn with bank angle $\phi$, what is the load factor $n$, turn radius $R$, and turn rate $\dot{\psi}$?
+> > [!success]- **Answer & Formula:**
+> > 1. **Load Factor:** $n = \frac{1}{\cos\phi}$.
+> > 2. **Turn Radius:** $R = \frac{V^2}{g \tan\phi} = \frac{V^2}{g \sqrt{n^2 - 1}}$.
+> > 3. **Turn Rate:** $\dot{\psi} = \frac{g \tan\phi}{V} = \frac{g \sqrt{n^2 - 1}}{V}$.
+
+> [!question]- 🃏 Flashcard: Breguet Range for Jet Aircraft vs. Propeller
+> **Question:** Write the Breguet Range equation for a **Jet Aircraft** and a **Propeller Aircraft** at constant altitude and velocity.
+> > [!success]- **Answer & Formula:**
+> > 1. **Jet Engine:** $R = \frac{V}{TSFC} \left(\frac{C_L}{C_D}\right) \ln\left(\frac{W_0}{W_1}\right)$ (Depends on flight velocity $V$).
+> > 2. **Propeller Engine:** $R = \frac{\eta_p}{BSFC} \left(\frac{C_L}{C_D}\right) \ln\left(\frac{W_0}{W_1}\right)$ (Independent of $V$, depends on $\eta_p$).
+
+> [!question]- 🃏 Flashcard: Minimum Thrust vs. Minimum Power Speed Ratio
+> **Question:** For a parabolic drag polar $C_D = C_{D0} + K C_L^2$, what is the ratio of the speed for minimum power $(V_{mp})$ to the speed for minimum thrust $(V_{md})$?
+> > [!success]- **Answer & Formula:**
+> > $$V_{mp} = \frac{1}{3^{1/4}} V_{md} \approx 0.76 V_{md}$$
+> > - At $V_{md}$ (max $L/D$): $C_{Di} = C_{D0}$.
+> > - At $V_{mp}$ (max $C_L^{3/2}/C_D$): $C_{Di} = 3 C_{D0}$.
+
+---
+
+*Last Updated: 2026-08-17 | Full Index: [[_Index_Flight Mechanics]] | [[06 - FORMULA SHEETS/Master Flashcard Hub|Flashcard Hub ↗]]*
+
+
 
 
 

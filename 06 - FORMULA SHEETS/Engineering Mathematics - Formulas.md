@@ -174,4 +174,36 @@ last_updated: 2026-07-27
 
 ---
 
-*Last Updated: 2026-07-27 | Full Index: [[_Index_Engineering Mathematics]]*
+## 🃏 Interactive Foldable Flashcards Deck
+
+> [!question]- 🃏 Flashcard: Cayley-Hamilton 2x2 Matrix Inverse Shortcut
+> **Question:** How is the Cayley-Hamilton Theorem used to compute $A^{-1}$ for a $2 \times 2$ matrix with characteristic equation $\lambda^2 - \text{tr}(A)\lambda + \det(A) = 0$?
+> > [!success]- **Answer & Formula:**
+> > Since $A^2 - \text{tr}(A)A + \det(A)I = 0$:
+> > $$A^{-1} = \frac{1}{\det(A)} \left[ \text{tr}(A)I - A \right]$$
+> > 
+> > ⚡ **Speed Shortcut:** Directly inverts any $2 \times 2$ matrix in **< 10 seconds**!
+
+> [!question]- 🃏 Flashcard: Properties of Real Symmetric Matrices
+> **Question:** State the 3 crucial properties of real symmetric matrices ($A = A^T$) tested frequently in GATE.
+> > [!success]- **Answer & Properties:**
+> > 1. All eigenvalues are **strictly real**.
+> > 2. Eigenvectors corresponding to distinct eigenvalues are **mutually orthogonal** ($v_1 \cdot v_2 = 0$).
+> > 3. Always **orthogonally diagonalizable** ($P^T A P = D$, where $P$ is an orthogonal modal matrix).
+
+> [!question]- 🃏 Flashcard: Stokes' Theorem & Divergence Theorem
+> **Question:** Write the vector calculus integral identity for Stokes' Theorem (curl) and Gauss's Divergence Theorem.
+> > [!success]- **Answer & Formula:**
+> > 1. **Stokes' Theorem:** $\oint_C \vec{F} \cdot d\vec{r} = \iint_S (\nabla \times \vec{F}) \cdot \hat{n}\, dS$.
+> > 2. **Divergence Theorem:** $\iint_S \vec{F} \cdot \hat{n}\, dS = \iiint_V (\nabla \cdot \vec{F})\, dV$.
+
+> [!question]- 🃏 Flashcard: Second-Order ODE Characteristic Roots
+> **Question:** For $a y'' + b y' + c y = 0$, state the general solution when roots $m_1, m_2$ are complex conjugates $\alpha \pm i\beta$.
+> > [!success]- **Answer & Formula:**
+> > $$y(x) = e^{\alpha x} \left( C_1 \cos(\beta x) + C_2 \sin(\beta x) \right)$$
+> > where $\alpha = -b/(2a)$ and $\beta = \sqrt{4ac - b^2}/(2a)$.
+
+---
+
+*Last Updated: 2026-08-17 | Full Index: [[_Index_Engineering Mathematics]] | [[06 - FORMULA SHEETS/Master Flashcard Hub|Flashcard Hub ↗]]*
+

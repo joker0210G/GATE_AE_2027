@@ -43,7 +43,7 @@ New-Item -ItemType Directory -Force -Path $StagingDir | Out-Null
 
 # 2. Copy Shared Layer
 Write-Host "`n📦 Copying shared course content..." -ForegroundColor Yellow
-$SharedFolders = @("00 - META", "01 - ROADMAP", "02 - SUBJECTS", "03 - DAILY TRACKER", "04 - PYQs", "05 - MOCK TESTS", "06 - FORMULA SHEETS", "07 - TEMPLATES", ".agents", "scripts")
+$SharedFolders = @("00 - META", "01 - ROADMAP", "02 - SUBJECTS", "03 - DAILY TRACKER", "04 - PYQs", "05 - MOCK TESTS", "06 - FORMULA SHEETS", "07 - TEMPLATES", ".agents", "assets", "scripts")
 foreach ($folder in $SharedFolders) {
     $src = Join-Path $VaultRoot $folder
     if (Test-Path $src) {
@@ -52,7 +52,7 @@ foreach ($folder in $SharedFolders) {
     }
 }
 
-$SharedFiles = @("AI_CONTEXT.md", "AGENTS.md", "VERSION.md", "CHANGELOG.md", "README.md", "CLAUDE.md", ".cursorrules", ".windsurfrules", ".gitignore")
+$SharedFiles = @("AI_CONTEXT.md", "AGENTS.md", "VERSION.md", "CHANGELOG.md", "FEATURES.md", "demo.md", "README.md", "CLAUDE.md", ".cursorrules", ".windsurfrules", ".gitignore", "mcp.json")
 foreach ($file in $SharedFiles) {
     $src = Join-Path $VaultRoot $file
     if (Test-Path $src) {

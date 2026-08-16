@@ -99,4 +99,25 @@ last_updated: 2026-07-27
 
 ---
 
-*Last Updated: 2026-07-27 | Full Index: [[_Index_General Aptitude]]*
+## 🃏 Interactive Foldable Flashcards Deck
+
+> [!question]- 🃏 Flashcard: Time, Speed & Distance (Average Speed)
+> **Question:** A vehicle travels from A to B at speed $v_1$ and returns from B to A at speed $v_2$. What is the average speed for the round trip?
+> > [!success]- **Answer & Formula:**
+> > $$v_{\text{avg}} = \frac{2 v_1 v_2}{v_1 + v_2}$$
+> > ⚠️ **Trap:** Never take arithmetic average $\frac{v_1 + v_2}{2}$ when distances are equal! It is the **harmonic mean**.
+
+> [!question]- 🃏 Flashcard: Combinatorics & Handshakes / Selections
+> **Question:** If $n$ people meet in a room and each person shakes hands with every other person once, what is the total number of handshakes?
+> > [!success]- **Answer & Formula:**
+> > $$\text{Total Handshakes} = \binom{n}{2} = \frac{n(n - 1)}{2}$$
+
+> [!question]- 🃏 Flashcard: Work & Time (Pipes & Cisterns)
+> **Question:** Pipe A fills a tank in $t_1$ hours and Pipe B empties it in $t_2$ hours ($t_2 > t_1$). What is the net time taken to fill the tank if both are opened simultaneously?
+> > [!success]- **Answer & Formula:**
+> > $$\text{Net Rate} = \frac{1}{t_1} - \frac{1}{t_2} \implies T_{\text{net}} = \frac{t_1 t_2}{t_2 - t_1} \text{ hours}$$
+
+---
+
+*Last Updated: 2026-08-17 | Full Index: [[_Index_General Aptitude]] | [[06 - FORMULA SHEETS/Master Flashcard Hub|Flashcard Hub ↗]]*
+

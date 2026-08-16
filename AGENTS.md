@@ -139,6 +139,12 @@ After teaching the micro-topic entirely (per Step 3b completeness criteria), ask
     1. Search the web (`search_web`) for the best competitive exam shortcuts and methods.
     2. Hot-patch the shared vault notes and formula sheets with the missing content.
     3. Log the improvement in `CHANGELOG.md`.
+- **NAT Precision & Tolerance Engine Protocol:**
+  - For all NAT (Numerical Answer Type) questions evaluated during Step 6 or Mock reviews:
+    1. **Analytical Target & Official Range:** Explicitly display the analytical answer AND the official IIT accepted tolerance window (e.g. Target: `14.32`, Accepted Range: `[14.25, 14.40]`).
+    2. **Premature Rounding Forensic Audit:** If the student's answer drifted outside the tolerance window, determine whether premature rounding of constants ($g=9.81$, $R=287$, $\gamma=1.4$, $\pi$) or intermediate steps caused the failure.
+    3. **Deg vs Rad Diagnostic:** If a trigonometric calculation is off, check if the student computed in Radians instead of Degrees (or vice versa).
+    4. **Remediation Link:** Direct the student to [`00 - META/GATE TCS Calculator Guide & NAT Precision Rules.md`](00%20-%20META/GATE%20TCS%20Calculator%20Guide%20%26%20NAT%20Precision%20Rules.md) and demonstrate the zero-loss memory register workflow (`MS` / `MR`).
 - **Post-Blitz Mastery Gate (Anti-Rushing Invariant):**
   - After completing forensic review of a practice batch, calculate the student's accuracy.
   - **If accuracy >= 80%:** The topic is mastered. The AI may offer to advance to the next topic.
@@ -153,7 +159,15 @@ After teaching the micro-topic entirely (per Step 3b completeness criteria), ask
     - `Cumulative Performance & Accuracy`: Update total questions solved, accuracy, and speed.
   - This ensures the student context file is a **living, real-time diagnostic dashboard**, not a static log.
 
-**Step 7 — Fatigue & Energy Monitoring:** Respect fatigue signals ("I'm tired", accuracy drop >30%). Trigger Fatigue Protocol — wrap up cleanly, log progress, formula recap of today's topics, and create **Tomorrow's Bridge**.
+**Step 7 — Fatigue & Energy Monitoring & Interactive Flashcard Bridge:** Respect fatigue signals ("I'm tired", accuracy drop >30%). Trigger Fatigue Protocol — wrap up cleanly, log progress, provide a 5-minute active recall recap using **Native Obsidian Interactive Foldable Flashcards (`> [!question]-`)** with click-to-reveal answers and AIR 1 trap warnings (`> [!success]-`), and create **Tomorrow's Bridge**.
+- **Interactive Foldable Flashcard Standard (`[!question]-`):** When generating formula recaps, warmup drills, or updating private notes, always format cards as native Obsidian foldable callouts:
+  ```markdown
+  > [!question]- 🃏 Flashcard: [Concept / Law Name]
+  > **Question:** [State pure question / formula request without hints]
+  > > [!success]- **Answer & AIR 1 Traps:**
+  > > [Analytical Formula / Core Derivation]
+  > > ⚠️ **AIR 1 Traps to Watch:** [Unit conventions, Deg/Rad slips, physical validity bounds]
+  ```
 
 **Step 8 — Real-Time Journal Synchronization:** Ensure all mined conversation data (student quotes, timing, guesses, reasoning, scorecards) are 100% synchronized into `journals/YYYY_MM_DD.md`.
 
@@ -163,9 +177,16 @@ After teaching the micro-topic entirely (per Step 3b completeness criteria), ask
 ### Mode: `mock` — "Test me on X" / "Mock mode" / "Mock test"
 Conduct a focused, forensic mock test from `05 - MOCK TESTS/` or scoped topic/sectional tests.
 1. **Scope & Time Setup:** Determine topic/sectional scope, question count, time limit, and NAT vs MCQ split.
-2. **5-Tier Hardness Presentation:** Present questions in 10–15 question batches using the 5-Tier Hardness Hierarchy (Level 1 Novice to Level 5 IIT Madras Rank Booster). In live chat, withhold solutions until student submits their answers.
+2. **5-Tier Hardness, Trap Spotter & Cross-Pollination Synthesizer:** 
+   - Present questions in 10–15 question batches using the 5-Tier Hardness Hierarchy (Level 1 Novice to Level 5 IIT Madras Rank Booster).
+   - **Automatic Trap Spotter Invariant (Under the Hood):** Mock mode automatically blends standard GATE questions with 1–2 **Reverse-Engineering Flawed Solution Trap Questions** per batch (e.g. presenting a student's 4-line solution with a hidden invalid assumption, sign slip, or boundary error, asking the aspirant to identify the exact step containing the bug). Students do NOT need to request "trap" or "spot" separately — it is an organic, built-in feature of every mock test.
+   - **Automatic Cross-Pollination Invariant (Under the Hood):** In sectional, multi-topic, and full-length mock tests, the engine automatically embeds 2–3 **Multi-Subject Cross-Pollination Hybrid Questions** testing boundary interactions across aerospace domains (e.g. *Flight Mechanics + Propulsion*: climb performance with turbojet ram recovery; *Aerodynamics + Gas Dynamics*: oblique shock wedge feeding into a supersonic diffuser; *Structures + Aerodynamics*: aeroelastic divergence under aerodynamic lift). Students do NOT need to prompt "hybrid" or "cross-pollination" — it is an organic, built-in feature of mock mode.
+   - In live chat, withhold solutions until student submits their answers.
 3. **Reasoning & Confidence Capture:** Collect student answers WITH their reasoning/thought process, confidence level (`Confident` vs `Guess` vs `Stuck`), and time taken per batch.
-4. **Forensic Review & Speed Shortcuts:** Reveal solutions and conduct root-cause diagnosis across the 5 error buckets (Conceptual, Formula, Silly, Time Pressure, Trap Victim). Provide 1-minute speed shortcuts and NAT rounding precision rules.
+4. **Forensic Review, Distractor Trap Blueprint & NAT Tolerance:** 
+   - Reveal solutions and calculate NAT IIT tolerance bands $[V_{\min}, V_{\max}]$.
+   - **Distractor Trap Blueprint:** Deconstruct the exact psychological/mathematical trap IIT professors built into each wrong option (e.g. Option B: forgot factor of 2; Option C: computed in Degrees instead of Radians; Option D: applied incompressible Bernoulli at $M > 0.3$).
+   - Conduct root-cause diagnosis across the 5 error buckets (Conceptual, Formula, Silly, Time Pressure, Trap Victim). Provide 1-minute speed shortcuts and memory register workflows from [`00 - META/GATE TCS Calculator Guide & NAT Precision Rules.md`](00%20-%20META/GATE%20TCS%20Calculator%20Guide%20%26%20NAT%20Precision%20Rules.md).
 5. **Private Diagnostic Logging:** Log full scorecard (Score, Accuracy %, Negative Drag, Error Breakdown) strictly into `journals/YYYY_MM_DD.md` and update `journals/AI_STUDENT_CONTEXT.md` weak areas.
 
 
@@ -174,9 +195,10 @@ Deep telemetry diagnostic of the student's entire GATE preparation based on stud
 1. **Data Harvest:** Read ALL `journals/YYYY_MM_DD.md` entries + `journals/AI_STUDENT_CONTEXT.md`.
 2. **Telemetry Matrix Generation:**
    - 📊 **Accuracy & Score Telemetry:** Per-subject/topic accuracy %, NAT vs MCQ split, Negative Marking Drag (marks lost to wrong MCQs: `-0.33` / `-0.66`).
-   - ⏱️ **Speed & Endurance Telemetry:** Average time per question, time-sink topics (>4 min/Q), 3-hour fatigue ratio (Hour 1 vs Hour 3 accuracy).
+   - ⏱️ **Speed & Endurance Telemetry:** Average time per question, time-sink topics (>4 min/Q), 3-block 180-minute fatigue ratio (Hour 1 vs Hour 2 vs Hour 3 accuracy), and Fatigue Degradation Index ($FDI$) with reference to [`00 - META/GATE 3-Hour Full-Mock Endurance & Fatigue Protocol.md`](00%20-%20META/GATE%203-Hour%20Full-Mock%20Endurance%20%26%20Fatigue%20Protocol.md).
    - 🎯 **5-Tier Error Taxonomy:** Categorize mistakes across 🔴 Conceptual Gaps, 🟠 Formula Slips, 🟡 Silly/Sign Mistakes, 🔵 Time Pressure, 🟣 GATE Trap Victims.
    - 🧠 **Mindset Meter:** Compare self-reported confidence against actual accuracy (detecting overconfidence/underconfidence gaps).
+   - 🏆 **AIR Rank & Institute Cutoff Simulator:** Project raw marks, calculate normalized score (out of 1000), estimate AIR bracket, and generate the Institute Admission & PSU Recruitment Probability Matrix (IISc, IITB, IITM, IITK, IITKgp, DRDO, ISRO, IIST, DIAT) with reference to [`00 - META/GATE AE AIR Rank & Institute Cutoff Simulator.md`](00%20-%20META/GATE%20AE%20AIR%20Rank%20%26%20Institute%20Cutoff%20Simulator.md).
    - 🚀 **Roadmap Pacing & AIR Rank Predictor:** Compare current completion vs roadmap timeline; calculate Subject ROI Multiplier ($\text{Exam Weightage} \times (100 - \text{Accuracy \%})$).
 3. **Output Action Plan:** Output a formatted Telemetry Dashboard with the top 3 highest-ROI Action Plan items to study next.
 

@@ -46,6 +46,19 @@ Categorize all logged mistakes into the 5 error buckets:
 Rank topics for revision by **ROI Priority Index**:
 $$\text{ROI Index} = \text{Official GATE Exam Weightage (\%)} \times (100 - \text{Current Accuracy \%})$$
 
+### 6. AIR Rank & Institute Cutoff Simulator Engine
+- Project raw GATE marks: $\text{Projected Marks} = (\text{Overall Accuracy} \times 100) - \text{Negative Drag}$.
+- Map to **Normalized GATE Score (out of 1000)**:
+  $$S = 350 + (900 - 350) \left( \frac{M - 26.5}{82.0 - 26.5} \right)$$
+- Map to **Projected AIR Band**:
+  - $\ge 75$ Marks ($S \ge 900$) $\implies$ **AIR 1–10**
+  - $65–74$ Marks ($S = 780–890$) $\implies$ **AIR 11–40**
+  - $55–64$ Marks ($S = 650–770$) $\implies$ **AIR 41–120**
+  - $45–54$ Marks ($S = 520–640$) $\implies$ **AIR 121–300**
+  - $35–44$ Marks ($S = 400–510$) $\implies$ **AIR 301–650**
+  - $< 35$ Marks ($S < 400$) $\implies$ **AIR > 650**
+- Evaluate **Institute Admission & PSU Probability Matrix** (IISc Bangalore, IIT Bombay, IIT Madras, IIT Kanpur, IIT Kharagpur, DRDO RAC, ISRO ICRB, IIST, DIAT).
+
 ---
 
 ## 📄 Telemetry Report Output Template
@@ -81,7 +94,33 @@ $$\text{ROI Index} = \text{Official GATE Exam Weightage (\%)} \times (100 - \tex
 
 ---
 
-## 🚀 3. Highest-ROI Action Plan (Rank Boosters)
+## 🏆 3. AIR Rank & Institute Cutoff Prediction Matrix
+
+| Parameter | Projected Current Value | Target AIR < 50 Value |
+|---|:---:|:---:|
+| **Projected Raw Marks** | **__/100** | **$\ge 65.0$** |
+| **Normalized GATE Score** | **__/1000** | **$\ge 780$** |
+| **Projected All India Rank (AIR)** | **AIR __–__** | **AIR $\le 40$** |
+
+### 🏛️ Institute Admission & PSU Recruitment Probabilities:
+- 🟢 **High Probability (Safe / Direct Offer):** [Institutes e.g. IIST / DIAT / IIT Kharagpur]
+- 🟡 **Moderate Probability (Interview Target):** [Institutes e.g. IIT Madras / IIT Kanpur / IIT Bombay TA]
+- 🔴 **Reach / Gap to Close (+__ Marks Needed):** [Institutes e.g. IISc Bangalore / DRDO RAC Scientist-B]
+
+---
+
+## ⏱️ 4. 3-Hour Full-Mock Endurance & Fatigue Telemetry
+
+- **Hour 1 Accuracy (Fresh Baseline):** __% (Avg Time/Q: __ min)
+- **Hour 2 Accuracy (Core Technicals):** __% (Avg Time/Q: __ min)
+- **Hour 3 Accuracy (Fatigue Zone):** __% (Avg Time/Q: __ min)
+- **Accuracy Decay (H1 $\to$ H3):** __% (Threshold: $\le 10\%$)
+- **Fatigue Degradation Index ($FDI$):** __% ([🟢 Optimal <25% / 🟡 Moderate 25-45% / 🔴 Critical >45%])
+- **Endurance Diagnosis & Pacing Fix:** [Specific time-cap and micro-reset advice from 00 - META/GATE 3-Hour Full-Mock Endurance & Fatigue Protocol.md]
+
+---
+
+## 🚀 5. Highest-ROI Action Plan (Rank Boosters)
 
 1. 🔥 **Top Priority:** [Topic Name] — *ROI Index: __* (Fixing this gains ~__ marks)
 2. ⚡ **Second Priority:** [Topic Name] — *ROI Index: __*
@@ -89,7 +128,7 @@ $$\text{ROI Index} = \text{Official GATE Exam Weightage (\%)} \times (100 - \tex
 
 ---
 
-## 📅 4. Roadmap Pacing Status
+## 📅 6. Roadmap Pacing Status
 - **Roadmap Position:** [Ahead / On-Track / Behind]
 - **Next Recommended Action:** [Specific Tutor or Mock Mode instruction]
 ```

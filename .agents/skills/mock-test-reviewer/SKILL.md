@@ -30,7 +30,7 @@ Use this skill when running mock tests in `mode: mock` ("Test me on X", "Mock mo
 2. Load questions from pre-authored shared mock files in `05 - MOCK TESTS/` (`Mock Series/` or `Topic Tests/`), or generate scoped questions adhering to the 5-Tier Hardness Hierarchy.
 3. Confirm time limit and total marks.
 
-### Step 2: Question Presentation & 5-Tier Hardness Standard
+### Step 2: Question Presentation, 5-Tier Standard, Trap Spotter & Cross-Pollination Synthesizer
 1. Present questions in batches of 10 to 15.
 2. Maintain the **5-Tier Hardness Hierarchy**:
    - **Level 1 (Novice):** Basic formula substitutions (1 Mark).
@@ -38,7 +38,13 @@ Use this skill when running mock tests in `mode: mock` ("Test me on X", "Mock mo
    - **Level 3 (Medium):** Core 2-Mark multi-step calculations and derivations.
    - **Level 4 (Tough):** Advanced 2-Mark tricky geometry and parameter tests.
    - **Level 5 (Challenger):** IIT Madras Rank Booster conceptual/abstract questions.
-3. In live AI chat, solutions MUST NOT be included in the question presentation prompt. Withhold solutions completely until after student submits their answers. (Foldable callouts `> [!faq]-` are used exclusively when authoring/saving mock files into `05 - MOCK TESTS/` for Obsidian).
+3. **Automatic "Trap Spotter" Invariant (Under the Hood):**
+   - Every 10–15 question batch automatically embeds 1–2 **Reverse-Engineering Flawed Solution Trap Questions** alongside standard problems.
+   - *Example Prompt:* "Problem: An aspirant calculated the lift coefficient of a cambered airfoil using thin airfoil theory and got $C_l = 2\pi(\alpha - \alpha_0) + 0.5$. Review the 4-step derivation below and pinpoint the exact invalid step/assumption, or verify if it is correct."
+4. **Automatic "Cross-Pollination Synthesizer" Invariant (Under the Hood):**
+   - In sectional, multi-topic, and full-length mock tests, the engine automatically embeds 2–3 **Multi-Subject Cross-Pollination Hybrid Questions** testing interdisciplinary physics (e.g. *Flight Mechanics + Propulsion*: climb ceiling with inlet ram drag; *Aerodynamics + Gas Dynamics*: wedge shock transition into ramjet diffuser; *Structures + Aerodynamics*: wing divergence under elliptic circulation).
+   - Aspirants do not need to prompt "cross-pollination" — it is an organic, integrated element of every mock test.
+5. In live AI chat, solutions MUST NOT be included in the question presentation prompt. Withhold solutions completely until after student submits their answers. (Foldable callouts `> [!faq]-` are used exclusively when authoring/saving mock files into `05 - MOCK TESTS/` for Obsidian).
 
 ### Step 3: Student Thought Process & Confidence Capture
 For each question batch, collect from the student:
@@ -47,7 +53,7 @@ For each question batch, collect from the student:
 - **Confidence Rating:** `Confident` (80-100%), `Guess` (40-79%), `Stuck` (0-39%).
 - **Time Taken:** Duration spent on the batch.
 
-### Step 4: Forensic Scorecard & 5-Tier Error Taxonomy
+### Step 4: Forensic Scorecard, Distractor Trap Blueprint & 5-Tier Error Taxonomy
 Generate a forensic diagnostic scorecard logged into `journals/YYYY_MM_DD.md`:
 
 ```markdown
@@ -55,6 +61,10 @@ Generate a forensic diagnostic scorecard logged into `journals/YYYY_MM_DD.md`:
 - **Score:** __ / __ Marks | **Accuracy:** __%
 - **MCQ Performance:** __% (Negative Marking Drag: -__ marks)
 - **NAT Performance:** __% (Rounding / Precision Errors: __)
+
+#### 🎯 Distractor Trap Blueprint (IIT Professor Deconstruction):
+- **Q1:** Option B = Deg/Rad slip; Option C = Gauge vs Absolute pressure trap.
+- **Q2 (Trap Spotter):** Step 3 failed because flow was compressible ($M=0.6$) but incompressible Bernoulli was used.
 
 #### 🎯 Error Taxonomy Breakdown:
 - 🔴 **Conceptual Gap:** [Q# & Concept]
@@ -64,10 +74,23 @@ Generate a forensic diagnostic scorecard logged into `journals/YYYY_MM_DD.md`:
 - 🟣 **GATE Trap Victim:** [Q# & Distractor choice]
 ```
 
-### Step 5: Speed Shortcuts & NAT Precision Coaching
-- Provide 1-minute speed shortcuts for calculation-heavy NAT/MCQ problems.
-- Emphasize IIT Madras NAT rounding precision rules (e.g. "round to 2 decimal places: 3.14").
-- Log weak topics to `journals/AI_STUDENT_CONTEXT.md` for prioritized revision.
+### Step 5: 3-Hour Endurance & Fatigue Telemetry (For Full-Length Mocks)
+For 180-minute full-length mocks, calculate the **3-Block Segmented Performance & Fatigue Degradation Index ($FDI$)**:
+
+```markdown
+#### ⏱️ 3-Hour Full-Mock Endurance & Fatigue Telemetry:
+| Operational Block | Questions | Accuracy % | Negative Drag | Time / Question |
+|---|:---:|:---:|:---:|:---:|
+| **Hour 1 (Fresh Baseline)** | Q1–Q20 | __% | -__ marks | __ min |
+| **Hour 2 (Core Heavy)** | Q21–Q45 | __% | -__ marks | __ min |
+| **Hour 3 (Fatigue Zone)** | Q46–Q65 | __% | -__ marks | __ min |
+
+- **Accuracy Decay (Hour 1 $\to$ Hour 3):** __% (Threshold: $\le 10\%$)
+- **Fatigue Degradation Index ($FDI$):** __% ([🟢 Optimal <25% / 🟡 Moderate 25-45% / 🔴 Critical >45%])
+- **Pacing Optimization Fix:** [Actionable pacing intervention from 00 - META/GATE 3-Hour Full-Mock Endurance & Fatigue Protocol.md]
+```
+
+- Log weak topics and pacing bottlenecks to `journals/AI_STUDENT_CONTEXT.md` for prioritized remediation.
 
 ---
 
