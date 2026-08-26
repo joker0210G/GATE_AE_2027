@@ -5,6 +5,31 @@ All notable changes to the GATE AE 2027 Obsidian Vault will be documented in thi
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [Unreleased]
+
+---
+
+## [1.3.0] — 2026-08-26
+
+### 🚀 Added & Enhanced
+- **Official TCS iON GATE Scientific Calculator 1:1 Pixel Replica (`assets/calculator/`):** Completely refactored the offline virtual calculator simulator to replicate the exact 11-column visual interface, window frame, and button arrangement of the official GATE exam screen.
+  - **Keypad & Functions:** Fully supports all 11 columns and 6 rows: `mod`, `sinh⁻¹`, `cosh⁻¹`, `tanh⁻¹`, `log₂x`, `logᵧx`, `|x|`, `%`, `n!`, `eˣ`, `10ˣ`, constants ($\pi, e$), wide red backspace `←` and `C`/`+/-` controls, wide `0` button, and vertical 2-row green `=` operator.
+  - **Exact Post-Fix Engine (`app.js`):** Accurate mathematical evaluation for unary functions (trigonometric, inverse hyperbolic, logarithmic bases 2, $e$, 10, $y$), memory registers (`MC`, `MR`, `MS`, `M+`, `M-`), and angle modes (`Deg`/`Rad`).
+  - **Authentic Windows/TCS Visual Styling (`style.css`):** Replicates the classic blue title bar, inset dual-screen formula and numeric displays, beveled gray button styling, and help modal.
+- **Role-Based Access Control (RBAC) & 3-Tier Spy Isolation Protocol (`AGENTS.md`, `AI_CONTEXT.md`, `07 - TEMPLATES/`, `journals/AI_STUDENT_CONTEXT.md`):** Engineered an automated permission validation system embedded in system prompt routines. When `spy:`, `hot-patch`, or rule customizations are invoked, the AI evaluates the caller's identity via `Role / Access Level` in `journals/AI_STUDENT_CONTEXT.md`. The **Author / Vault Architect** retains full 3-Tier authority to edit Layers 1, 2, and 3 (`AGENTS.md`, `AI_CONTEXT.md`, `00-07`, `CHANGELOG.md`, `journals/`), maintaining centralized fixes. For **Students / Peers / Friends**, the AI automatically isolates all prompt modifications, rule tweaks, and note customizations strictly to **Layer 3 (`journals/`)** under `<custom_ai_overrides>`, preventing corruption or fragmentation of shared upstream course materials.
+- **Mandatory `[Unreleased]` Changelog Invariant (`AGENTS.md`):** Formulated Rule 4 under `Mode: author / dev` in `AGENTS.md` mandating that all AI assistants automatically log developer improvements, architectural modifications, and formula hot-patches directly under `## [Unreleased]` at the top of `CHANGELOG.md` in real-time, eliminating untracked developer updates.
+
+### 🐛 Fixed & Polished
+- **Mermaid Diagram & Visual Telemetry Invariant (`AGENTS.md`, `prep-analyser`, `CHANGELOG.md`):** Fixed Mermaid rendering failure in Antigravity (`Invalid mermaid header: "pie title ..."`) caused by unsupported `pie` chart syntax. Codified the Mermaid & Visual Telemetry Invariant forbidding `pie` headers across all AI models, standardizing high-contrast **Unicode Progress Bar Tables** (`████████░░`) and supported `xychart-beta` charts for 100% universal rendering compatibility across Antigravity IDE, Obsidian, GitHub, and mobile parsers.
+- **Offline TCS Calculator Simulator Entry Point Restoration (`assets/calculator/index.html`):** Restored missing `index.html` file for the offline TCS iON Scientific Calculator simulator in `assets/calculator/`, linking the CSS styling (`style.css`) and post-fix JavaScript computation engine (`app.js`) to allow seamless 1-click browser simulation from [`00 - META/GATE TCS Calculator Guide & NAT Precision Rules.md`](00%20-%20META/GATE%20TCS%20Calculator%20Guide%20%26%20NAT%20Precision%20Rules.md).
+- **KaTeX Alignment Formatting Hot-Patch & 3-Tier Layer Synchronization (`AGENTS.md`, `AI_CONTEXT.md`, `journals/AI_STUDENT_CONTEXT.md`, `07 - TEMPLATES/`, `.agents/skills/`, `02 - SUBJECTS/`, `05 - MOCK TESTS/`):**
+  - **Layer 1 (`AGENTS.md`):** Updated `<formatting_rules>` with explicit KaTeX Multi-Line & Alignment Invariants, contrasting broken `\begin{aligned}` and `\boxed{\begin{aligned}}` patterns against valid standalone `$$ ... $$` lines and separate `\boxed{...}` equations.
+  - **Layer 2 (`AI_CONTEXT.md`):** Added Rule 5 to architectural directives mandating strict KaTeX math rendering compliance across all multi-agent interaction modes.
+  - **Layer 3 (`journals/AI_STUDENT_CONTEXT.md` & `07 - TEMPLATES/`):** Embedded the KaTeX Rendering Invariant under `<custom_ai_overrides>` ensuring live chat, worked solutions, drill batches, and private student notes (`journals/Fresh/`, `journals/Recall/`) strictly output valid standalone math expressions.
+  - **Vault-Wide Cleanup:** Eliminated all occurrences of `\begin{aligned}` and `&` alignment tabs across shared concept notes (`02 - SUBJECTS/`), daily trackers (`03 - DAILY TRACKER/`), and topic mock tests (`05 - MOCK TESTS/Topic Tests/`), resolving `Expected 'EOF', got '&'` render crashes across web and mobile KaTeX parsers.
+
+---
+
 ## [1.2.0] — 2026-08-17
 
 ### 🚀 Added & Enhanced

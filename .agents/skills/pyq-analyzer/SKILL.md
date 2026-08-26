@@ -26,3 +26,8 @@ Use this skill whenever analyzing a GATE AE Previous Year Question (PYQ).
 
 4. **Update Index:**
    - Update `04 - PYQs/_PYQ Master Index.md` attempt count and performance table.
+
+5. **KaTeX & Math Rendering Invariant:**
+   - NEVER use `\begin{aligned}`, `\begin{align}`, or `&` alignment operators.
+   - Separate equations into standalone `$$ ... $$` lines or bulleted `$ ... $` points.
+

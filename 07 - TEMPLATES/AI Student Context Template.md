@@ -11,6 +11,7 @@ description: Blank template for initializing a new student's private AI context 
 ## 👤 STUDENT PROFILE & TARGETS
 | Metric | Value |
 |---|---|
+| Role / Access Level | Student (Layer 3 Customization Access) |
 | Student Name | |
 | Target Exam | GATE Aerospace Engineering 2027 (IIT Madras, Feb 2027) |
 | Target AIR Rank | AIR < 10 |
@@ -41,6 +42,14 @@ description: Blank template for initializing a new student's private AI context 
 
 ### Communication Style
 *(AI notes tone preferences, language comfort, encouragement vs clinical feedback)*
+
+---
+
+<custom_ai_overrides>
+### 🛠️ Custom AI Prompt Overrides (GATE PERSONAL Layer)
+> **CRITICAL INSTRUCTION TO AI TUTOR:** Rules defined here take precedence for this student.
+- **KaTeX Rendering & No-`\begin{aligned}` Invariant:** The AI must NEVER output `\begin{aligned}`, `\begin{align}`, or `&` alignment operators in live chat conversations, worked solutions, drill batches, or private student notes (`journals/Fresh/`, `journals/Recall/`). All equations, systems of equations, and derivations must be formatted as separate standalone `$$ ... $$` display math equations or bulleted `$ ... $` lines to eliminate KaTeX rendering crashes (`Expected 'EOF', got '&'`).
+</custom_ai_overrides>
 
 ---
 

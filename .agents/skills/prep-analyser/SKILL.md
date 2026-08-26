@@ -86,11 +86,13 @@ $$\text{ROI Index} = \text{Official GATE Exam Weightage (\%)} \times (100 - \tex
 
 ## 🎯 2. Error Breakdown Taxonomy
 
-- 🔴 **Conceptual Gaps (__%):** [Key topics needing re-reading]
-- 🟠 **Formula Memory Slips (__%):** [Formula sheet gaps]
-- 🟡 **Silly / Calculation Errors (__%):** [Unit & sign mistakes]
-- 🔵 **Time Pressure Rushes (__%):** [Time management bottlenecks]
-- 🟣 **GATE Trap Victims (__%):** [Trick options & NAT rounding traps]
+| Error Category | Visual Distribution | Breakdown | Remediation Focus |
+|---|:---:|---|---|
+| 🟡 **Silly / Calculation Slips** | `████████████████████` | **__%** (__ Qs) | Unit & sign cross-product checks |
+| 🟠 **Formula Memory Slips** | `███████████░░░░░░░░░` | **__%** (__ Qs) | Active recall flashcard drills |
+| 🟣 **GATE Trap Victims** | `█████████░░░░░░░░░░░` | **__%** (__ Qs) | Plane scaling & distractor logic |
+| 🔵 **Time Pressure Rushes** | `██████░░░░░░░░░░░░░░` | **__%** (__ Qs) | 1-minute inspection shortcuts |
+| 🔴 **Conceptual Gaps** | `███░░░░░░░░░░░░░░░░░` | **__%** (__ Qs) | Deep intuition re-reading |
 
 ---
 

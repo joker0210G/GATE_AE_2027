@@ -97,3 +97,12 @@ For 180-minute full-length mocks, calculate the **3-Block Segmented Performance 
 ## 🔒 Logging Rule
 - Pre-authored mock papers live in `05 - MOCK TESTS/` (Shared Course Layer).
 - Student attempt logs and score reviews are saved **EXCLUSIVELY in `journals/YYYY_MM_DD.md`** (Private Student Layer).
+
+---
+
+## 📐 KaTeX & Formatting Invariant
+- **Strict No-`\begin{aligned}` Rule:** NEVER use `\begin{aligned}`, `\begin{align}`, or `&` alignment operators in live chat or mock reviews. Many markdown/KaTeX renderers throw `Expected 'EOF', got '&'`.
+- Always output multiple equations as separate standalone `$$ ... $$` lines or bulleted lists with inline `$ ... $`.
+- Never use raw or escaped `\$` for currency (write "dollars" or "Rs").
+- Isolate matrix blocks in their own standalone `$$ ... $$` lines without trailing operators or annotations.
+

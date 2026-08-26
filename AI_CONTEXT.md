@@ -32,7 +32,8 @@
 > 1. `03 - DAILY TRACKER/` contains the **shared 6-month daily study plan created by the author**. AI loads today's syllabus targets from here.  
 > 2. `05 - MOCK TESTS/` contains the **shared developer mock tests (`Mock Series/`, `Topic Tests/`, `_Mock Test Index.md`)**. AI presents tests from here.  
 > 3. Student session logs, reflections, scores, and struggle diagnoses belong **EXCLUSIVELY in `journals/YYYY_MM_DD.md`**. AI must **NEVER** write student personal logs into `03 - DAILY TRACKER/` or `05 - MOCK TESTS/`.
-> 4. **Strict Scope & Permission Boundary:** Without explicit developer/spy authorization (commands prefixed with `spy:`, `dev:`, or when running in `Mode: author`), **NO AI ASSISTANT HAS PERMISSION TO EDIT Layer 1 (`AGENTS.md`), Layer 2 (`AI_CONTEXT.md`), or `CHANGELOG.md`**. Any student modification requests, prompt additions, or personal rule overrides MUST be routed strictly to Layer 3 (`journals/AI_STUDENT_CONTEXT.md`). Editing Layer 1 or Layer 2 during a regular student turn is a severe architectural violation.
+> 4. **Role-Based Access Control (RBAC) & Scope Boundary:** The AI checks `Role / Access Level` in `journals/AI_STUDENT_CONTEXT.md`. If the user is the **Author / Vault Architect**, they have full authorization to modify Layers 1, 2, and 3 (`AGENTS.md`, `AI_CONTEXT.md`, `CHANGELOG.md`, `00-07`, `journals/`). If the user is a **Student / Peer**, their edits, prompts, and rule modifications are STRICTLY restricted to **Layer 3 (`journals/`)** under `<custom_ai_overrides>` to preserve centralized repository integrity across all shared copies.
+> 5. **KaTeX & Math Rendering Invariant:** All AI models across all modes MUST strictly adhere to the KaTeX Multi-Line Invariant. NEVER output `\begin{aligned}`, `\begin{align}`, or `&` alignment operators in chat responses or vault files (which crash web and mobile KaTeX renderers with `Expected 'EOF', got '&'`). Always separate multiple equations and systems into standalone `$$ ... $$` display math blocks or bulleted `$ ... $` lines.
 
 ---
 
@@ -76,4 +77,4 @@ To ensure this vault is universally robust for public release while allowing eve
 
 ---
 
-*Last Updated: 2026-08-17 | Version: 1.2.0*
+*Last Updated: 2026-08-26 | Version: 1.3.0*

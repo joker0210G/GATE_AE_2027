@@ -2,8 +2,8 @@
 
 [![Exam](https://img.shields.io/badge/GATE-Aerospace_Engineering_2027-blue.svg)](00%20-%20META/GATE%202027%20Official%20Syllabus.md)
 [![Syllabus](https://img.shields.io/badge/IIT_Madras-Official_Syllabus-green.svg)](00%20-%20META/GATE%202027%20Official%20Syllabus.md)
-[![Vault Version](https://img.shields.io/badge/Vault_Version-1.2.0-purple.svg)](VERSION.md)
-[![Last Updated](https://img.shields.io/badge/Last_Updated-2026--08--17-orange.svg)](CHANGELOG.md)
+[![Vault Version](https://img.shields.io/badge/Vault_Version-1.3.0-purple.svg)](VERSION.md)
+[![Last Updated](https://img.shields.io/badge/Last_Updated-2026--08--26-orange.svg)](CHANGELOG.md)
 [![Recommended AI Platform](https://img.shields.io/badge/Recommended_AI-Google_Antigravity-4285F4.svg)](https://deepmind.google/technologies/gemini/)
 [![AI Ready](https://img.shields.io/badge/AI_Ready-Antigravity_%7C_Claude_%7C_Gemini_%7C_GPT--4o_%7C_Cursor-purple.svg)](AGENTS.md)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)

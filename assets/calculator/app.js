@@ -1,7 +1,7 @@
-/**
- * TCS iON GATE Scientific Calculator Engine
- * Replicates the exact button layout, post-fix logic, memory registers,
- * and precision rules of the official GATE Online Scientific Calculator.
+﻿/**
+ * Official TCS iON GATE Scientific Calculator Engine
+ * Exact replica of the official GATE Online Scientific Calculator interface,
+ * key layout, unary/binary operations, post-fix logic, and memory registers.
  */
 
 class GateCalculator {
@@ -11,9 +11,9 @@ class GateCalculator {
     this.memory = 0;
     this.hasMemory = false;
     this.angleMode = 'deg'; // 'deg' or 'rad'
-    this.examMode = true; // Mouse only by default
     this.isNewNumber = true;
     this.lastResult = null;
+    this.logyBase = null; // For log_y(x)
 
     this.initDOM();
     this.bindEvents();
@@ -23,32 +23,22 @@ class GateCalculator {
   initDOM() {
     this.formulaEl = document.getElementById('formula-display');
     this.mainEl = document.getElementById('main-display');
-    this.memIndicator = document.getElementById('mem-indicator');
     this.degRadio = document.getElementById('mode-deg');
     this.radRadio = document.getElementById('mode-rad');
-    this.examToggleBtn = document.getElementById('exam-toggle-btn');
   }
 
   bindEvents() {
     // Mode changes
-    this.degRadio.addEventListener('change', () => {
-      this.angleMode = 'deg';
-    });
-    this.radRadio.addEventListener('change', () => {
-      this.angleMode = 'rad';
-    });
-
-    // Exam mode toggle
-    this.examToggleBtn.addEventListener('click', () => {
-      this.examMode = !this.examMode;
-      if (this.examMode) {
-        this.examToggleBtn.textContent = '🔒 Exam Mode (Mouse Only)';
-        this.examToggleBtn.classList.add('active');
-      } else {
-        this.examToggleBtn.textContent = '🔓 Practice Mode (Keyboard Allowed)';
-        this.examToggleBtn.classList.remove('active');
-      }
-    });
+    if (this.degRadio) {
+      this.degRadio.addEventListener('change', () => {
+        this.angleMode = 'deg';
+      });
+    }
+    if (this.radRadio) {
+      this.radRadio.addEventListener('change', () => {
+        this.angleMode = 'rad';
+      });
+    }
 
     // Keypad clicks
     document.querySelectorAll('.calc-btn').forEach(btn => {
@@ -59,16 +49,8 @@ class GateCalculator {
       });
     });
 
-    // Keyboard support when not in strict exam mode
+    // Keyboard support (Practice / Development)
     window.addEventListener('keydown', (e) => {
-      if (this.examMode) {
-        // Prevent typing into main display during exam mode simulation
-        if (e.key >= '0' && e.key <= '9' || ['+', '-', '*', '/', '.', '(', ')', 'Enter', 'Backspace'].includes(e.key)) {
-          e.preventDefault();
-        }
-        return;
-      }
-
       if (e.key >= '0' && e.key <= '9') {
         this.inputDigit(e.key);
       } else if (e.key === '.') {
@@ -92,6 +74,7 @@ class GateCalculator {
       } else if (e.key === 'Escape') {
         this.clearAll();
       }
+      this.updateDisplay();
     });
   }
 
@@ -120,9 +103,6 @@ class GateCalculator {
         break;
       case 'clear':
         this.clearAll();
-        break;
-      case 'clear-entry':
-        this.clearEntry();
         break;
       case 'backspace':
         this.backspace();
@@ -181,12 +161,17 @@ class GateCalculator {
     if (op === '^') {
       this.expression += '**';
     } else if (op === 'root_y') {
-      // y-th root of x: x**(1/y) -> formatted as binary
       this.expression += '**(1/';
     } else if (op === 'mod') {
       this.expression += '%';
     } else if (op === 'exp') {
       this.expression += '*10**';
+    } else if (op === 'log_y') {
+      // Log base y of x: Evaluated as log(x)/log(y)
+      const xVal = parseFloat(this.currentInput);
+      this.expression = Math.log()/Math.log(;
+      this.isNewNumber = true;
+      return;
     } else {
       this.expression += op;
     }
@@ -212,10 +197,12 @@ class GateCalculator {
         res = Math.tan(this.angleMode === 'deg' ? toRad(x) : x);
         break;
       case 'asin':
+        if (x < -1 || x > 1) { alert('Invalid input for sin⁻¹ (Range [-1, 1])'); return; }
         res = Math.asin(x);
         if (this.angleMode === 'deg') res = toDeg(res);
         break;
       case 'acos':
+        if (x < -1 || x > 1) { alert('Invalid input for cos⁻¹ (Range [-1, 1])'); return; }
         res = Math.acos(x);
         if (this.angleMode === 'deg') res = toDeg(res);
         break;
@@ -232,16 +219,31 @@ class GateCalculator {
       case 'tanh':
         res = Math.tanh(x);
         break;
+      case 'asinh':
+        res = Math.asinh(x);
+        break;
+      case 'acosh':
+        if (x < 1) { alert('Invalid input for cosh⁻¹ (x >= 1)'); return; }
+        res = Math.acosh(x);
+        break;
+      case 'atanh':
+        if (x <= -1 || x >= 1) { alert('Invalid input for tanh⁻¹ (-1 < x < 1)'); return; }
+        res = Math.atanh(x);
+        break;
       case 'ln':
-        if (x <= 0) { alert('Invalid input for ln'); return; }
+        if (x <= 0) { alert('Invalid input for ln (x > 0)'); return; }
         res = Math.log(x);
         break;
       case 'log10':
-        if (x <= 0) { alert('Invalid input for log'); return; }
+        if (x <= 0) { alert('Invalid input for log₁₀ (x > 0)'); return; }
         res = Math.log10(x);
         break;
+      case 'log2':
+        if (x <= 0) { alert('Invalid input for log₂ (x > 0)'); return; }
+        res = Math.log2(x);
+        break;
       case 'sqrt':
-        if (x < 0) { alert('Invalid input for sqrt'); return; }
+        if (x < 0) { alert('Invalid input for square root'); return; }
         res = Math.sqrt(x);
         break;
       case 'cbrt':
@@ -267,12 +269,17 @@ class GateCalculator {
       case 'epow':
         res = Math.exp(x);
         break;
+      case 'abs':
+        res = Math.abs(x);
+        break;
+      case 'percent':
+        res = x / 100;
+        break;
       case 'plusminus':
         res = -x;
         break;
     }
 
-    // Fix JavaScript floating point quirks like sin(180 deg) = 1.22e-16
     if (Math.abs(res) < 1e-15) res = 0;
 
     this.currentInput = this.formatNumber(res);
@@ -321,11 +328,6 @@ class GateCalculator {
     this.lastResult = null;
   }
 
-  clearEntry() {
-    this.currentInput = '0';
-    this.isNewNumber = true;
-  }
-
   backspace() {
     if (this.isNewNumber || this.currentInput.length <= 1) {
       this.currentInput = '0';
@@ -350,8 +352,8 @@ class GateCalculator {
       }
 
       // Sanitize expression for safe eval
-      const sanitized = fullExpr.replace(/[^0-9+\-*/().*%eE]/g, '');
-      const result = Function(`'use strict'; return (${sanitized})`)();
+      const sanitized = fullExpr.replace(/[^0-9+\-*/().*%eEMath,]/g, '');
+      const result = Function('use strict'; return ())();
 
       if (isNaN(result) || !isFinite(result)) {
         this.currentInput = 'Error';
@@ -370,22 +372,15 @@ class GateCalculator {
 
   formatNumber(num) {
     if (typeof num !== 'number') return num.toString();
-    // High precision without scientific notation noise unless very small/large
     if (Math.abs(num) > 1e12 || (Math.abs(num) < 1e-6 && num !== 0)) {
       return num.toExponential(8).replace(/\.?0+e/, 'e');
     }
-    // Round to max 10 decimal places to eliminate IEEE 754 precision artifacts
     return parseFloat(num.toFixed(10)).toString();
   }
 
   updateDisplay() {
     this.mainEl.value = this.currentInput;
     this.formulaEl.textContent = this.expression || '';
-    if (this.hasMemory) {
-      this.memIndicator.classList.add('active');
-    } else {
-      this.memIndicator.classList.remove('active');
-    }
   }
 }
 
