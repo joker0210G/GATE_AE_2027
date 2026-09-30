@@ -1,0 +1,1017 @@
+schema_version: 1.0-final
+meta:
+  title: GATE AE 2027 AIR-1 Master Curriculum
+  organizer: IIT Madras
+  paper: AE
+  start_date: '2026-10-01'
+  end_date: '2027-02-06'
+  total_days: 129
+  target_score: 84-88 Marks (AIR 1)
+operating_point:
+  attempt_marks: 95-97
+  accuracy: '>=0.925'
+  negative_drag: <=1.8 M
+  tolerance_rule: 4 s.f. universal, MS/MR zero-transcription, no premature rounding
+curriculum:
+- d: 1
+  date: '2026-10-01'
+  dow: Thu
+  week: 1
+  phase: 1
+  day_type: college
+  apex_topic: CV conservation laws (integral form) + Bernoulli + pitot-static intro
+  secondary_topic: Vector algebra; matrix algebra
+  chain_tag: CT0 foundation chain
+- d: 2
+  date: '2026-10-02'
+  dow: Fri
+  week: 1
+  phase: 1
+  day_type: college
+  apex_topic: Kinematics (stream/streak/pathline); incompressibility; Newtonian; NS
+    differential form
+  secondary_topic: Matrix ops; SLE
+- d: 3
+  date: '2026-10-03'
+  dow: Sat
+  week: 1
+  phase: 1
+  day_type: weekend
+  apex_topic: 'NS exact solutions: Couette, Hagen–Poiseuille'
+  secondary_topic: SLE; rank
+  gate: Weekend deep ×2
+- d: 4
+  date: '2026-10-04'
+  dow: Sun
+  week: 1
+  phase: 1
+  day_type: weekend
+  apex_topic: U-tube manometers (sp)
+  secondary_topic: Rank; eigen intro
+  gate: Quiz 1 + Sync 1
+- d: 5
+  date: '2026-10-05'
+  dow: Mon
+  week: 1
+  phase: 1
+  day_type: college
+  apex_topic: 'Potential flow: source, sink, doublet, point vortex; superposition'
+  secondary_topic: Eigenvalues/eigenvectors
+- d: 6
+  date: '2026-10-06'
+  dow: Tue
+  week: 1
+  phase: 1
+  day_type: college
+  apex_topic: Cylinder ± circulation; D'Alembert
+  secondary_topic: Eigen; single-var maxima
+- d: 7
+  date: '2026-10-07'
+  dow: Wed
+  week: 1
+  phase: 1
+  day_type: college
+  apex_topic: KJ theorem; airfoil nomenclature; L/D/M coefficients
+  secondary_topic: Integration applications
+- d: 8
+  date: '2026-10-08'
+  dow: Thu
+  week: 2
+  phase: 1
+  day_type: college
+  apex_topic: Thin airfoil theory I (derive); Kutta condition; starting vortex
+  secondary_topic: Eigen finish
+  chain_tag: CT1
+- d: 9
+  date: '2026-10-09'
+  dow: Fri
+  week: 2
+  phase: 1
+  day_type: college
+  apex_topic: 'TAT II: camber, flaps, pitching moment, aerodynamic center'
+  secondary_topic: Maxima/minima
+- d: 10
+  date: '2026-10-10'
+  dow: Sat
+  week: 2
+  phase: 1
+  day_type: weekend
+  apex_topic: 'Finite wing: lifting line, induced drag, downwash, e'
+  secondary_topic: Single-var integration
+  gate: Weekend deep
+- d: 11
+  date: '2026-10-11'
+  dow: Sun
+  week: 2
+  phase: 1
+  day_type: weekend
+  apex_topic: Repair (W1–W2 errors)
+  secondary_topic: Mixed calculus PYQs
+  gate: Quiz 2 + GA set 1
+- d: 12
+  date: '2026-10-12'
+  dow: Mon
+  week: 2
+  phase: 1
+  day_type: college
+  apex_topic: Compressibility; speed of sound; M_cr / M_dd; isentropic relations
+  secondary_topic: Grad/div/curl
+- d: 13
+  date: '2026-10-13'
+  dow: Tue
+  week: 2
+  phase: 1
+  day_type: college
+  apex_topic: Area–Mach; choking; mass-flow parameter
+  secondary_topic: Div/curl; directional derivatives
+- d: 14
+  date: '2026-10-14'
+  dow: Wed
+  week: 2
+  phase: 1
+  day_type: college
+  apex_topic: Normal shocks + table drills
+  secondary_topic: Directional derivatives
+- d: 15
+  date: '2026-10-15'
+  dow: Thu
+  week: 3
+  phase: 1
+  day_type: college
+  apex_topic: Oblique shocks (θ-β-M) + shock-expansion link
+  secondary_topic: Line integrals
+  chain_tag: CT2 · C1 (aero seg)
+- d: 16
+  date: '2026-10-16'
+  dow: Fri
+  week: 3
+  phase: 1
+  day_type: college
+  apex_topic: Prandtl–Meyer expansion; reflections
+  secondary_topic: Line/surface integrals
+- d: 17
+  date: '2026-10-17'
+  dow: Sat
+  week: 3
+  phase: 1
+  day_type: weekend
+  apex_topic: 'Nozzles & diffusers: area ratio, over/under-expanded'
+  secondary_topic: Volume integrals
+  gate: Weekend deep
+- d: 18
+  date: '2026-10-18'
+  dow: Sun
+  week: 3
+  phase: 1
+  day_type: weekend
+  apex_topic: Repair + table-speed drills
+  secondary_topic: Stokes/Gauss/Green intro
+  chain_tag: Quiz 3 + Tolerance Court
+- d: 19
+  date: '2026-10-19'
+  dow: Mon
+  week: 3
+  phase: 1
+  day_type: college
+  apex_topic: 'BL: thicknesses, von Kármán integral'
+  secondary_topic: Stokes theorem
+- d: 20
+  date: '2026-10-20'
+  dow: Tue
+  week: 3
+  phase: 1
+  day_type: college
+  apex_topic: Blasius solution; laminar BL
+  secondary_topic: Gauss theorem
+- d: 21
+  date: '2026-10-21'
+  dow: Wed
+  week: 3
+  phase: 1
+  day_type: college
+  apex_topic: Turbulent BL; separation; drag
+  secondary_topic: Green theorem
+- d: 22
+  date: '2026-10-22'
+  dow: Thu
+  week: 4
+  phase: 1
+  day_type: college
+  apex_topic: π-theorem; similarity; Rayleigh supersonic pitot; tunnels
+  secondary_topic: S/G/G PYQs
+  chain_tag: CT3 · C6
+- d: 23
+  date: '2026-10-23'
+  dow: Fri
+  week: 4
+  phase: 1
+  day_type: college
+  apex_topic: Subsonic pitot-static; tunnel types & corrections
+  secondary_topic: Bisection / Newton–Raphson
+- d: 24
+  date: '2026-10-24'
+  dow: Sat
+  week: 4
+  phase: 1
+  day_type: weekend
+  apex_topic: —
+  secondary_topic: —
+  chain_tag: 'SECTIONAL S1: Aero (bar ≥85%)'
+- d: 25
+  date: '2026-10-25'
+  dow: Sun
+  week: 4
+  phase: 1
+  day_type: weekend
+  apex_topic: S1 teardown + repair
+  secondary_topic: Bisection/NR PYQs
+  gate: Sync
+- d: 26
+  date: '2026-10-26'
+  dow: Mon
+  week: 4
+  phase: 1
+  day_type: college
+  apex_topic: 'ISA: lapse rates, pressure/density altitude'
+  secondary_topic: Line integrals rev
+- d: 27
+  date: '2026-10-27'
+  dow: Tue
+  week: 4
+  phase: 1
+  day_type: college
+  apex_topic: Classification, config; EAS/CAS/IAS; altimeter/ASI/VSI/turn-bank
+  secondary_topic: S/G/G PYQs
+- d: 28
+  date: '2026-10-28'
+  dow: Wed
+  week: 4
+  phase: 1
+  day_type: college
+  apex_topic: Forces/moments, AoA, sideslip; high-lift; roll/pitch/yaw controls; CL-α
+  secondary_topic: Surface/volume integrals
+- d: 29
+  date: '2026-10-29'
+  dow: Thu
+  week: 5
+  phase: 1
+  day_type: college
+  apex_topic: Drag polar + level flight (ISA→polar→V link)
+  secondary_topic: S/G/G PYQs
+  chain_tag: CT4 · C5
+- d: 30
+  date: '2026-10-30'
+  dow: Fri
+  week: 5
+  phase: 1
+  day_type: college
+  apex_topic: Breguet (jet vs prop); absolute & service ceiling
+  secondary_topic: Mixed vector-calc PYQs
+- d: 31
+  date: '2026-10-31'
+  dow: Sat
+  week: 5
+  phase: 1
+  day_type: weekend
+  apex_topic: Climb/descent/glide; TO & landing; head/tail/cross winds
+  secondary_topic: Mixed calculus PYQs
+  gate: Weekend deep
+- d: 32
+  date: '2026-11-01'
+  dow: Sun
+  week: 5
+  phase: 1
+  day_type: weekend
+  apex_topic: Repair (performance errors)
+  secondary_topic: First-order ODEs intro
+  gate: Quiz 5 + Sync
+- d: 33
+  date: '2026-11-02'
+  dow: Mon
+  week: 5
+  phase: 1
+  day_type: college
+  apex_topic: Load factor; turning flight; V-n diagram
+  secondary_topic: First-order ODEs
+  chain_tag: C2 FM-nodes seeded
+- d: 34
+  date: '2026-11-03'
+  dow: Tue
+  week: 5
+  phase: 1
+  day_type: college
+  apex_topic: 'Static stability: stick-fixed, NP, static margin, tail size/position'
+  secondary_topic: First-order ODEs PYQs
+- d: 35
+  date: '2026-11-04'
+  dow: Wed
+  week: 5
+  phase: 1
+  day_type: college
+  apex_topic: Trim, elevator power, stick-free; directional, vertical tail size
+  secondary_topic: Higher-order ODEs
+- d: 36
+  date: '2026-11-05'
+  dow: Thu
+  week: 6
+  phase: 1
+  day_type: college
+  apex_topic: 'Lateral stability: dihedral, sweep, wing position'
+  secondary_topic: Higher-order ODEs
+  chain_tag: CT5 · C9
+- d: 37
+  date: '2026-11-06'
+  dow: Fri
+  week: 6
+  phase: 1
+  day_type: college
+  apex_topic: Hinge moments, stick forces; rigid-body momentum balance
+  secondary_topic: Higher-order ODEs PYQs
+- d: 38
+  date: '2026-11-07'
+  dow: Sat
+  week: 6
+  phase: 1
+  day_type: weekend
+  apex_topic: 'Space: central force, Kepler''s laws, escape velocity'
+  secondary_topic: ODE PYQs
+  chain_tag: 'SECTIONAL S2: FM'
+- d: 39
+  date: '2026-11-08'
+  dow: Sun
+  week: 6
+  phase: 1
+  day_type: weekend
+  apex_topic: 'Diwali (A1): half day + light quiz'
+  secondary_topic: GA cards
+  gate: Family evening
+  holiday: Diwali
+- d: 40
+  date: '2026-11-09'
+  dow: Mon
+  week: 6
+  phase: 1
+  day_type: college
+  apex_topic: 'SOM: stress–strain (steel/Al); 2D transformation; Mohr; principal'
+  secondary_topic: ODE mixed PYQs
+- d: 41
+  date: '2026-11-10'
+  dow: Tue
+  week: 6
+  phase: 1
+  day_type: college
+  apex_topic: 'SOM: SFBM diagrams; axial; torsion (first pass)'
+  secondary_topic: —
+  gate: P1→P2 HANDOFF (eve)
+- d: 42
+  date: '2026-11-11'
+  dow: Wed
+  week: 6
+  phase: 2
+  day_type: college
+  anchor_topic: 'SOM: torsion of shafts — theory + PYQs'
+- d: 43
+  date: '2026-11-12'
+  dow: Thu
+  week: 7
+  phase: 2
+  day_type: college
+  anchor_topic: C1 nodes (HSA paper sync)
+  chain_tag: CT6 · C1 condensed
+- d: 44
+  date: '2026-11-13'
+  dow: Fri
+  week: 7
+  phase: 2
+  day_type: college
+  anchor_topic: 'Prop: thermo laws, entropy, cycles — PYQs'
+- d: 45
+  date: '2026-11-14'
+  dow: Sat
+  week: 7
+  phase: 2
+  day_type: weekend
+  anchor_topic: Mini-mock (8-Q) + sem prep
+- d: 46
+  date: '2026-11-15'
+  dow: Sun
+  week: 7
+  phase: 2
+  day_type: weekend
+  anchor_topic: Checkpoint 12-Q (bar 85%) + Tolerance Court
+- d: 47
+  date: '2026-11-16'
+  dow: Mon
+  week: 7
+  phase: 2
+  day_type: college
+  anchor_topic: 'Math: bisection, N-R, numerical differentiation'
+- d: 48
+  date: '2026-11-17'
+  dow: Tue
+  week: 7
+  phase: 2
+  day_type: college
+  anchor_topic: 'Aero: isentropic, area–Mach, choking PYQs'
+- d: 49
+  date: '2026-11-18'
+  dow: Wed
+  week: 7
+  phase: 2
+  day_type: college
+  anchor_topic: 'SOM: combined loading + failure criteria (max-stress/Tresca/von Mises)'
+- d: 50
+  date: '2026-11-19'
+  dow: Thu
+  week: 8
+  phase: 2
+  day_type: college
+  anchor_topic: 'Chain: intake shock-train → σ → nozzle → thrust'
+  chain_tag: CT7 · C1 FULL
+- d: 51
+  date: '2026-11-20'
+  dow: Fri
+  week: 8
+  phase: 2
+  day_type: college
+  anchor_topic: 'Prop: Brayton cycle, thrust, efficiency PYQs'
+- d: 52
+  date: '2026-11-21'
+  dow: Sat
+  week: 8
+  phase: 2
+  day_type: weekend
+  anchor_topic: Mini-mock + sem prep
+- d: 53
+  date: '2026-11-22'
+  dow: Sun
+  week: 8
+  phase: 2
+  day_type: weekend
+  anchor_topic: Checkpoint + Tolerance Court
+- d: 54
+  date: '2026-11-23'
+  dow: Mon
+  week: 8
+  phase: 2
+  day_type: college
+  anchor_topic: 'Math: trapezoidal, Simpson ⅓ & ⅜'
+- d: 55
+  date: '2026-11-24'
+  dow: Tue
+  week: 8
+  phase: 2
+  day_type: college
+  anchor_topic: 'Aero: BL, separation, tunnel corrections PYQs'
+- d: 56
+  date: '2026-11-25'
+  dow: Wed
+  week: 8
+  phase: 2
+  day_type: college
+  anchor_topic: 'SOM: 3D Hooke, plane stress/strain'
+- d: 57
+  date: '2026-11-26'
+  dow: Thu
+  week: 9
+  phase: 2
+  day_type: college
+  anchor_topic: 'Vibrations harvest: SDOF free/forced, transmissibility'
+  chain_tag: CT8 · C7
+- d: 58
+  date: '2026-11-27'
+  dow: Fri
+  week: 9
+  phase: 2
+  day_type: college
+  anchor_topic: 'Prop: thrust eq, Isp, rocket equation, staging PYQs'
+- d: 59
+  date: '2026-11-28'
+  dow: Sat
+  week: 9
+  phase: 2
+  day_type: weekend
+  anchor_topic: Mini-mock + sem prep
+- d: 60
+  date: '2026-11-29'
+  dow: Sun
+  week: 9
+  phase: 2
+  day_type: weekend
+  anchor_topic: Checkpoint + Tolerance Court
+- d: 61
+  date: '2026-11-30'
+  dow: Mon
+  week: 9
+  phase: 2
+  day_type: college
+  anchor_topic: 'Math: regression/least squares, interpolation'
+- d: 62
+  date: '2026-12-01'
+  dow: Tue
+  week: 9
+  phase: 2
+  day_type: college
+  anchor_topic: 'Aero: shock-table drills + oblique + P–M PYQs'
+- d: 63
+  date: '2026-12-02'
+  dow: Wed
+  week: 9
+  phase: 2
+  day_type: college
+  anchor_topic: 'SOM: indeterminate bars/beams (compatibility)'
+- d: 64
+  date: '2026-12-03'
+  dow: Thu
+  week: 10
+  phase: 2
+  day_type: college
+  anchor_topic: 'Vibrations harvest: 2-DOF free (sem sync)'
+  chain_tag: CT9 · C7
+- d: 65
+  date: '2026-12-04'
+  dow: Fri
+  week: 10
+  phase: 2
+  day_type: college
+  anchor_topic: 'Prop: solid & liquid propellants, chemical rockets'
+- d: 66
+  date: '2026-12-05'
+  dow: Sat
+  week: 10
+  phase: 2
+  day_type: weekend
+  anchor_topic: Mini-mock + sem prep
+- d: 67
+  date: '2026-12-06'
+  dow: Sun
+  week: 10
+  phase: 2
+  day_type: weekend
+  anchor_topic: Checkpoint + Tolerance Court
+- d: 68
+  date: '2026-12-07'
+  dow: Mon
+  week: 10
+  phase: 2
+  day_type: college
+  anchor_topic: 'Math: Bayes, distributions (Binomial/Normal/Poisson)'
+- d: 69
+  date: '2026-12-08'
+  dow: Tue
+  week: 10
+  phase: 2
+  day_type: college
+  anchor_topic: 'Aero: potential flow + airfoil decay-watch PYQs'
+- d: 70
+  date: '2026-12-09'
+  dow: Wed
+  week: 10
+  phase: 2
+  day_type: college
+  anchor_topic: 'SOM: Euler buckling, columns PYQs'
+- d: 71
+  date: '2026-12-10'
+  dow: Thu
+  week: 11
+  phase: 2
+  day_type: college
+  anchor_topic: 'Space harvest: Kepler → vis-viva → Hohmann preview → ΔV'
+  chain_tag: CT10 · C4
+- d: 72
+  date: '2026-12-11'
+  dow: Fri
+  week: 11
+  phase: 2
+  day_type: college
+  anchor_topic: 'Prop: intakes & nozzles (non-rotating) + C1 tie-in'
+- d: 73
+  date: '2026-12-12'
+  dow: Sat
+  week: 11
+  phase: 2
+  day_type: weekend
+  anchor_topic: Mini-mock + sem prep
+- d: 74
+  date: '2026-12-13'
+  dow: Sun
+  week: 11
+  phase: 2
+  day_type: weekend
+  anchor_topic: Checkpoint + Tolerance Court
+- d: 75
+  date: '2026-12-14'
+  dow: Mon
+  week: 11
+  phase: 2
+  day_type: college
+  anchor_topic: 'Math: mixed PYQ set (ODE + numerics + probability)'
+- d: 76
+  date: '2026-12-15'
+  dow: Tue
+  week: 11
+  phase: 2
+  day_type: college
+  anchor_topic: 'Aero: mixed PYQ set + P2 exit / return-prep'
+  chain_tag: Formula freeze
+- d: 77
+  date: '2026-12-16'
+  dow: Wed
+  week: 11
+  phase: 3
+  day_type: break-surge
+  apex_topic: Return diagnostic (bar ≥85%) + error-log teardown + repair plan
+- d: 78
+  date: '2026-12-17'
+  dow: Thu
+  week: 12
+  phase: 3
+  day_type: break-surge
+  apex_topic: 'Weakest-topic repair #1 + C1 timed re-run'
+  chain_tag: CT11 · C1 FULL
+- d: 79
+  date: '2026-12-18'
+  dow: Fri
+  week: 12
+  phase: 3
+  day_type: break-surge
+  apex_topic: 'Deflection: double integration, Macaulay, moment-area, superposition'
+- d: 80
+  date: '2026-12-19'
+  dow: Sat
+  week: 12
+  phase: 3
+  day_type: break-surge
+  apex_topic: 'Columns: Euler, end conditions; repair #2'
+- d: 81
+  date: '2026-12-20'
+  dow: Sun
+  week: 12
+  phase: 3
+  day_type: break-surge
+  apex_topic: Deep checkpoint (P1+P2 watchlist) + Sync
+  gate: Bar 85%
+- d: 82
+  date: '2026-12-21'
+  dow: Mon
+  week: 12
+  phase: 3
+  day_type: break-surge
+  apex_topic: '[Δ] EOM, Euler angles; decoupling long/lateral'
+- d: 83
+  date: '2026-12-22'
+  dow: Tue
+  week: 12
+  phase: 3
+  day_type: break-surge
+  apex_topic: '[Δ] SPPO + phugoid derivations; Mode Map I'
+- d: 84
+  date: '2026-12-23'
+  dow: Wed
+  week: 12
+  phase: 3
+  day_type: break-surge
+  apex_topic: '[Δ] Dutch roll, roll subsidence, spiral; Routh; Mode Map II'
+- d: 85
+  date: '2026-12-24'
+  dow: Thu
+  week: 13
+  phase: 3
+  day_type: break-surge
+  apex_topic: Dyn-stab PYQ sweep + derivative-effects table
+  chain_tag: CT12 · C9 full + C3 partial
+- d: 86
+  date: '2026-12-25'
+  dow: Fri
+  week: 13
+  phase: 3
+  day_type: break-surge
+  apex_topic: '[Δ] Turbomach: Euler angular momentum; axial compressor work, stage
+    characteristics'
+- d: 87
+  date: '2026-12-26'
+  dow: Sat
+  week: 13
+  phase: 3
+  day_type: break-surge
+  apex_topic: '[Δ] Degree of reaction (derived); multi-staging; efficiency'
+- d: 88
+  date: '2026-12-27'
+  dow: Sun
+  week: 13
+  phase: 3
+  day_type: break-surge
+  apex_topic: Delta quiz 1 + Sync
+  gate: Bar 85%
+- d: 89
+  date: '2026-12-28'
+  dow: Mon
+  week: 13
+  phase: 3
+  day_type: break-surge
+  apex_topic: '[Δ] Centrifugal: inducer, impeller, diffuser, Stanitz σ = 1 − 1.98/Z'
+- d: 90
+  date: '2026-12-29'
+  dow: Tue
+  week: 13
+  phase: 3
+  day_type: break-surge
+  apex_topic: '[Δ] Axial turbines: stage performance, triangles'
+- d: 91
+  date: '2026-12-30'
+  dow: Wed
+  week: 13
+  phase: 3
+  day_type: break-surge
+  apex_topic: Turbomach PYQ sweep + evening C3 full (cycle↔machine)
+  chain_tag: C3 FULL
+- d: 92
+  date: '2026-12-31'
+  dow: Thu
+  week: 14
+  phase: 3
+  day_type: break-surge
+  apex_topic: Thin-walled open sections q = −VQ/I
+  chain_tag: CT13 · C2 FULL (n→V-n→root BM→multi-cell→shear center→FS)
+- d: 93
+  date: '2027-01-01'
+  dow: Fri
+  week: 14
+  phase: 3
+  day_type: break-surge
+  apex_topic: '[Δ] Closed sections: Bredt–Batho; multi-cell twist compatibility; library
+    I'
+- d: 94
+  date: '2027-01-02'
+  dow: Sat
+  week: 14
+  phase: 3
+  day_type: break-surge
+  apex_topic: '[Δ] Unsymmetric bending; loads on aircraft; library II; datum discipline'
+- d: 95
+  date: '2027-01-03'
+  dow: Sun
+  week: 14
+  phase: 3
+  day_type: break-surge
+  apex_topic: '[Δ] Strain energy + Castigliano: indeterminate beams/frames/rings'
+  gate: Sync quiz
+- d: 96
+  date: '2027-01-04'
+  dow: Mon
+  week: 14
+  phase: 3
+  day_type: college
+  apex_topic: '[Δ] Vibrations: SDOF free (undamped + damped)'
+- d: 97
+  date: '2027-01-05'
+  dow: Tue
+  week: 14
+  phase: 3
+  day_type: college
+  apex_topic: '[Δ] SDOF forced, transmissibility; 2-DOF free; C7 final'
+- d: 98
+  date: '2027-01-06'
+  dow: Wed
+  week: 14
+  phase: 3
+  day_type: college
+  apex_topic: '[Δ] Fanno & Rayleigh flow (sp)'
+  sectional_or_mock: 'Eve: S3: Aero'
+- d: 99
+  date: '2027-01-07'
+  dow: Thu
+  week: 15
+  phase: 3
+  day_type: college
+  apex_topic: '[Δ] Hohmann transfers full (ΔV, time, phasing)'
+  chain_tag: CT14 · C4 FULL + C10
+- d: 100
+  date: '2027-01-08'
+  dow: Fri
+  week: 15
+  phase: 3
+  day_type: college
+  apex_topic: 'Combustor: stoichiometric F/A, types; blade cooling; C–T matching (sp)'
+  sectional_or_mock: 'Eve: S4: FM+Space'
+- d: 101
+  date: '2027-01-09'
+  dow: Sat
+  week: 15
+  phase: 3
+  day_type: weekend
+  apex_topic: '[Δ] Complex numbers, analytic fn, C–R, residue theorem'
+- d: 102
+  date: '2027-01-10'
+  dow: Sun
+  week: 15
+  phase: 3
+  day_type: weekend
+  apex_topic: '[Δ] PDE classification; separation (wave/Laplace/heat); Fourier series'
+  chain_tag: PYQ SWEEP COMPLETE
+- d: 103
+  date: '2027-01-11'
+  dow: Mon
+  week: 15
+  phase: 3
+  day_type: college
+  apex_topic: Engine types (ramjet→turboshaft, afterburners) + 2D elasticity (sp)
+  sectional_or_mock: 'Eve: S6: Propulsion'
+- d: 104
+  date: '2027-01-12'
+  dow: Tue
+  week: 15
+  phase: 3
+  day_type: college
+  apex_topic: Structures repair + weak-topic sets
+  sectional_or_mock: 'S5: Structures'
+- d: 105
+  date: '2027-01-13'
+  dow: Wed
+  week: 15
+  phase: 3
+  day_type: college
+  apex_topic: 'Style calibration: GATE 2011 (IITM) — timed'
+- d: 106
+  date: '2027-01-14'
+  dow: Thu
+  week: 16
+  phase: 3
+  day_type: college
+  apex_topic: 2011 teardown + failure-chain + Goodman context 30 min (V4)
+  chain_tag: 'CT15 · C8 + Eve: S7: Math+GA'
+  holiday: Pongal
+- d: 107
+  date: '2027-01-15'
+  dow: Fri
+  week: 16
+  phase: 3
+  day_type: college
+  apex_topic: 'Style calibration: GATE 2019 (IITM) — timed'
+  holiday: Pongal
+- d: 108
+  date: '2027-01-16'
+  dow: Sat
+  week: 16
+  phase: 4
+  day_type: mock
+  session: MOCK M1 (series)
+  gate: a ≥88%, M ≥90
+- d: 109
+  date: '2027-01-17'
+  dow: Sun
+  week: 16
+  phase: 4
+  day_type: repair
+  session: M1 teardown (1:1.5) + named-leak repair
+- d: 110
+  date: '2027-01-18'
+  dow: Mon
+  week: 16
+  phase: 4
+  day_type: mock
+  session: 'MOCK M2: GATE 2024 real'
+  gate: a ≥88%
+- d: 111
+  date: '2027-01-19'
+  dow: Tue
+  week: 16
+  phase: 4
+  day_type: repair
+  session: M2 teardown + repair + chain drill
+- d: 112
+  date: '2027-01-20'
+  dow: Wed
+  week: 16
+  phase: 4
+  day_type: mock
+  session: MOCK M3 (series)
+  gate: a ≥90%, drag ≤2.5
+- d: 113
+  date: '2027-01-21'
+  dow: Thu
+  week: 17
+  phase: 4
+  day_type: repair
+  session: M3 teardown + chain revision C1/C2/C5
+  gate: CT16
+- d: 114
+  date: '2027-01-22'
+  dow: Fri
+  week: 17
+  phase: 4
+  day_type: mock
+  session: 'MOCK M4: GATE 2025 real'
+  gate: a ≥90%
+- d: 115
+  date: '2027-01-23'
+  dow: Sat
+  week: 17
+  phase: 4
+  day_type: repair
+  session: M4 teardown + repair
+- d: 116
+  date: '2027-01-24'
+  dow: Sun
+  week: 17
+  phase: 4
+  day_type: mock
+  session: MOCK M5 (series) + pod mock-review sync
+  gate: a ≥90%
+- d: 117
+  date: '2027-01-25'
+  dow: Mon
+  week: 17
+  phase: 4
+  day_type: repair
+  session: M5 teardown + repair · no new topics from today
+- d: 118
+  date: '2027-01-26'
+  dow: Tue
+  week: 17
+  phase: 4
+  day_type: mock
+  session: 'MOCK M6: GATE 2026 real (timed re-test)'
+  gate: a ≥92%, drag ≤2.0, ≥80
+  holiday: Republic Day
+- d: 119
+  date: '2027-01-27'
+  dow: Wed
+  week: 17
+  phase: 4
+  day_type: repair
+  session: M6 teardown + Formula Bible pass 1
+- d: 120
+  date: '2027-01-28'
+  dow: Thu
+  week: 18
+  phase: 4
+  day_type: mock
+  session: MOCK M7 (series) — M-gate ≥95 checked first + revision C3/C4/C9
+  gate: CT17
+- d: 121
+  date: '2027-01-29'
+  dow: Fri
+  week: 18
+  phase: 4
+  day_type: repair
+  session: M7 teardown + Bible pass 2
+- d: 122
+  date: '2027-01-30'
+  dow: Sat
+  week: 18
+  phase: 4
+  day_type: mock
+  session: 'MOCK M8: GATE 2023 real (hostile calibration)'
+  gate: all gates
+- d: 123
+  date: '2027-01-31'
+  dow: Sun
+  week: 18
+  phase: 4
+  day_type: repair
+  session: M8 teardown + Top-25 Leaks list + sync
+- d: 124
+  date: '2027-02-01'
+  dow: Mon
+  week: 18
+  phase: 4
+  day_type: repair
+  session: Formula Bible full pass + leak repair
+- d: 125
+  date: '2027-02-02'
+  dow: Tue
+  week: 18
+  phase: 4
+  day_type: mock
+  session: 'LIGHT MOCK 9: GATE 2022 real (confidence)'
+- d: 126
+  date: '2027-02-03'
+  dow: Wed
+  week: 18
+  phase: 4
+  day_type: repair
+  session: Light teardown + Bible pass 3 + error-log review
+- d: 127
+  date: '2027-02-04'
+  dow: Thu
+  week: 19
+  phase: 4
+  day_type: college
+  session: Light slot-time set (60 min) + GA + cards · no chains
+  gate: CT18 (taper)
+- d: 128
+  date: '2027-02-05'
+  dow: Fri
+  week: 19
+  phase: 4
+  day_type: rest
+  session: 'REST + logistics: admit card, center recon, kit, sleep lock'
+- d: 129
+  date: '2027-02-06'
+  dow: Sat
+  week: 19
+  phase: 4
+  day_type: exam
+  session: 'GATE AE 2027 — EXAM (A2: forenoon; pending §4-Q3)'
+  gate: 'Pass 1: GA first'
