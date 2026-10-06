@@ -7,6 +7,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### 🚀 Added & Enhanced
+- **Same-Day Daily Tracker Completion Mandate & Adaptive Anti-Backlog Protocol (`AGENTS.md`, `journals/AI_STUDENT_CONTEXT.md`):** Formulated an ironclad coaching directive under `Mode: tutor` in `AGENTS.md` and personal AI overrides. Codifies the tutor's core mission: students have high motivation and study ambition, but struggle with execution and pacing. The AI tutor must dynamically adapt to the student's real-time learning speed, break down cognitive friction with intuitive analogies and AIR-1 shortcuts, time-box segments proactively, and invoke the daily tracker's Triage / Minimum Viable Day rule during high-fatigue windows so that the daily target in `03 - DAILY TRACKER/YYYY-MM-DD.md` is guaranteed to be 100% completed on that exact day with zero backlog accumulation.
+
 ---
 
 ## [1.3.0] — 2026-08-26
