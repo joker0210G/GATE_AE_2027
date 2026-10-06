@@ -152,15 +152,37 @@ section: Section 3
   - Force transformations: Wind axes ($L, D$) to Body axes ($N, A$) and small-angle approximations
   - Aerodynamic center ($x_{ac} = c/4$, $dC_M/d\alpha \equiv 0$) vs Center of pressure ($x_{cp} = c/4 - c_{m,ac}/c_l \cdot c$)
   - Pitching moment sign conventions: Nose-down negative moment for positive camber, stability implications
-- [ ] [[02 - SUBJECTS/Aerodynamics/04.2 - Thin Airfoil Theory, Kutta Condition and Starting Vortex]] 🔲
-- [ ] [[02 - SUBJECTS/Aerodynamics/04.3 - Finite Wing Theory and Prandtl Lifting Line Theory]] 🔲
-- [ ] [[02 - SUBJECTS/Aerodynamics/04.4 - Critical and Drag Divergence Mach Numbers]] 🔲
-
-### 5. Compressible Flows
-- [ ] [[02 - SUBJECTS/Aerodynamics/05.1 - 1D Compressible Flow and Isentropic Relations]] 🔲
-- [ ] [[02 - SUBJECTS/Aerodynamics/05.2 - Normal and Oblique Shock Waves]] 🔲
+- [x] [[02 - SUBJECTS/Aerodynamics/04.2 - Thin Airfoil Theory, Kutta Condition and Starting Vortex]] ✅ *(2026-10-08)*
+  - Vortex sheet model, Kutta condition at trailing edge ($\gamma(c) = 0$), starting vortex and Kelvin circulation theorem
+  - Glauert transformation $x = \frac{c}{2}(1 - \cos\theta_0)$, Fourier expansion of $\gamma(\theta)$, Glauert integral identity
+  - Symmetric airfoil: $c_l = 2\pi\alpha$, theoretical lift-curve slope $a_0 = 2\pi\text{ rad}^{-1} \approx 0.1097\text{ deg}^{-1}$
+  - Cambered airfoil: $\alpha_0 = -\frac{1}{2}(A_1 - 2A_0 + 2\alpha)$, $c_{m,c/4} = \frac{\pi}{4}(A_2 - A_1)$, quarter-chord aerodynamic center invariant ($x_{ac} \equiv 0.25 c$)
+- [x] [[02 - SUBJECTS/Aerodynamics/04.3 - Finite Wing Theory and Prandtl Lifting Line Theory]] ✅ *(2026-10-10)*
+  - 3D finite wing flow leakage, wingtip vortices, downwash $w$, and induced angle of attack $\alpha_i = w/V_\infty$
+  - Helmholtz vortex theorems, horseshoe vortex model, Biot-Savart downwash integration
+  - Prandtl fundamental integro-differential lifting line equation, Fourier sine series $\sum A_n \sin(n\theta)$
+  - Elliptic lift distribution: uniform downwash $w = \Gamma_0/(2b)$, minimum induced drag $C_{Di} = C_L^2/(\pi AR)$
+  - General monoplane equation: $C_L = \pi AR A_1$, $C_{Di} = \frac{C_L^2}{\pi AR}(1+\delta)$, span efficiency factor $e = \frac{1}{1+\delta}$
+- [x] [[02 - SUBJECTS/Aerodynamics/04.4 - Critical and Drag Divergence Mach Numbers]] ✅ *(2026-10-12)*
+  - Subsonic compressible flow, critical Mach number $M_{cr}$ definition and analytical determination via Prandtl-Glauert vs isentropic sonic $C_{p,\text{crit}}$
+  - Drag divergence Mach number $M_{dd}$ ($\Delta C_D = 0.0020$ or $dC_D/dM = 0.10$), transonic shock stall and wave drag onset
+  - Engineering delay strategies: wing sweep $\Lambda$ ($M_{cr} \approx M_{cr0}/\cos\Lambda$), thin airfoils ($t/c$), supercritical airfoils, Whitcomb Area Rule
+- [x] [[02 - SUBJECTS/Aerodynamics/05.1 - 1D Compressible Flow and Isentropic Relations]] ✅ *(2026-10-12)*
+  - Speed of sound $a = \sqrt{\gamma R T}$, Mach angle $\mu = \arcsin(1/M)$, Mach cone geometry
+  - Stagnation / total conditions: $T_0/T = 1 + \frac{\gamma-1}{2}M^2$, $p_0/p = (1 + \frac{\gamma-1}{2}M^2)^{\frac{\gamma}{\gamma-1}}$, $\rho_0/\rho = (1 + \frac{\gamma-1}{2}M^2)^{\frac{1}{\gamma-1}}$
+  - Characteristic speed of sound $a^* = \sqrt{\gamma R T^*}$ and bounded Mach parameter $M^*$
+  - Compressible dynamic pressure $q = \frac{1}{2}\gamma p M^2$, expansion to recover incompressible Bernoulli
+- [x] [[02 - SUBJECTS/Aerodynamics/05.2 - Normal and Oblique Shock Waves]] ✅ *(2026-10-14)*
+  - Normal shock governing 1D equations (continuity, momentum, energy), Prandtl relation $u_1 u_2 = (a^*)^2 \iff M_1^* M_2^* = 1$
+  - Rankine-Hugoniot jump relations: downstream Mach number $M_2 < 1$, static pressure ratio $p_2/p_1$, density ratio cap $\rho_2/\rho_1 \le 6.0$
+  - Stagnation temperature invariant $T_{02} \equiv T_{01}$, stagnation pressure drop and entropy rise $\Delta s = -R \ln(p_{02}/p_{01}) > 0$
+  - Rayleigh supersonic Pitot tube formula and subsonic downstream deceleration
 - [ ] [[02 - SUBJECTS/Aerodynamics/05.3 - Prandtl-Meyer Expansion Waves]] 🔲
-- [ ] [[02 - SUBJECTS/Aerodynamics/05.4 - Flow Through Quasi-1D Nozzles and Diffusers]] 🔲
+- [x] [[02 - SUBJECTS/Aerodynamics/05.4 - Flow Through Quasi-1D Nozzles and Diffusers]] ✅ *(2026-10-13)*
+  - Area-Mach differential equation $\frac{dA}{A} = (M^2-1)\frac{dV}{V}$, subsonic vs supersonic duct behavior
+  - de Laval convergent-divergent nozzle, sonic throat requirement ($dA=0$ at $M=1$)
+  - Isentropic area ratio $A/A^*$, mass flow rate equation and Mass Flow Parameter $\text{MFP}(M)$
+  - Choked mass flow $\dot{m}_{\max} \approx 0.04042 \frac{p_0 A^*}{\sqrt{T_0}}$, nozzle operating regimes (first critical, internal shock, third critical design, over/under-expanded)
 
 ---
 
@@ -187,9 +209,9 @@ section: Section 3
 | 01.3a Dynamic Similarity & Scaling | 🔵 Core | 🟢 First Read | 2026-08-09 | 2026-08-09 | 0 |
 | 01.4 Incompressibility & Newtonian Fluids | 🔵 Core | 🔲 To-Do | | | 0 |
 | 02 Viscous Flows & Boundary Layers | 🔵 Core | 🔲 To-Do | | | 0 |
-| 03 Potential Flow Theory | 🔵 Core | 🔲 To-Do | | | 0 |
-| 04 Airfoils and Wings | 🔵 Core | 🔲 To-Do | | | 0 |
-| 05 Compressible Flows | 🔵 Core | 🔲 To-Do | | | 0 |
+| 03 Potential Flow Theory | 🔵 Core | 🟢 First Read | 2026-10-05 | 2026-10-06 | 12 |
+| 04 Airfoils and Wings | 🔵 Core | 🟢 First Read | 2026-10-07 | 2026-10-10 | 25 |
+| 05 Compressible Flows | 🔵 Core | 🟢 First Read | 2026-10-12 | 2026-10-14 | 28 |
 | 06 Special Topics (Fanno/Rayleigh/Pitot) | 🟡 Special | 🔲 To-Do | | | 0 |
 
 ---

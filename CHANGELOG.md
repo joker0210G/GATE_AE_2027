@@ -8,6 +8,22 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### 🚀 Added & Enhanced
+- **Week 2 Master Content & Connective Study Blueprints (`03 - DAILY TRACKER/`, `02 - SUBJECTS/Aerodynamics/`):**
+  - **7 Daily Trackers (Days 8 to 14):** Created complete, self-contained AIR-1 study trackers in `03 - DAILY TRACKER/` for October 8–14, 2026 (`2026-10-08.md` through `2026-10-14.md`), fully forging the 7 links of Chain Thursday CT1:
+    - **D8 (2026-10-08):** Thin Airfoil Theory I (Derivation, Vortex Sheet Model, Kutta Condition, Starting Vortex) + Eigenvalues/Eigenvectors.
+    - **D9 (2026-10-09):** Cambered Airfoil Theory (TAT II, Fourier Series, Flap Deflections, Pitching Moments, $x_{ac} = 0.25c$) + Calculus Maxima/Minima.
+    - **D10 (2026-10-10):** Finite Wing Aerodynamics (Prandtl Lifting Line Theory, Horseshoe Vortex, Induced Drag, Downwash, Elliptic vs General Loading) + Calculus Integration Review.
+    - **D11 (2026-10-11):** W1–W2 Comprehensive Forensic Repair Gate, Tolerance Court, Quiz 2 + GA Set 1 & Mixed Calculus PYQ Marathon.
+    - **D12 (2026-10-12):** Subsonic Compressible Aerodynamics (Speed of Sound, Stagnation Relations, Critical Mach $M_{cr}$, Drag Divergence $M_{dd}$) + Vector Calculus (Gradient, Divergence, Curl).
+    - **D13 (2026-10-13):** Quasi-1D Compressible Flow (Area-Mach Relation, de Laval Nozzles, Choking, Mass Flow Parameter) + Directional Derivatives & Tangent Planes.
+    - **D14 (2026-10-14):** 1D Compressible Normal Shocks (Rankine-Hugoniot Jump Relations, Stagnation Pressure Loss, Rayleigh Pitot Tube) + Directional Math Finish (CT1 Finale).
+  - **6 Master Concept Notes (`02 - SUBJECTS/Aerodynamics/`):** Authored foundational theory notes complete with derivations, KaTeX-compliant display math, TCS Virtual Calculator keystroke ledgers, official IIT tolerance bands, distractor trap autopsies, and interactive native foldable flashcards (`> [!question]-`):
+    - `04.2 - Thin Airfoil Theory, Kutta Condition and Starting Vortex.md`
+    - `04.3 - Finite Wing Theory and Prandtl Lifting Line Theory.md`
+    - `04.4 - Critical and Drag Divergence Mach Numbers.md`
+    - `05.1 - 1D Compressible Flow and Isentropic Relations.md`
+    - `05.4 - Flow Through Quasi-1D Nozzles and Diffusers.md`
+    - `05.2 - Normal and Oblique Shock Waves.md`
 - **Same-Day Daily Tracker Completion Mandate & Adaptive Anti-Backlog Protocol (`AGENTS.md`, `journals/AI_STUDENT_CONTEXT.md`):** Formulated an ironclad coaching directive under `Mode: tutor` in `AGENTS.md` and personal AI overrides. Codifies the tutor's core mission: students have high motivation and study ambition, but struggle with execution and pacing. The AI tutor must dynamically adapt to the student's real-time learning speed, break down cognitive friction with intuitive analogies and AIR-1 shortcuts, time-box segments proactively, and invoke the daily tracker's Triage / Minimum Viable Day rule during high-fatigue windows so that the daily target in `03 - DAILY TRACKER/YYYY-MM-DD.md` is guaranteed to be 100% completed on that exact day with zero backlog accumulation.
 
 ---
